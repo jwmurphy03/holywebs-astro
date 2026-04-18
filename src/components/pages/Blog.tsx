@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowRight, Clock, ChevronLeft, ChevronRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import BlogSidebar from "@/components/BlogSidebar";
@@ -84,17 +83,21 @@ const publishedPosts = [
 ];
 
 export default function Blog() {
-  const { page: pageParam } = useParams<{ page?: string }>();
+  // Read page number from URL path: /resources/blog/page/2
+  const pathMatch = typeof window !== "undefined"
+    ? window.location.pathname.match(/\/page\/(\d+)$/)
+    : null;
+  const pageParam = pathMatch ? pathMatch[1] : undefined;
   const totalPages = Math.max(1, Math.ceil(publishedPosts.length / POSTS_PER_PAGE));
 
-  // Validate page param
   const parsedPage = pageParam ? parseInt(pageParam, 10) : 1;
   const isInvalidPage =
     pageParam !== undefined &&
     (Number.isNaN(parsedPage) || parsedPage < 1 || parsedPage > totalPages || parsedPage === 1);
 
   if (isInvalidPage) {
-    return <Navigate href="/resources/blog" replace />;
+    if (typeof window !== "undefined") window.location.href = "/resources/blog";
+    return null;
   }
 
   const currentPage = parsedPage;
