@@ -7,7 +7,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
-import dallasSkyline from "@/assets/dallas-skyline.png";
+const dallasSkyline = "/assets/dallas-skyline.png";
 
 const services = [
   {

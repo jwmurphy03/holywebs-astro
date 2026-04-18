@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Check, ArrowRight, Search, MousePointerClick, BarChart3, Settings, Shield, DollarSign, Target, TrendingUp } from "lucide-react";
-import googleAdsSearchImg from "@/assets/google-ads-search.png";
-import googleAdsAnalyticsImg from "@/assets/google-ads-analytics.jpg";
+const googleAdsSearchImg = "/assets/google-ads-search.png";
+const googleAdsAnalyticsImg = "/assets/google-ads-analytics.jpg";
 
 import Layout from "@/components/Layout";
 import SectionWrapper from "@/components/SectionWrapper";

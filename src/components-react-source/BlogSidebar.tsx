@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen } from "lucide-react";
-import bookCover from "@/assets/book-cover.png";
+const bookCover = "/assets/book-cover.png";
 
 export default function BlogSidebar() {
   return (

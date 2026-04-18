@@ -7,8 +7,8 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
-import charlestonWaterfront from "@/assets/charleston-waterfront.jpg";
-import charlestonBridge from "@/assets/charleston-ravenel-bridge.jpg";
+const charlestonWaterfront = "/assets/charleston-waterfront.jpg";
+const charlestonBridge = "/assets/charleston-ravenel-bridge.jpg";
 
 const services = [
   {

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useSearchParams } from "react-router-dom";
 import { CheckCircle2, Download, Mail, ArrowRight, BookOpen, Loader2 } from "lucide-react";
-import bookCover from "@/assets/book-cover.png";
+const bookCover = "/assets/book-cover.png";
 import { supabase } from "@/integrations/supabase/client";
 import { stripeEnvironment } from "@/lib/stripe";
 

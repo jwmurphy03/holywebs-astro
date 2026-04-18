@@ -5,14 +5,14 @@ import Layout from "@/components/Layout";
 import BlogSidebar from "@/components/BlogSidebar";
 // Unsplash blog thumbnails
 
-import gbpTipsThumb from "@/assets/blog/gbp-tips-thumb-v2.jpg";
-import seoVsAdsThumb from "@/assets/blog/seo-vs-google-ads-thumb-v3.jpg";
-import aeoThumb from "@/assets/blog/what-is-aeo-thumb-v2.jpg";
-import agencyThumb from "@/assets/blog/agency-wasting-money-thumb-v2.jpg";
-import speedThumb from "@/assets/blog/website-speed-thumb-v2.jpg";
-import contractorNoCallsThumb from "@/assets/blog/contractor-website-no-calls-thumb-v2.jpg";
-import googleMapsThumb from "@/assets/blog/google-maps-ranking-thumb.jpg";
-import hvacNotShowingThumb from "@/assets/blog/hvac-not-showing-google-thumb.jpg";
+const gbpTipsThumb = "/assets/blog/gbp-tips-thumb-v2.jpg";
+const seoVsAdsThumb = "/assets/blog/seo-vs-google-ads-thumb-v3.jpg";
+const aeoThumb = "/assets/blog/what-is-aeo-thumb-v2.jpg";
+const agencyThumb = "/assets/blog/agency-wasting-money-thumb-v2.jpg";
+const speedThumb = "/assets/blog/website-speed-thumb-v2.jpg";
+const contractorNoCallsThumb = "/assets/blog/contractor-website-no-calls-thumb-v2.jpg";
+const googleMapsThumb = "/assets/blog/google-maps-ranking-thumb.jpg";
+const hvacNotShowingThumb = "/assets/blog/hvac-not-showing-google-thumb.jpg";
 
 const POSTS_PER_PAGE = 6;
 

@@ -17,9 +17,9 @@ const relatedLinks = [
   { title: "HVAC", description: "HVAC and roofing companies both rely on seasonal search demand. See our strategy.", href: "/industries/hvac" },
 ];
 import IndustryPortfolio from "@/components/IndustryPortfolio";
-import refinedImg from "@/assets/portfolio-refined-roofing.png";
-import woodysImg from "@/assets/portfolio-woodys-roofing.png";
-import tidewaterImg from "@/assets/portfolio-tidewater.png";
+const refinedImg = "/assets/portfolio-refined-roofing.png";
+const woodysImg = "/assets/portfolio-woodys-roofing.png";
+const tidewaterImg = "/assets/portfolio-tidewater.png";
 
 const roofingPortfolio = [
   { image: refinedImg, name: "Refined Roofing Co." },

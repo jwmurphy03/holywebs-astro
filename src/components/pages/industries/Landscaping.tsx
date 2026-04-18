@@ -17,8 +17,8 @@ const relatedLinks = [
   { title: "Multi-Location", description: "Growing into new markets? See how we scale visibility for multi-location businesses.", href: "/industries/multi-location" },
 ];
 import IndustryPortfolio from "@/components/IndustryPortfolio";
-import dnaImg from "@/assets/portfolio-dna-landscape.png";
-import willshireImg from "@/assets/portfolio-willshire.png";
+const dnaImg = "/assets/portfolio-dna-landscape.png";
+const willshireImg = "/assets/portfolio-willshire.png";
 
 const landscapingPortfolio = [
   { image: dnaImg, name: "DNA Landscape" },

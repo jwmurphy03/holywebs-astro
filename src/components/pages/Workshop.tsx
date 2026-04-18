@@ -4,7 +4,7 @@ import { Calendar, Clock, Video, CheckCircle, AlertTriangle } from "lucide-react
 import Layout from "@/components/Layout";
 import { postToGHL } from "@/lib/ghl";
 import { toast } from "sonner";
-import jeremyPhoto from "@/assets/jeremy-workshop.jpeg";
+const jeremyPhoto = "/assets/jeremy-workshop.jpeg";
 
 const WORKSHOP_DATE = new Date("2026-05-07T19:00:00Z"); // 2 PM Central = 7 PM UTC
 

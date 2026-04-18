@@ -7,7 +7,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
-import arlingtonBackyard from "@/assets/arlington-backyard.png";
+const arlingtonBackyard = "/assets/arlington-backyard.png";
 
 const services = [
   {

@@ -4,7 +4,7 @@ import { ArrowRight, Users, Target, Shield, Heart, Clock, Award, BookOpen, Brief
 import Layout from "@/components/Layout";
 import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
-import jeremyPhoto from "@/assets/jeremy-murphy.webp";
+const jeremyPhoto = "/assets/jeremy-murphy.webp";
 
 const values = [
   {

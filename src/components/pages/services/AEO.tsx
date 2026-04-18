@@ -3,7 +3,7 @@ import { Check, ArrowRight, Bot, MessageSquare, Globe, Layers, Sparkles, BarChar
 
 import Layout from "@/components/Layout";
 import SectionWrapper from "@/components/SectionWrapper";
-import aeoSearchImg from "@/assets/aeo-ai-search.jpg";
+const aeoSearchImg = "/assets/aeo-ai-search.jpg";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import ServicesSocialProof from "@/components/ServicesSocialProof";
 import WhereWeServe from "@/components/WhereWeServe";

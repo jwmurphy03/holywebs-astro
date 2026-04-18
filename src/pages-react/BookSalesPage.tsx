@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import logoWhite from "@/assets/logo-white.png";
-import bookCover from "@/assets/book-cover.png";
+const logoWhite = "/assets/logo-white.png";
+const bookCover = "/assets/book-cover.png";
 import {
   CheckCircle2,
   Star,

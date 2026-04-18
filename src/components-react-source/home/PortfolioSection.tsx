@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import SectionWrapper from "@/components/SectionWrapper";
-import snapbooksImg from "@/assets/portfolio-snapbooks.png";
-import redboxImg from "@/assets/portfolio-redbox.png";
-import dnaImg from "@/assets/portfolio-dna-landscape.png";
-import palmettoImg from "@/assets/portfolio-palmetto.png";
-import gsbImg from "@/assets/portfolio-gsb.png";
-import notorious5Img from "@/assets/portfolio-notorious5.png";
-import willshireImg from "@/assets/portfolio-willshire.png";
-import refinedImg from "@/assets/portfolio-refined-roofing.png";
-import wrapstarImg from "@/assets/portfolio-wrapstar.png";
-import tidewaterImg from "@/assets/portfolio-tidewater.png";
-import longcaneImg from "@/assets/portfolio-longcane.png";
-import csgImg from "@/assets/portfolio-csg.png";
+const snapbooksImg = "/assets/portfolio-snapbooks.png";
+const redboxImg = "/assets/portfolio-redbox.png";
+const dnaImg = "/assets/portfolio-dna-landscape.png";
+const palmettoImg = "/assets/portfolio-palmetto.png";
+const gsbImg = "/assets/portfolio-gsb.png";
+const notorious5Img = "/assets/portfolio-notorious5.png";
+const willshireImg = "/assets/portfolio-willshire.png";
+const refinedImg = "/assets/portfolio-refined-roofing.png";
+const wrapstarImg = "/assets/portfolio-wrapstar.png";
+const tidewaterImg = "/assets/portfolio-tidewater.png";
+const longcaneImg = "/assets/portfolio-longcane.png";
+const csgImg = "/assets/portfolio-csg.png";
 
 const projects = [
   { image: snapbooksImg, name: "SnapBooks", url: null },

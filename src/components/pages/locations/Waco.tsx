@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
-import wacoSkyline from "@/assets/waco-bridge.png";
+const wacoSkyline = "/assets/waco-bridge.png";
 
 const services = [
   {

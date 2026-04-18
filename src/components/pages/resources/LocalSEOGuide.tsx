@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Clock, BookOpen } from "lucide-react";
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import heroImg from "@/assets/guide-hero-local-seo.jpg";
+const heroImg = "/assets/guide-hero-local-seo.jpg";
 
 const tocItems = [
   { id: "why-local-seo", label: "Why Local SEO Matters" },

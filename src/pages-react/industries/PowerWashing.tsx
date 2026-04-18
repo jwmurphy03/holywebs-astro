@@ -17,8 +17,8 @@ const relatedLinks = [
   { title: "Construction", description: "Post-construction cleanups are a power washing niche. See our construction marketing.", href: "/industries/construction" },
 ];
 import IndustryPortfolio from "@/components/IndustryPortfolio";
-import holyCityImg from "@/assets/portfolio-holy-city-hydroshine.png";
-import coastalEliteImg from "@/assets/portfolio-coastal-elite.png";
+const holyCityImg = "/assets/portfolio-holy-city-hydroshine.png";
+const coastalEliteImg = "/assets/portfolio-coastal-elite.png";
 
 const powerWashingPortfolio = [
   { image: holyCityImg, name: "Holy City Hydroshine" },

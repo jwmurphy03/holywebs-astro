@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { usePathname } from "@/hooks/usePathname";
 import { Menu, X, ChevronDown, Flame, Wrench, Zap, Home, HardHat, Droplets, TreePine, Calculator, MapPin, BookOpen, Video, Search, FileText, Newspaper } from "lucide-react";
-import logoWhite from "@/assets/logo-white.png";
-import logoColor from "@/assets/logo-color.png";
+const logoWhite = "/assets/logo-white.png";
+const logoColor = "/assets/logo-color.png";
 
 const servicesMegaLinks = [
   { label: "Web Design", to: "/services/web-design", desc: "Sites that turn visitors into booked jobs" },

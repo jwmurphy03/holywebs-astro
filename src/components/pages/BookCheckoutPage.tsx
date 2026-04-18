@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Helmet } from "react-helmet-async";
 
 import { ArrowLeft, CheckCircle2, ShieldCheck, Lock, Star, Zap } from "lucide-react";
-import bookCover from "@/assets/book-cover.png";
+const bookCover = "/assets/book-cover.png";
 import { BookCheckout } from "@/components/BookCheckout";
 import { PaymentTestModeBanner } from "@/components/PaymentTestModeBanner";
 

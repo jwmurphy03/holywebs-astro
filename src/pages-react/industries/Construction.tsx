@@ -17,11 +17,11 @@ const relatedLinks = [
   { title: "Plumbing", description: "New construction plumbing marketing requires a different approach. See how we help.", href: "/industries/plumbing" },
 ];
 import IndustryPortfolio from "@/components/IndustryPortfolio";
-import blackCreekImg from "@/assets/portfolio-black-creek.png";
-import carolinaConcreteImg from "@/assets/portfolio-carolina-concrete.png";
-import qualityFenceImg from "@/assets/portfolio-quality-fence.png";
-import southeastUtilityImg from "@/assets/portfolio-southeast-utility.png";
-import greatSouthernImg from "@/assets/portfolio-great-southern.png";
+const blackCreekImg = "/assets/portfolio-black-creek.png";
+const carolinaConcreteImg = "/assets/portfolio-carolina-concrete.png";
+const qualityFenceImg = "/assets/portfolio-quality-fence.png";
+const southeastUtilityImg = "/assets/portfolio-southeast-utility.png";
+const greatSouthernImg = "/assets/portfolio-great-southern.png";
 
 const constructionPortfolio = [
   { image: blackCreekImg, name: "Black Creek Installations" },

@@ -11,8 +11,8 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
-import houstonSkyline from "@/assets/houston-skyline.jpg";
-import houstonBeSomeone from "@/assets/houston-be-someone.jpg";
+const houstonSkyline = "/assets/houston-skyline.jpg";
+const houstonBeSomeone = "/assets/houston-be-someone.jpg";
 
 const services = [
   {

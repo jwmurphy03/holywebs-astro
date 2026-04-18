@@ -7,7 +7,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
-import tylerTheater from "@/assets/tyler-theater.png";
+const tylerTheater = "/assets/tyler-theater.png";
 
 const services = [
   {

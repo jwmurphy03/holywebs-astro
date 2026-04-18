@@ -16,7 +16,7 @@ const relatedLinks = [
   { title: "Electrical", description: "Trades and professional services face similar local search challenges. See our approach.", href: "/industries/electrical" },
   { title: "HVAC", description: "HVAC companies rely on the same local marketing strategies. See how we help them.", href: "/industries/hvac" },
 ];
-import snapbooksImg from "@/assets/portfolio-snapbooks-full.png";
+const snapbooksImg = "/assets/portfolio-snapbooks-full.png";
 
 
 const cpaFaqs = [

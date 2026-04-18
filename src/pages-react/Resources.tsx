@@ -9,7 +9,7 @@ import {
 import Layout from "@/components/Layout";
 import SectionWrapper from "@/components/SectionWrapper";
 import GatedDownloadDialog from "@/components/GatedDownloadDialog";
-import auditSample from "@/assets/audit-report-sample.png";
+const auditSample = "/assets/audit-report-sample.png";
 
 const guides = [
   {

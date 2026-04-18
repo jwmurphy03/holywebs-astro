@@ -1,8 +1,8 @@
 
 import { ArrowRight } from "lucide-react";
 import SectionWrapper from "../SectionWrapper";
-import texasSkyline from "@/assets/texas-skyline.png";
-import scSkyline from "@/assets/south-carolina-skyline.png";
+const texasSkyline = "/assets/texas-skyline.png";
+const scSkyline = "/assets/south-carolina-skyline.png";
 
 const locations = [
   {

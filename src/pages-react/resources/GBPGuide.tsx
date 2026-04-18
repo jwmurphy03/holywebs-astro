@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Clock, BookOpen } from "lucide-react";
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import heroImg from "@/assets/guide-hero-gbp.jpg";
+const heroImg = "/assets/guide-hero-gbp.jpg";
 
 const tocItems = [
   { id: "why-gbp-matters", label: "Why GBP Matters in 2026" },

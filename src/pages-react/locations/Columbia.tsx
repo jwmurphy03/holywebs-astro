@@ -7,7 +7,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
-import columbiaSkyline from "@/assets/columbia-skyline.png";
+const columbiaSkyline = "/assets/columbia-skyline.png";
 
 const services = [
   {

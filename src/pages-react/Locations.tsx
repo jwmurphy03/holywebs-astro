@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionWrapper from "@/components/SectionWrapper";
-import texasOutline from "@/assets/texas-outline.svg";
-import scOutline from "@/assets/south-carolina-outline.svg";
+const texasOutline = "/assets/texas-outline.svg";
+const scOutline = "/assets/south-carolina-outline.svg";
 
 interface CityLink {
   name: string;

@@ -1,5 +1,5 @@
 
-import logoWhite from "@/assets/logo-white.png";
+const logoWhite = "/assets/logo-white.png";
 
 const serviceLinks = [
   { label: "Web Design", to: "/services/web-design" },

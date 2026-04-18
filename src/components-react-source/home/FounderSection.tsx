@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import SectionWrapper from "../SectionWrapper";
 import { ArrowRight } from "lucide-react";
-import founderPhoto from "@/assets/jeremy-workshop.jpeg";
+const founderPhoto = "/assets/jeremy-workshop.jpeg";
 
 export default function FounderSection() {
   return (

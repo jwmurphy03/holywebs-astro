@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Clock, BookOpen } from "lucide-react";
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import heroImg from "@/assets/guide-hero-google-ads.jpg";
+const heroImg = "/assets/guide-hero-google-ads.jpg";
 
 const tocItems = [
   { id: "why-google-ads", label: "Why Google Ads for Service Businesses" },

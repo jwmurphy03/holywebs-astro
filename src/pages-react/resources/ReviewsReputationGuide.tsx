@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Clock, BookOpen } from "lucide-react";
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import heroImg from "@/assets/guide-hero-reviews.jpg";
+const heroImg = "/assets/guide-hero-reviews.jpg";
 
 const tocItems = [
   { id: "why-reviews-matter", label: "Why Reviews Matter More Than Ever" },
