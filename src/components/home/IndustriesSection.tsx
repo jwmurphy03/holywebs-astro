@@ -17,7 +17,7 @@ export default function IndustriesSection() {
     <SectionWrapper variant="dark">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-4">
             Who We Work&nbsp;With
           </h2>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">

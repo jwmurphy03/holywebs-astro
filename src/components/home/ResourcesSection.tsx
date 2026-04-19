@@ -39,7 +39,7 @@ export default function ResourcesSection() {
   return (
     <SectionWrapper variant="muted">
       <div className="text-center mb-14">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-4">
           Free Resources for Local Business Owners
         </h2>
         <p className="text-muted-foreground text-lg max-w-none mx-auto whitespace-nowrap">

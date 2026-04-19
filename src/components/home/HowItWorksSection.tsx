@@ -31,7 +31,7 @@ const steps = [
 export default function HowItWorksSection() {
   return (
     <SectionWrapper variant="light">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-6">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground text-center mb-6">
         How It Works
       </h2>
       <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-14">

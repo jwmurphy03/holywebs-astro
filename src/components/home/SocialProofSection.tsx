@@ -64,7 +64,7 @@ export default function SocialProofSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-3">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-3">
             What Our Clients&nbsp;Say
           </h2>
         </div>

@@ -4,7 +4,7 @@ export default function ProblemSection() {
   return (
     <SectionWrapper variant="light">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-8 leading-tight">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-8 leading-tight">
           Most Local Businesses Are Invisible Online.{" "}
           <span className="text-primary">That's Not an Accident — It's a Fixable Problem.</span>
         </h2>

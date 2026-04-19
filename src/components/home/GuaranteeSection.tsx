@@ -1,7 +1,7 @@
 export default function GuaranteeSection() {
   return (
     <section className="section-dark relative overflow-hidden py-20 lg:py-32">
-      <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+      <div className="container mx-auto px-4 lg:px-8 max-w-5xl text-center">
 
         {/* Statement headline */}
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground leading-tight mb-8">
@@ -16,7 +16,7 @@ export default function GuaranteeSection() {
         </h2>
 
         {/* Supporting copy */}
-        <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+        <p className="text-white/70 text-lg leading-relaxed max-w-xl mx-auto mb-10">
           Month-to-month, always. No 12-month lock-ins, no cancellation fees,
           no long-term contracts. If we're not moving the needle, you
           shouldn't have to stay — and we're confident enough in our work
