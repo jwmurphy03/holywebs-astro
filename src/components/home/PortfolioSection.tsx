@@ -32,9 +32,9 @@ const projects = [
 
 export default function PortfolioSection() {
   return (
-    <SectionWrapper variant="dark">
+    <SectionWrapper variant="light">
       <div className="text-center mb-14">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-4">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-4">
           Trusted by Local Service Businesses
         </h2>
       </div>
@@ -51,7 +51,7 @@ export default function PortfolioSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="group relative block overflow-hidden rounded-xl border border-white/10 bg-white/5"
+              className="group relative block overflow-hidden rounded-xl border border-border bg-muted/40"
             >
               <div className="aspect-video overflow-hidden">
                 <img
