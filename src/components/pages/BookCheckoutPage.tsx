@@ -1,5 +1,24 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, Component } from "react";
+import type { ReactNode } from "react";
 import { Helmet } from "react-helmet-async";
+
+class ErrorBoundary extends Component<{ children: ReactNode }, { error: string | null }> {
+  state = { error: null };
+  static getDerivedStateFromError(e: Error) { return { error: e.message }; }
+  render() {
+    if (this.state.error) {
+      return (
+        <div className="min-h-screen flex items-center justify-center p-8">
+          <div className="bg-red-50 border border-red-200 rounded-xl p-6 max-w-lg w-full">
+            <h2 className="text-red-800 font-bold text-lg mb-2">Checkout failed to load</h2>
+            <p className="text-red-600 text-sm font-mono">{this.state.error}</p>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 import { ArrowLeft, CheckCircle2, ShieldCheck, Lock, Star, Zap } from "lucide-react";
 const bookCover = "/assets/book-cover.png";
@@ -21,7 +40,8 @@ export default function BookCheckoutPage() {
   const totalFormatted = `$${(totalCents / 100).toFixed(2)}`;
 
   return (
-    <>
+    <ErrorBoundary>
+      <>
       <Helmet>
         <title>Checkout — Stop Being Invisible | Holy Webs</title>
         <meta name="description" content="Complete your order for the digital book Stop Being Invisible." />
@@ -176,6 +196,7 @@ export default function BookCheckoutPage() {
           </div>
         </main>
       </div>
-    </>
+      </>
+    </ErrorBoundary>
   );
 }
