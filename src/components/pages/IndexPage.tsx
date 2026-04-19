@@ -3,6 +3,7 @@ import ProblemSection from "@/components/home/ProblemSection";
 import ServicesSection from "@/components/home/ServicesSection";
 import HowItWorksSection from "@/components/home/HowItWorksSection";
 import WhySection from "@/components/home/WhySection";
+import GuaranteeSection from "@/components/home/GuaranteeSection";
 import SocialProofSection from "@/components/home/SocialProofSection";
 import FounderSection from "@/components/home/FounderSection";
 import PortfolioSection from "@/components/home/PortfolioSection";
@@ -18,6 +19,7 @@ export default function IndexPage() {
       <ServicesSection />
       <HowItWorksSection />
       <WhySection />
+      <GuaranteeSection />
       <SocialProofSection />
       <FounderSection />
       <PortfolioSection />
