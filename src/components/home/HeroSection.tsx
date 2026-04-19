@@ -4,34 +4,25 @@ import { Star } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="section-dark relative overflow-hidden">
-      {/* Background video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/hero-bg.mp4" type="video/mp4" />
-      </video>
+    <section className="section-dark relative overflow-hidden" style={{ background: "#08101f" }}>
 
-      {/* Dark gradient overlay — solid left/top fading to semi-transparent */}
+      {/* Radial glow — orange from top-left behind headline, cool blue from bottom-right for depth */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          background:
-            "linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.85) 40%, rgba(15,23,42,0.65) 100%)",
+          background: `
+            radial-gradient(ellipse 50% 70% at 80% 90%, rgba(30, 58, 138, 0.35) 0%, transparent 65%)
+          `,
         }}
       />
 
-      {/* Film grain texture overlay */}
+      {/* Noise texture */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.06] mix-blend-overlay"
+        className="absolute inset-0 pointer-events-none opacity-[0.09]"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           backgroundRepeat: "repeat",
-          backgroundSize: "128px 128px",
+          backgroundSize: "180px 180px",
         }}
       />
 
@@ -45,10 +36,10 @@ export default function HeroSection() {
           {/* Social proof badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8">
             <Star className="w-4 h-4 text-primary fill-primary" />
-            <span className="text-sm text-white/90 font-medium">4.9 Stars · 73 Google Reviews</span>
+            <span className="text-sm text-white/90 font-medium">4.9 on Google · 200+ Home Service Operators</span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground leading-[1.1] mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-6">
             Stop{" "}
             <span
               className="bg-clip-text text-transparent"

@@ -9,8 +9,11 @@ import { PaymentTestModeBanner } from "@/components/PaymentTestModeBanner";
 export default function BookCheckoutPage() {
   const [bumpSelected, setBumpSelected] = useState(false);
 
+  const BOOK_PRODUCT_ID = "prod_UMUim7JZ9mSYAq";
+  const UPSELL_PRODUCT_ID = "prod_UMUlDjsxJ93o0d";
+
   const priceIds = useMemo(
-    () => (bumpSelected ? ["book_main", "action_plan_bump"] : ["book_main"]),
+    () => (bumpSelected ? [BOOK_PRODUCT_ID, UPSELL_PRODUCT_ID] : [BOOK_PRODUCT_ID]),
     [bumpSelected]
   );
 
