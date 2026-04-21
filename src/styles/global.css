@@ -205,11 +205,11 @@
   text-underline-offset: 3px;
 }
 
-/* Hero CSS animation — runs without JavaScript, no framer-motion needed */
+/* Hero CSS animation — transform-only so LCP element is visible immediately */
 @keyframes hw-fade-up {
-  from { opacity: 0; transform: translateY(40px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { transform: translateY(20px); }
+  to   { transform: translateY(0); }
 }
 .hero-fade-in {
-  animation: hw-fade-up 0.7s ease-out forwards;
+  animation: hw-fade-up 0.6s ease-out;
 }
