@@ -50,7 +50,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <SectionWrapper variant="muted">
-      <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground text-center mb-14">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground text-center leading-tight mb-14">
         What We Do
       </h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

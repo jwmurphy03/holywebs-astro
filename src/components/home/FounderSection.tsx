@@ -21,7 +21,7 @@ export default function FounderSection() {
           <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
             Who's Behind Holy Webs
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-6 leading-tight">
             Jeremy Murphy
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-4">

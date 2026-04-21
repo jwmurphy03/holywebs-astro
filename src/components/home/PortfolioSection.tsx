@@ -34,7 +34,7 @@ export default function PortfolioSection() {
   return (
     <SectionWrapper variant="light">
       <div className="text-center mb-14">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-4">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-tight mb-4">
           Trusted by Local Service Businesses
         </h2>
       </div>

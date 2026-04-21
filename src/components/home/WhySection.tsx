@@ -13,10 +13,10 @@ export default function WhySection() {
     <SectionWrapper variant="muted">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-2">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-tight mb-2">
             We're Not an Agency.
           </h2>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight">
             We're Your Digital Team.
           </h2>
         </div>
