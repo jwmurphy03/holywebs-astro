@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { Calendar, Clock, Video, CheckCircle, AlertTriangle } from "lucide-react";
+import { Calendar, Clock, Video, CheckCircle, AlertTriangle, Timer, ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { postToGHL } from "@/lib/ghl";
 import { toast } from "sonner";
@@ -36,6 +36,25 @@ const learnings = [
   "How to turn your Google Business Profile into your #1 lead source (most businesses are leaving this completely unoptimized)",
   "A live action plan built around your specific market so you leave the workshop knowing exactly what to do first",
 ];
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="py-5">
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between gap-4 text-left"
+      >
+        <span className="text-lg font-semibold text-white">{question}</span>
+        <ChevronDown className={`w-5 h-5 text-primary shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
+      </button>
+      {open && (
+        <p className="mt-3 text-white/70 leading-relaxed">{answer}</p>
+      )}
+    </div>
+  );
+}
 
 export default function Workshop() {
   const countdown = useCountdown(WORKSHOP_DATE);
@@ -87,6 +106,20 @@ export default function Workshop() {
           content="Free live workshop for HVAC, plumbing & home service contractors. Learn the exact system to get found on Google and start generating calls."
         />
         <link rel="canonical" href="https://holywebs.com/workshop" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Event",
+          "name": "Stop Being Invisible: Free Live Training for Home Service Contractors",
+          "description": "Free live workshop for HVAC, plumbing & home service contractors. Learn the 3-part local visibility system to get found on Google and generate more calls without paid ads.",
+          "startDate": "2026-05-07T19:00:00Z",
+          "endDate": "2026-05-07T20:30:00Z",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+          "location": { "@type": "VirtualLocation", "url": "https://holywebs.com/workshop" },
+          "organizer": { "@type": "Organization", "name": "Holy Webs", "url": "https://holywebs.com" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://holywebs.com/workshop" },
+          "image": "https://holywebs.com/og/og-seo.jpg"
+        })}</script>
       </Helmet>
 
       <div className="bg-black text-white">
@@ -98,7 +131,7 @@ export default function Workshop() {
               {/* Left column — copy */}
               <div className="text-center lg:text-left">
                 <span className="inline-block text-sm sm:text-base font-bold uppercase tracking-[0.2em] text-primary bg-white/5 border border-white/10 rounded-xl px-6 py-3 mb-8">
-                  Free Live Workshop
+                  Free Live Training — May 7th, 2026
                 </span>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.95] mb-6 tracking-tight">
                   Stop Being<br />
@@ -118,6 +151,9 @@ export default function Workshop() {
                   </span>
                   <span className="flex items-center gap-2">
                     <Clock className="w-5 h-5 text-primary" /> 2:00 PM Central
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <Timer className="w-5 h-5 text-primary" /> 90-Min Session
                   </span>
                   <span className="flex items-center gap-2">
                     <Video className="w-5 h-5 text-primary" /> Live on Zoom
@@ -280,6 +316,39 @@ export default function Workshop() {
           </div>
         </section>
 
+        {/* ── Section 3.5: FAQ ── */}
+        <section className="bg-[#0a0a0a] border-t border-white/5">
+          <div className="container mx-auto px-4 lg:px-8 py-20 lg:py-28">
+            <h2 className="text-3xl sm:text-4xl font-black text-center mb-12">Common Questions</h2>
+            <div className="max-w-3xl mx-auto divide-y divide-white/10">
+              {[
+                {
+                  q: "Is this actually free?",
+                  a: "Yes, completely free. No credit card, no upsell during the session. This is a live training where I share the exact systems we use with paying clients. My goal is to give you enough value that you want to work with us — but there's zero obligation."
+                },
+                {
+                  q: "Do I need to be tech-savvy?",
+                  a: "Not at all. This workshop is designed for business owners who run HVAC, plumbing, roofing, and home service companies — not marketers or tech people. If you can use your phone, you'll follow everything we cover."
+                },
+                {
+                  q: "What if I can't make it live?",
+                  a: "Register anyway and we'll send you the full replay. That said, live attendees get to ask questions in real time and receive a personalized action plan during the session."
+                },
+                {
+                  q: "How long is it?",
+                  a: "90 minutes. We cover a lot of ground, but every minute is practical — no fluff, no slides full of buzzwords."
+                },
+                {
+                  q: "Will you try to sell me something?",
+                  a: "I'll mention that Holy Webs offers done-for-you services at the end, but the first 85 minutes are pure teaching. If what I share resonates and you want help implementing it, great. If not, you still leave with an action plan."
+                },
+              ].map((item, i) => (
+                <FAQItem key={i} question={item.q} answer={item.a} />
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── Section 4: Urgency Block ── */}
         <section className="bg-white/5 border-y border-white/10">
           <div className="container mx-auto px-4 lg:px-8 py-14 text-center">
@@ -291,6 +360,25 @@ export default function Workshop() {
               We keep this workshop small on purpose so every attendee gets real value. Register now
               to secure your spot — can't make it live? We'll send you the replay.
             </p>
+          </div>
+        </section>
+
+        {/* ── Section 5: Bottom CTA ── */}
+        <section className="bg-[#0a0a0a] border-t border-white/5">
+          <div className="container mx-auto px-4 lg:px-8 py-20 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4">
+              Ready to Stop Losing Jobs<br className="hidden sm:block" /> to Inferior Competitors?
+            </h2>
+            <p className="text-white/60 text-lg max-w-xl mx-auto mb-8">
+              Register in 30 seconds — it's completely free and you'll get the replay if you can't attend live.
+            </p>
+            <button
+              onClick={scrollToForm}
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold text-lg px-10 py-4 rounded-xl transition-colors"
+            >
+              Save My Spot →
+            </button>
+            <p className="text-white/30 text-sm mt-4">Thursday, May 7th · 2:00 PM Central · Live on Zoom · 90 Minutes</p>
           </div>
         </section>
 

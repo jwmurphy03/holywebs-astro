@@ -1,11 +1,48 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import IndexPage from '../components/pages/IndexPage';
+
+// TODO: Update ratingCount with your actual Google review count
+const homepageSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://holywebs.com/#localbusiness",
+  "name": "Holy Webs",
+  "description": "Digital marketing agency specializing in web design, SEO, Google Ads, and local marketing for contractors and home service businesses.",
+  "url": "https://holywebs.com",
+  "telephone": "(843) 847-0181",
+  "email": "hello@holywebs.com",
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "47"
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Texas" },
+    { "@type": "State", "name": "South Carolina" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Digital Marketing Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web Design for Contractors", "url": "https://holywebs.com/services/web-design" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Local SEO", "url": "https://holywebs.com/services/seo" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Ads Management", "url": "https://holywebs.com/services/google-ads" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Meta Ads Management", "url": "https://holywebs.com/services/meta-ads" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Business Profile Optimization", "url": "https://holywebs.com/services/google-business-profile" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Answer Engine Optimization (AEO)", "url": "https://holywebs.com/services/aeo" } }
+    ]
+  }
+};
 ---
 <Layout
   title="Holy Webs | Digital Marketing for Local Service Businesses"
   description="Web design, SEO, Google Ads, and local marketing for contractors and service businesses across Texas and South Carolina."
   canonicalUrl="https://holywebs.com/"
+  schema={homepageSchema}
 >
   <IndexPage client:load />
 </Layout>

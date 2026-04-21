@@ -55,7 +55,7 @@ export default function FinalCTASection({ headline, subtitle }: FinalCTASectionP
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto items-center">
           {/* Left — Copy */}
           <div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground leading-tight mb-6">
               {headline || "Ready to stop being invisible?"}
             </h2>
             <p className="text-white/70 text-lg mb-8 leading-relaxed">

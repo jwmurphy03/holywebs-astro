@@ -2,7 +2,6 @@
 import '../styles/global.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import OrganizationSchema from '../components/OrganizationSchema';
 import ExitIntentPopup from '../components/ExitIntentPopup';
 
 interface Props {
@@ -10,6 +9,7 @@ interface Props {
   description?: string;
   ogImage?: string;
   canonicalUrl?: string;
+  schema?: object | object[];
 }
 
 const {
@@ -17,6 +17,7 @@ const {
   description = 'Holy Webs helps service businesses get found online with web design, SEO, and local marketing.',
   ogImage = '/og/og-seo.jpg',
   canonicalUrl = Astro.url.href,
+  schema,
 } = Astro.props;
 ---
 
@@ -35,13 +36,30 @@ const {
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://holywebs.com/#organization",
+      "name": "Holy Webs",
+      "url": "https://holywebs.com",
+      "logo": "https://holywebs.com/assets/logo-white.png",
+      "description": "Web design, SEO, Google Ads, and local digital marketing for contractors and service businesses across Texas and South Carolina.",
+      "telephone": "(843) 847-0181",
+      "email": "hello@holywebs.com",
+      "priceRange": "$$",
+      "areaServed": [
+        { "@type": "State", "name": "Texas" },
+        { "@type": "State", "name": "South Carolina" }
+      ],
+      "sameAs": []
+    })} />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="min-h-screen flex flex-col">
-      <OrganizationSchema client:load />
       <Navbar client:load />
       <main class="flex-1 pt-16">
         <slot />

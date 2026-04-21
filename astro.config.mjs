@@ -13,6 +13,9 @@ export default defineConfig({
     react(),
     tailwind({ applyBaseStyles: false }),
   ],
+  redirects: {
+    '/blog': '/resources/blog',
+  },
   vite: {
     resolve: {
       alias: {
