@@ -2,7 +2,6 @@ import { useState } from "react";
 const logoWhite = "/assets/logo-white.png";
 import { Helmet } from "react-helmet-async";
 
-import { motion } from "framer-motion";
 import { postToGHL } from "@/lib/ghl";
 import {
   CheckCircle2,
@@ -123,12 +122,7 @@ export default function BookResources() {
         />
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10 py-24 lg:py-32">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="text-center max-w-3xl mx-auto"
-          >
+          <div className="hero-fade-in text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8">
               <Star className="w-4 h-4 text-primary fill-primary" />
               <span className="text-sm text-white/90 font-medium">
@@ -154,7 +148,7 @@ export default function BookResources() {
               tools, templates, and checklists below, or request a custom audit
               of your digital&nbsp;footprint.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 

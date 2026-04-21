@@ -84,8 +84,6 @@ type DropdownKey = "services" | "industries" | "locations" | "resources" | null;
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
   const [activeDropdown, setActiveDropdown] = useState<DropdownKey>(null);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
@@ -95,11 +93,13 @@ export default function Navbar() {
   
   const navRef = useRef<HTMLDivElement>(null);
   const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const progressBarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      setScrollProgress(docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0);
+      const pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+      if (progressBarRef.current) progressBarRef.current.style.width = `${pct}%`;
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -698,8 +698,9 @@ export default function Navbar() {
       {/* Scroll progress bar */}
       <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-transparent">
         <div
+          ref={progressBarRef}
           className="h-full bg-primary transition-[width] duration-100 ease-out"
-          style={{ width: `${scrollProgress}%` }}
+          style={{ width: "0%" }}
         />
       </div>
     </nav>

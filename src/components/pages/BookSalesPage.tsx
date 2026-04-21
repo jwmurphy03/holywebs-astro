@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { motion } from "framer-motion";
 
 const logoWhite = "/assets/logo-white.png";
 const bookCover = "/assets/book-cover.png";
@@ -18,11 +17,6 @@ import {
   BookOpen,
   Phone,
 } from "lucide-react";
-
-const fade = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
 
 const chapters = [
   "Why most local businesses are invisible online (and don't know it)",
@@ -124,12 +118,7 @@ export default function BookSalesPage() {
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={fade}
-              transition={{ duration: 0.7 }}
-            >
+            <div className="hero-fade-in">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-6">
                 <BookOpen className="w-4 h-4 text-primary" />
                 <span className="text-sm text-white/90 font-medium">
@@ -188,14 +177,9 @@ export default function BookSalesPage() {
                   hundreds of local businesses get&nbsp;found.
                 </span>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 40, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center lg:justify-end"
-            >
+            <div className="hero-fade-in flex justify-center lg:justify-end">
               <div className="relative">
                 {/* Reflective surface beneath the book */}
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[110%] h-24 bg-gradient-to-t from-transparent via-white/[0.07] to-white/[0.03] rounded-full blur-md" />
@@ -208,21 +192,14 @@ export default function BookSalesPage() {
                   height={614}
                 />
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ═══════════════ PROBLEM AGITATION ═══════════════ */}
       <section className="section-light py-16 lg:py-24">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-          variants={fade}
-          transition={{ duration: 0.6 }}
-          className="container mx-auto px-4 lg:px-8 max-w-3xl"
-        >
+        <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-8 text-center leading-tight">
             You Do Great Work.{" "}
             <span className="text-primary">
@@ -256,20 +233,13 @@ export default function BookSalesPage() {
               This book was written to change that.
             </p>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* ═══════════════ WHAT YOU'LL LEARN ═══════════════ */}
       <section className="section-muted py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={fade}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-14"
-          >
+          <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4">
               Here's What You'll Learn Inside
             </h2>
@@ -277,24 +247,16 @@ export default function BookSalesPage() {
               Every chapter is built around one question: what do you actually
               need to know to start getting more calls this&nbsp;month?
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {bulletPoints.map((item, i) => (
-              <motion.div
-                key={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-40px" }}
-                variants={fade}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-background rounded-xl p-6 border border-border flex items-start gap-4"
-              >
+              <div key={i} className="bg-background rounded-xl p-6 border border-border flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <item.icon className="w-5 h-5 text-primary" />
                 </div>
                 <p className="text-foreground leading-relaxed">{item.text}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -303,13 +265,7 @@ export default function BookSalesPage() {
       {/* ═══════════════ WHO THIS IS FOR ═══════════════ */}
       <section className="section-light py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={fade}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-10 text-center">
               This Book Is For&nbsp;You&nbsp;If…
             </h2>
@@ -333,7 +289,7 @@ export default function BookSalesPage() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -343,14 +299,7 @@ export default function BookSalesPage() {
           <div className="absolute bottom-0 left-1/3 w-80 h-80 rounded-full bg-primary/10 blur-[120px]" />
         </div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={fade}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-dark-foreground mb-4">
               What's Inside the Book
             </h2>
@@ -358,26 +307,18 @@ export default function BookSalesPage() {
               Ten focused chapters. Zero filler. Every one ends with a clear
               action step you can take&nbsp;today.
             </p>
-          </motion.div>
+          </div>
 
           <div className="max-w-2xl mx-auto space-y-3">
             {chapters.map((chapter, i) => (
-              <motion.div
-                key={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-20px" }}
-                variants={fade}
-                transition={{ duration: 0.4, delay: i * 0.04 }}
-                className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-lg px-5 py-4"
-              >
+              <div key={i} className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-lg px-5 py-4">
                 <span className="text-primary font-extrabold text-lg leading-none mt-0.5">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span className="text-white/80 leading-relaxed">
                   {chapter}
                 </span>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -385,14 +326,7 @@ export default function BookSalesPage() {
 
       {/* ═══════════════ ABOUT THE AUTHOR ═══════════════ */}
       <section className="section-light py-16 lg:py-24">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-          variants={fade}
-          transition={{ duration: 0.6 }}
-          className="container mx-auto px-4 lg:px-8 max-w-3xl text-center"
-        >
+        <div className="container mx-auto px-4 lg:px-8 max-w-3xl text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-8">
             Who Wrote This?
           </h2>
@@ -422,43 +356,28 @@ export default function BookSalesPage() {
               truth about what it takes to stop being invisible.
             </p>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* ═══════════════ OBJECTION HANDLING ═══════════════ */}
       <section className="section-muted-v2 py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={fade}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4">
               You Might Be Thinking…
             </h2>
-          </motion.div>
+          </div>
 
           <div className="space-y-5">
             {objections.map((item, i) => (
-              <motion.div
-                key={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-20px" }}
-                variants={fade}
-                transition={{ duration: 0.4, delay: i * 0.05 }}
-                className="bg-background rounded-xl border border-border p-6"
-              >
+              <div key={i} className="bg-background rounded-xl border border-border p-6">
                 <p className="font-bold text-foreground text-lg mb-2">
                   "{item.q}"
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   {item.a}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -466,14 +385,7 @@ export default function BookSalesPage() {
 
       {/* ═══════════════ RISK REVERSAL + VALUE STACK ═══════════════ */}
       <section className="section-light py-16 lg:py-24">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-          variants={fade}
-          transition={{ duration: 0.6 }}
-          className="container mx-auto px-4 lg:px-8 max-w-3xl text-center"
-        >
+        <div className="container mx-auto px-4 lg:px-8 max-w-3xl text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-8">
             All of This for{" "}
             <span className="text-primary">Less Than a&nbsp;Coffee</span>
@@ -518,7 +430,7 @@ export default function BookSalesPage() {
               Get the Book Now <ArrowRight className="w-5 h-5" />
             </a>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* ═══════════════ FINAL CTA ═══════════════ */}
@@ -530,14 +442,7 @@ export default function BookSalesPage() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-primary/15 blur-[180px]" />
         </div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-          variants={fade}
-          transition={{ duration: 0.6 }}
-          className="container mx-auto px-4 lg:px-8 relative z-10 text-center max-w-3xl"
-        >
+        <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center max-w-3xl">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-dark-foreground mb-6 leading-tight">
             Your Competitors Are Getting Found.{" "}
             <span
@@ -573,7 +478,7 @@ export default function BookSalesPage() {
           <p className="text-white/30 text-sm">
             Instant digital download. Start reading in the next two&nbsp;minutes.
           </p>
-        </motion.div>
+        </div>
       </section>
 
       {/* ═══════════════ FOOTER ═══════════════ */}
