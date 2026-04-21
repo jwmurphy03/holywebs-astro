@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { usePathname } from "@/hooks/usePathname";
-import { Menu, X, ChevronDown, Flame, Wrench, Zap, Home, HardHat, Droplets, TreePine, Calculator, MapPin, BookOpen, Video, Search, FileText, Newspaper } from "lucide-react";
+import { Menu, X, ChevronDown, Flame, Wrench, Zap, Home, HardHat, Droplets, TreePine, Calculator, MapPin, BookOpen, Video, Search, FileText, Newspaper, HelpCircle } from "lucide-react";
 const logoWhite = "/assets/logo-white.png";
 const logoColor = "/assets/logo-color.png";
 
@@ -70,6 +70,7 @@ const resourceSubLinks = [
   { label: "GBP Optimization Guide", to: "/resources/google-business-profile-guide" },
   { label: "Free Visibility Audit", to: "/resources/free-visibility-audit" },
   { label: "Blog", to: "/resources/blog" },
+  { label: "FAQ", to: "/faq" },
 ];
 
 const navLinks = [
@@ -386,6 +387,14 @@ export default function Navbar() {
                 >
                   <Newspaper className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="text-sm font-medium text-white/80 group-hover:text-primary">Blog</span>
+                </a>
+                <a
+                  href="/faq"
+                  onClick={() => setActiveDropdown(null)}
+                  className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/5 group"
+                >
+                  <HelpCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                  <span className="text-sm font-medium text-white/80 group-hover:text-primary">FAQ</span>
                 </a>
               </div>
             </div>
