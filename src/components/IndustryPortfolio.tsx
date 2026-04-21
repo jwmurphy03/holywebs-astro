@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import SectionWrapper from "@/components/SectionWrapper";
 
 interface Project {
@@ -60,13 +59,7 @@ export default function IndustryPortfolio({ industry, projects }: IndustryPortfo
 
 function PortfolioCard({ project, index }: { project: Project; index: number }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-40px" }}
-      transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="group relative block overflow-hidden rounded-xl border border-white/10 bg-white/5"
-    >
+    <div className="group relative block overflow-hidden rounded-xl border border-white/10 bg-white/5">
       <div className="aspect-video overflow-hidden">
         <img
           src={project.image}
@@ -82,6 +75,6 @@ function PortfolioCard({ project, index }: { project: Project; index: number }) 
           {project.name}
         </span>
       </div>
-    </motion.div>
+    </div>
   );
 }

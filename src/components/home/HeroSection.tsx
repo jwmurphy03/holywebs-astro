@@ -1,5 +1,3 @@
-
-import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 export default function HeroSection() {
@@ -27,12 +25,7 @@ export default function HeroSection() {
       />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 py-24 lg:py-36">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-3xl"
-        >
+        <div className="hero-fade-in max-w-3xl">
           {/* Social proof badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8">
             <Star className="w-4 h-4 text-primary fill-primary" />
@@ -72,7 +65,7 @@ export default function HeroSection() {
               Get a Free Visibility Audit
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

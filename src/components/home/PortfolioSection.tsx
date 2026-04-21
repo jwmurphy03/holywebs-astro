@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import { ArrowRight } from "lucide-react";
 import SectionWrapper from "@/components/SectionWrapper";
 const snapbooksImg = "/assets/portfolio-snapbooks.png";
@@ -40,19 +38,10 @@ export default function PortfolioSection() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, i) => {
-          const Wrapper = project.url ? motion.a : motion.div;
-          const linkProps = project.url ? { href: project.url, target: "_blank", rel: "noopener noreferrer" } : {};
-          return (
-            <Wrapper
-              key={project.name}
-              {...linkProps}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="group relative block overflow-hidden rounded-xl border border-border bg-muted/40"
-            >
+        {projects.map((project) => {
+          const cardClass = "group relative block overflow-hidden rounded-xl border border-border bg-muted/40";
+          const inner = (
+            <>
               <div className="aspect-video overflow-hidden">
                 <img
                   src={project.image}
@@ -68,7 +57,16 @@ export default function PortfolioSection() {
                   {project.name}
                 </span>
               </div>
-            </Wrapper>
+            </>
+          );
+          return project.url ? (
+            <a key={project.name} href={project.url} target="_blank" rel="noopener noreferrer" className={cardClass}>
+              {inner}
+            </a>
+          ) : (
+            <div key={project.name} className={cardClass}>
+              {inner}
+            </div>
           );
         })}
       </div>

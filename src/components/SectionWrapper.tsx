@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 interface SectionWrapperProps {
   children: React.ReactNode;
   variant?: "light" | "muted" | "muted-v2" | "muted-v3" | "muted-v4" | "dark";
@@ -21,15 +19,9 @@ export default function SectionWrapper({ children, variant = "light", className 
 
   return (
     <section id={id} className={`${bg} py-14 lg:py-20 ${className}`}>
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.6 }}
-        className="container mx-auto px-4 lg:px-8"
-      >
+      <div className="container mx-auto px-4 lg:px-8">
         {children}
-      </motion.div>
+      </div>
     </section>
   );
 }
