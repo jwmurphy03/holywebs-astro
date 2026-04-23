@@ -224,6 +224,47 @@ export default function Roofing() {
 
       <IndustryPortfolio industry="Roofing Companies" projects={roofingPortfolio} />
 
+      {/* Markets We Serve */}
+      <SectionWrapper variant="light">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
+            Roofing Marketing by Market
+          </h2>
+          <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-12">
+            Storm patterns, housing age, and contractor competition vary dramatically by market. See how we approach roofing marketing in the specific cities we serve.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              {
+                city: "Charleston, SC",
+                desc: "Our home market. Hurricane season, salt air corrosion, aging Peninsula housing, and explosive Lowcountry growth create one of the most active roofing markets in the Southeast.",
+                href: "/locations/south-carolina/charleston/roofing",
+                tag: "Established market · Storm-season specialists",
+              },
+              {
+                city: "Houston, TX",
+                desc: "Hail storms, hurricanes, and extreme heat cycles mean Houston roofs have some of the shortest replacement cycles in the country. Massive housing density and year-round demand.",
+                href: "/locations/texas/houston/roofing",
+                tag: "High-volume market · Competitive landscape",
+              },
+            ].map((m) => (
+              <a
+                key={m.city}
+                href={m.href}
+                className="block bg-background rounded-xl p-6 border border-border hover:border-primary/40 hover:shadow-md transition-all duration-300 group"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">{m.city}</h3>
+                  <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-3">{m.desc}</p>
+                <span className="text-xs font-semibold text-primary/70 uppercase tracking-wide">{m.tag}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
       <IndustryFAQ faqs={roofingFaqs} canonicalUrl="https://holywebs.com/industries/roofing" />
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />

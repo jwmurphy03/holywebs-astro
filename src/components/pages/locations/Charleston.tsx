@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-import { ArrowRight, Globe, Search, MousePointerClick, Share2, TrendingUp, Users, MapPin, Palmtree, Check } from "lucide-react";
+import { ArrowRight, Globe, Search, MousePointerClick, Share2, TrendingUp, Users, MapPin, Palmtree, Check, Wrench, Droplets, HardHat, Hammer } from "lucide-react";
 import Layout from "@/components/Layout";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionWrapper from "@/components/SectionWrapper";
@@ -182,6 +182,63 @@ export default function Charleston() {
               </a>
             </div>
           ))}
+        </div>
+      </SectionWrapper>
+
+      {/* Industry Marketing Hubs */}
+      <SectionWrapper variant="muted">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
+            Digital Marketing by Industry in Charleston
+          </h2>
+          <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-12">
+            Every trade has different customers, different search behavior, and different competitive dynamics. See how we approach marketing for your specific industry in the Lowcountry.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              {
+                icon: Wrench,
+                industry: "HVAC",
+                desc: "Charleston's heat and humidity make HVAC one of the highest-demand trades in the metro. We put you in the map pack for emergency AC searches and keep you there year-round.",
+                href: "/locations/south-carolina/charleston/hvac",
+              },
+              {
+                icon: Droplets,
+                industry: "Plumbing",
+                desc: "From slab leaks in older Peninsula homes to new construction in Summerville — plumbing search volume in the tri-county area is high and growing. We help plumbers own it.",
+                href: "/locations/south-carolina/charleston/plumbing",
+              },
+              {
+                icon: HardHat,
+                industry: "Roofing",
+                desc: "Hurricane season drives massive roofing search spikes. We build the rankings and ad campaigns that capture storm-damage calls before your competitors even know it hit.",
+                href: "/locations/south-carolina/charleston/roofing",
+              },
+              {
+                icon: Hammer,
+                industry: "Construction",
+                desc: "New construction and renovation demand in the Lowcountry is as strong as it's ever been. We help general contractors and remodelers get found by homeowners who are ready to hire.",
+                href: "/locations/south-carolina/charleston/construction",
+              },
+            ].map((item) => (
+              <a
+                key={item.industry}
+                href={item.href}
+                className="flex items-start gap-4 bg-background rounded-xl p-6 border border-border hover:border-primary/40 hover:shadow-md transition-all duration-300 group"
+              >
+                <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <item.icon className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">{item.industry}</h3>
+                    <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors ml-2" />
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </SectionWrapper>
 

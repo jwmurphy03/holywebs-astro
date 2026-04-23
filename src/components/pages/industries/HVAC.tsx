@@ -212,6 +212,47 @@ export default function HVAC() {
         </div>
       </SectionWrapper>
 
+      {/* Markets We Serve */}
+      <SectionWrapper variant="light">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
+            HVAC Marketing by Market
+          </h2>
+          <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-12">
+            Every market has different competition, seasonality, and customer behavior. See how we approach HVAC marketing in the specific markets we serve.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              {
+                city: "Charleston, SC",
+                desc: "Our home market. Intense summer heat, hurricane season, and explosive Lowcountry growth create one of the highest-demand HVAC markets in the Southeast.",
+                href: "/locations/south-carolina/charleston/hvac",
+                tag: "Established market · 73 Google reviews",
+              },
+              {
+                city: "Houston, TX",
+                desc: "One of the hottest and most humid major metros in the country. A massive service area spanning multiple counties with year-round HVAC demand and high search volume.",
+                href: "/locations/texas/houston/hvac",
+                tag: "High-volume market · Competitive landscape",
+              },
+            ].map((m) => (
+              <a
+                key={m.city}
+                href={m.href}
+                className="block bg-background rounded-xl p-6 border border-border hover:border-primary/40 hover:shadow-md transition-all duration-300 group"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">{m.city}</h3>
+                  <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-3">{m.desc}</p>
+                <span className="text-xs font-semibold text-primary/70 uppercase tracking-wide">{m.tag}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
       <IndustryFAQ faqs={hvacFaqs} canonicalUrl="https://holywebs.com/industries/hvac" />
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />

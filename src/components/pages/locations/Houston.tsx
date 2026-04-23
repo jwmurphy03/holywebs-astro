@@ -286,6 +286,56 @@ export default function Houston() {
         </div>
       </SectionWrapper>
 
+      {/* Industry Marketing Hubs */}
+      <SectionWrapper variant="light">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
+            Digital Marketing by Industry in Houston
+          </h2>
+          <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-12">
+            Every trade has different customers, different search behavior, and different competitive dynamics. See how we approach marketing for your specific industry in Greater Houston.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              {
+                industry: "HVAC",
+                desc: "Houston's 90°F+ summers and Gulf Coast humidity make HVAC one of the highest-demand trades in America. We put you in the map pack for emergency AC searches and keep you there year-round.",
+                href: "/locations/texas/houston/hvac",
+              },
+              {
+                industry: "Plumbing",
+                desc: "Harvey flood damage, clay soil slab movement, and millions of homes across the metro create enormous plumbing search volume. We help plumbers capture it across every community they serve.",
+                href: "/locations/texas/houston/plumbing",
+              },
+              {
+                industry: "Roofing",
+                desc: "Hurricanes, hail, and extreme heat cycles drive year-round roofing demand. We build the rankings and storm-ready campaigns that capture calls before competitors even know a storm hit.",
+                href: "/locations/texas/houston/roofing",
+              },
+              {
+                industry: "Construction",
+                desc: "Houston is one of the fastest-growing construction markets in North America. We help general contractors and custom builders get found by the homeowners and developers planning the biggest projects.",
+                href: "/locations/texas/houston/construction",
+              },
+            ].map((item) => (
+              <a
+                key={item.industry}
+                href={item.href}
+                className="flex items-start gap-4 bg-background rounded-xl p-6 border border-border hover:border-primary/40 hover:shadow-md transition-all duration-300 group"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">{item.industry}</h3>
+                    <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors ml-2" />
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
       <NearbyMarkets
         markets={[
           { name: "Waco, TX", to: "/locations/texas/waco" },

@@ -228,6 +228,47 @@ export default function Construction() {
 
       <IndustryPortfolio industry="Construction Companies" projects={constructionPortfolio} />
 
+      {/* Markets We Serve */}
+      <SectionWrapper variant="light">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
+            Construction Marketing by Market
+          </h2>
+          <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-12">
+            Construction demand is shaped by local housing stock, growth patterns, and economic conditions. See how we approach construction marketing in the specific markets we serve.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              {
+                city: "Charleston, SC",
+                desc: "Our home market. Rapid suburban growth, historic Peninsula renovation demand, coastal STR investor build-outs, and post-storm reconstruction cycles make Charleston one of the strongest construction markets in the Southeast.",
+                href: "/locations/south-carolina/charleston/construction",
+                tag: "Established market · Multiple demand streams",
+              },
+              {
+                city: "Houston, TX",
+                desc: "The largest city in Texas with massive new construction, commercial development, and post-hurricane rebuild cycles. A construction market that runs year-round at scale with strong search demand across all project types.",
+                href: "/locations/texas/houston/construction",
+                tag: "High-volume market · Competitive landscape",
+              },
+            ].map((m) => (
+              <a
+                key={m.city}
+                href={m.href}
+                className="block bg-background rounded-xl p-6 border border-border hover:border-primary/40 hover:shadow-md transition-all duration-300 group"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">{m.city}</h3>
+                  <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-3">{m.desc}</p>
+                <span className="text-xs font-semibold text-primary/70 uppercase tracking-wide">{m.tag}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
       <IndustryFAQ faqs={constructionFaqs} canonicalUrl="https://holywebs.com/industries/construction" />
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
