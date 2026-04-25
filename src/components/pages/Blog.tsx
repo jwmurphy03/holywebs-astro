@@ -12,10 +12,9 @@ const speedThumb = "/assets/blog/website-speed-thumb-v2.jpg";
 const contractorNoCallsThumb = "/assets/blog/contractor-website-no-calls-thumb-v2.jpg";
 const googleMapsThumb = "/assets/blog/google-maps-ranking-thumb.jpg";
 const hvacNotShowingThumb = "/assets/blog/hvac-not-showing-google-thumb.jpg";
-// TODO: replace with dedicated thumbnails once created
-const plumbingNotShowingThumb = "/assets/blog/hvac-not-showing-google-thumb.jpg";
-const roofingNotShowingThumb = "/assets/blog/hvac-not-showing-google-thumb.jpg";
-const constructionNotShowingThumb = "/assets/blog/hvac-not-showing-google-thumb.jpg";
+const plumbingNotShowingThumb = "/assets/blog/plumbing-not-showing-google-thumb.jpg";
+const roofingNotShowingThumb = "/assets/blog/roofing-not-showing-google-thumb.jpg";
+const constructionNotShowingThumb = "/assets/blog/construction-not-showing-google-thumb.jpg";
 
 const POSTS_PER_PAGE = 6;
 
