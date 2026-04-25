@@ -9,12 +9,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedLinks from "@/components/RelatedLinks";
 
 const relatedLinks = [
-  { title: "SEO", description: "Rank for 'roof repair near me' and storm-related searches that drive emergency calls.", href: "/services/seo" },
-  { title: "Google Ads", description: "Storm season creates surges in search demand. Paid ads capture those leads fast.", href: "/services/google-ads" },
-  { title: "Web Design", description: "Roofing websites need to build trust fast. See how we design sites that convert.", href: "/services/web-design" },
+  { title: "Roofing Marketing in Charleston, SC", description: "How we grow roofing companies in a market shaped by hurricane season, salt air, and Peninsula aging homes.", href: "/locations/south-carolina/charleston/roofing" },
+  { title: "Roofing Marketing in Houston, TX", description: "Roofing marketing strategy for a market hit by hurricanes and hail — where storm chasers flood in after every major event.", href: "/locations/texas/houston/roofing" },
   { title: "Construction", description: "Many roofers also do general construction. See how we market both.", href: "/industries/construction" },
   { title: "Power Washing", description: "Roof cleaning and power washing overlap. See our marketing approach.", href: "/industries/power-washing" },
   { title: "HVAC", description: "HVAC and roofing companies both rely on seasonal search demand. See our strategy.", href: "/industries/hvac" },
+  { title: "All Locations", description: "See every market where we build roofing visibility — and what makes each one different.", href: "/locations" },
 ];
 import IndustryPortfolio from "@/components/IndustryPortfolio";
 const refinedImg = "/assets/portfolio-refined-roofing.png";

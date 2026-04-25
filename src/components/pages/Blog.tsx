@@ -12,6 +12,10 @@ const speedThumb = "/assets/blog/website-speed-thumb-v2.jpg";
 const contractorNoCallsThumb = "/assets/blog/contractor-website-no-calls-thumb-v2.jpg";
 const googleMapsThumb = "/assets/blog/google-maps-ranking-thumb.jpg";
 const hvacNotShowingThumb = "/assets/blog/hvac-not-showing-google-thumb.jpg";
+// TODO: replace with dedicated thumbnails once created
+const plumbingNotShowingThumb = "/assets/blog/hvac-not-showing-google-thumb.jpg";
+const roofingNotShowingThumb = "/assets/blog/hvac-not-showing-google-thumb.jpg";
+const constructionNotShowingThumb = "/assets/blog/hvac-not-showing-google-thumb.jpg";
 
 const POSTS_PER_PAGE = 6;
 
@@ -80,27 +84,35 @@ const publishedPosts = [
     slug: "how-fast-should-website-load",
     thumb: speedThumb,
   },
+  {
+    title: "The Real Reason Your Plumbing Business Isn't Showing Up on Google",
+    desc: "Can't find your plumbing company on Google Maps? Here are the most common reasons plumbers don't rank locally — and how to fix each one.",
+    category: "Plumbing Marketing",
+    readTime: "7 min read",
+    slug: "plumbing-not-showing-on-google",
+    thumb: plumbingNotShowingThumb,
+  },
+  {
+    title: "The Real Reason Your Roofing Company Isn't Showing Up on Google",
+    desc: "Roofing clients search Google Maps immediately after a storm. If you're not in the top 3 results, you're invisible when it matters most.",
+    category: "Roofing Marketing",
+    readTime: "7 min read",
+    slug: "roofing-not-showing-on-google",
+    thumb: roofingNotShowingThumb,
+  },
+  {
+    title: "The Real Reason Your Construction Company Isn't Showing Up on Google",
+    desc: "Most general contractors are invisible on Google Maps — not because they lack credibility, but because their GBP and website aren't built to rank.",
+    category: "Construction Marketing",
+    readTime: "7 min read",
+    slug: "construction-not-showing-on-google",
+    thumb: constructionNotShowingThumb,
+  },
 ];
 
-export default function Blog() {
-  // Read page number from URL path: /resources/blog/page/2
-  const pathMatch = typeof window !== "undefined"
-    ? window.location.pathname.match(/\/page\/(\d+)$/)
-    : null;
-  const pageParam = pathMatch ? pathMatch[1] : undefined;
+export default function Blog({ page = 1 }: { page?: number }) {
   const totalPages = Math.max(1, Math.ceil(publishedPosts.length / POSTS_PER_PAGE));
-
-  const parsedPage = pageParam ? parseInt(pageParam, 10) : 1;
-  const isInvalidPage =
-    pageParam !== undefined &&
-    (Number.isNaN(parsedPage) || parsedPage < 1 || parsedPage > totalPages || parsedPage === 1);
-
-  if (isInvalidPage) {
-    if (typeof window !== "undefined") window.location.href = "/resources/blog";
-    return null;
-  }
-
-  const currentPage = parsedPage;
+  const currentPage = Math.max(1, Math.min(page, totalPages));
   const startIdx = (currentPage - 1) * POSTS_PER_PAGE;
   const visiblePosts = publishedPosts.slice(startIdx, startIdx + POSTS_PER_PAGE);
 

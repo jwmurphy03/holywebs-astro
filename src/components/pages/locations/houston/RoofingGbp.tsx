@@ -225,14 +225,12 @@ export default function HoustonRoofingGbp() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Roofing GBP", to: "/locations/south-carolina/charleston/roofing/google-business-profile" },
-          { name: "Houston Roofing SEO", to: "/locations/texas/houston/roofing/seo" },
-          { name: "Houston HVAC GBP", to: "/locations/texas/houston/hvac/google-business-profile" },
-          { name: "Roofing Digital Marketing", to: "/industries/roofing" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Roofing Marketing", to: "/locations/texas/houston/roofing" },
+        { name: "Houston Roofing SEO", to: "/locations/texas/houston/roofing/seo" },
+        { name: "Charleston Roofing GBP", to: "/locations/south-carolina/charleston/roofing/google-business-profile" },
+        { name: "Roofing Industry Page", to: "/industries/roofing" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Get Into Houston's Roofing Map Pack Before the Next Storm?"

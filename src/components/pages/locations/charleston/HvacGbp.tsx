@@ -433,14 +433,12 @@ export default function CharlestonHvacGbp() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Houston HVAC GBP", to: "/locations/texas/houston/hvac/google-business-profile" },
-          { name: "Charleston — All Services", to: "/locations/south-carolina/charleston" },
-          { name: "HVAC Digital Marketing", to: "/industries/hvac" },
-          { name: "GBP Services", to: "/services/google-business-profile" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Charleston HVAC Marketing", to: "/locations/south-carolina/charleston/hvac" },
+        { name: "Charleston HVAC SEO", to: "/locations/south-carolina/charleston/hvac/seo" },
+        { name: "Houston HVAC GBP", to: "/locations/texas/houston/hvac/google-business-profile" },
+        { name: "HVAC Industry Page", to: "/industries/hvac" },
+      ]} />
 
       <FinalCTASection
         headline="Let's Get Your HVAC Company Into the Top 3 on Google Maps"

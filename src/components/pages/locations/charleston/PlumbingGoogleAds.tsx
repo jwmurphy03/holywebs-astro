@@ -322,11 +322,11 @@ export default function CharlestonPlumbingGoogleAds() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets markets={[
+            <NearbyMarkets markets={[
+        { name: "Charleston Plumbing Marketing", to: "/locations/south-carolina/charleston/plumbing" },
+        { name: "Charleston Plumbing SEO", to: "/locations/south-carolina/charleston/plumbing/seo" },
         { name: "Houston Plumbing Google Ads", to: "/locations/texas/houston/plumbing/google-ads" },
-        { name: "Charleston Plumbing — All Services", to: "/locations/south-carolina/charleston/plumbing" },
-        { name: "Plumbing Digital Marketing", to: "/industries/plumbing" },
-        { name: "Google Ads Services", to: "/services/google-ads" },
+        { name: "Plumbing Industry Page", to: "/industries/plumbing" },
       ]} />
 
       <FinalCTASection

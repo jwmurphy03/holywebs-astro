@@ -55,7 +55,7 @@ export default function WhatIsAEO() {
 
                 <h2>The Shift from Search to&nbsp;Answers</h2>
                 <p>
-                  Think about how people use technology today. They ask Siri to find a plumber. They ask Alexa for the best-rated HVAC company nearby. They type a question into Google and read the AI-generated summary at the top of the page without scrolling past&nbsp;it.
+                  Think about how people use technology today. They ask Siri to find a <a href="/industries/plumbing" className="text-primary">plumber</a>. They ask Alexa for the best-rated <a href="/industries/hvac" className="text-primary">HVAC company</a> nearby. They type a question into Google and read the AI-generated summary at the top of the page without scrolling past&nbsp;it.
                 </p>
                 <p>
                   These aren't traditional searches. They're conversations. And the platforms delivering those answers pull from a very specific type of content: structured, authoritative, question-and-answer formatted information that's easy for machines to parse and&nbsp;trust.
@@ -77,7 +77,7 @@ export default function WhatIsAEO() {
 
                 <h2>Why This Matters for Local Service&nbsp;Businesses</h2>
                 <p>
-                  If you run an HVAC company, a plumbing business, or a roofing contractor, your customers are already using voice assistants and AI search tools. They might not even realize they're doing it. When someone picks up their phone and says "find a roofer near me," the device doesn't show ten results. It shows one. Maybe&nbsp;three.
+                  If you run an <a href="/industries/hvac" className="text-primary">HVAC company</a>, a <a href="/industries/plumbing" className="text-primary">plumbing business</a>, or a <a href="/industries/roofing" className="text-primary">roofing company</a>, your customers are already using voice assistants and AI search tools. They might not even realize they're doing it. When someone picks up their phone and says "find a roofer near me," the device doesn't show ten results. It shows one. Maybe&nbsp;three.
                 </p>
                 <p>
                   The businesses that show up in those moments are the ones with structured data, consistent information across every platform, strong review profiles, and content that directly answers the questions customers are asking. If your online presence checks those boxes, you're in the running. If it doesn't, you're not even in the&nbsp;conversation.
@@ -100,7 +100,7 @@ export default function WhatIsAEO() {
 
                 <h3>3. Make Your Google Business Profile&nbsp;Bulletproof</h3>
                 <p>
-                  Your GBP is one of the primary data sources that AI platforms pull from. Every field should be filled out. Your categories should be precise. Your reviews should be consistent and recent. And your business information should match what's on your website, your social profiles, and every directory listing you&nbsp;have.
+                  Your <a href="/resources/google-business-profile-guide" className="text-primary">GBP</a> is one of the primary data sources that AI platforms pull from. Every field should be filled out. Your categories should be precise. Your reviews should be consistent and recent. And your business information should match what's on your website, your social profiles, and every directory listing you&nbsp;have.
                 </p>
 
                 <h3>4. Write Content That Answers, Not Just&nbsp;Describes</h3>
@@ -123,6 +123,17 @@ export default function WhatIsAEO() {
                 <p>
                   If you're already doing the basics well, you're closer than you think. And if you're not sure where you stand, that's a great place to&nbsp;start.
                 </p>
+
+                {/* Internal link to pillar guide */}
+                <div className="mt-8 p-6 bg-muted/50 rounded-lg border border-border/40">
+                  <p className="text-sm text-muted-foreground mb-2">AEO builds on top of local SEO fundamentals — start here:</p>
+                  <a
+                    href="/resources/local-seo-guide-service-businesses"
+                    className="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all"
+                  >
+                    Read our Local SEO Guide for Service Businesses <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
               </article>
 
               <div className="mt-12 bg-muted rounded-xl p-8 text-center">

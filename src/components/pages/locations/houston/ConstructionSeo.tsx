@@ -354,14 +354,12 @@ export default function HoustonConstructionSeo() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Construction SEO", to: "/locations/south-carolina/charleston/construction/seo" },
-          { name: "Houston Roofing SEO", to: "/locations/texas/houston/roofing/seo" },
-          { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
-          { name: "Construction Digital Marketing", to: "/industries/construction" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Construction Marketing", to: "/locations/texas/houston/construction" },
+        { name: "Houston Construction Google Ads", to: "/locations/texas/houston/construction/google-ads" },
+        { name: "Charleston Construction SEO", to: "/locations/south-carolina/charleston/construction/seo" },
+        { name: "Construction Industry Page", to: "/industries/construction" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Dominate Construction Search in Houston?"

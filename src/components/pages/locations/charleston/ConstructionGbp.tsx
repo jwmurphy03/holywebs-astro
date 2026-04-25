@@ -158,11 +158,11 @@ export default function CharlestonConstructionGbp() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets markets={[
-        { name: "Charleston Construction Marketing Hub", to: "/locations/south-carolina/charleston/construction" },
+            <NearbyMarkets markets={[
+        { name: "Charleston Construction Marketing", to: "/locations/south-carolina/charleston/construction" },
         { name: "Charleston Construction SEO", to: "/locations/south-carolina/charleston/construction/seo" },
-        { name: "Charleston Construction Google Ads", to: "/locations/south-carolina/charleston/construction/google-ads" },
         { name: "Houston Construction GBP", to: "/locations/texas/houston/construction/google-business-profile" },
+        { name: "Construction Industry Page", to: "/industries/construction" },
       ]} />
 
       <FinalCTASection

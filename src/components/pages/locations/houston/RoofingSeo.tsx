@@ -354,14 +354,12 @@ export default function HoustonRoofingSeo() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Roofing SEO", to: "/locations/south-carolina/charleston/roofing/seo" },
-          { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
-          { name: "Houston Construction SEO", to: "/locations/texas/houston/construction/seo" },
-          { name: "Roofing Digital Marketing", to: "/industries/roofing" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Roofing Marketing", to: "/locations/texas/houston/roofing" },
+        { name: "Houston Roofing Google Ads", to: "/locations/texas/houston/roofing/google-ads" },
+        { name: "Charleston Roofing SEO", to: "/locations/south-carolina/charleston/roofing/seo" },
+        { name: "Roofing Industry Page", to: "/industries/roofing" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Dominate Roofing Search in Houston?"

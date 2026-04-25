@@ -225,14 +225,12 @@ export default function HoustonHvacGbp() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston HVAC GBP", to: "/locations/south-carolina/charleston/hvac/google-business-profile" },
-          { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
-          { name: "Houston Plumbing GBP", to: "/locations/texas/houston/plumbing/google-business-profile" },
-          { name: "HVAC Digital Marketing", to: "/industries/hvac" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston HVAC Marketing", to: "/locations/texas/houston/hvac" },
+        { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
+        { name: "Charleston HVAC GBP", to: "/locations/south-carolina/charleston/hvac/google-business-profile" },
+        { name: "HVAC Industry Page", to: "/industries/hvac" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Get Into Houston's HVAC Map Pack?"

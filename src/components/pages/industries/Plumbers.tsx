@@ -9,12 +9,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedLinks from "@/components/RelatedLinks";
 
 const relatedLinks = [
-  { title: "SEO", description: "Get found for 'plumber near me' and other high-intent local searches that drive booked jobs.", href: "/services/seo" },
-  { title: "Google Business Profile", description: "Your GBP is where most plumbing customers find you first. We make sure it is fully optimized.", href: "/services/google-business-profile" },
-  { title: "Google Ads", description: "Emergency plumbing searches convert fast. Paid search puts you at the top when it matters most.", href: "/services/google-ads" },
+  { title: "Plumbing Marketing in Charleston, SC", description: "How we grow plumbing companies in a market defined by historic pipes, coastal humidity, and rapid suburban expansion.", href: "/locations/south-carolina/charleston/plumbing" },
+  { title: "Plumbing Marketing in Houston, TX", description: "Plumbing marketing strategy for a market shaped by Harvey flooding, clay soil movement, and 7M+ residents.", href: "/locations/texas/houston/plumbing" },
   { title: "HVAC", description: "Many plumbing companies also offer HVAC. See how we market both services.", href: "/industries/hvac" },
   { title: "Construction", description: "New construction plumbing needs a different marketing approach. See our strategy.", href: "/industries/construction" },
   { title: "Electrical", description: "Electrical and plumbing contractors face similar local search challenges. See our approach.", href: "/industries/electrical" },
+  { title: "All Locations", description: "See every market where we build plumbing visibility — and what makes each one different.", href: "/locations" },
 ];
 
 const plumberFaqs = [

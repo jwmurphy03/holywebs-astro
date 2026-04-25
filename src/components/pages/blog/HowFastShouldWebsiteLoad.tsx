@@ -66,7 +66,7 @@ export default function HowFastShouldWebsiteLoad() {
 
                 <h2>Why Mobile Speed Matters&nbsp;Most</h2>
                 <p>
-                  Over 60% of local searches happen on mobile devices. Someone's AC goes out on a Saturday afternoon and they grab their phone, not their laptop. If your site takes 6 seconds to load on a 4G connection, that person has already called your competitor by the time your homepage finishes&nbsp;rendering.
+                  Over 60% of local searches happen on mobile devices. Someone's <a href="/industries/hvac" className="text-primary">AC goes out</a> on a Saturday afternoon and they grab their phone, not their laptop. If your site takes 6 seconds to load on a 4G connection, that person has already called your competitor by the time your homepage finishes&nbsp;rendering.
                 </p>
                 <p>
                   Google also uses the mobile version of your site as the primary version for ranking purposes. So even if your desktop site loads quickly, a sluggish mobile experience will drag down your search visibility across the&nbsp;board.
@@ -117,6 +117,17 @@ export default function HowFastShouldWebsiteLoad() {
                 <p>
                   The best part? Most speed improvements are one-time fixes that keep paying dividends for as long as your site is live. It's one of the highest-ROI investments you can make in your online&nbsp;presence.
                 </p>
+
+                {/* Internal link to pillar guide */}
+                <div className="mt-8 p-6 bg-muted/50 rounded-lg border border-border/40">
+                  <p className="text-sm text-muted-foreground mb-2">Speed is just one piece of a website that converts. Get the full picture:</p>
+                  <a
+                    href="/resources/website-guide-service-businesses"
+                    className="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all"
+                  >
+                    Read our Website Guide for Service Businesses <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
               </article>
 
               <div className="mt-12 bg-muted rounded-xl p-8 text-center">

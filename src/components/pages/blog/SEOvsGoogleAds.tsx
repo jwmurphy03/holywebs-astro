@@ -82,7 +82,7 @@ export default function SEOvsGoogleAds() {
                   If your business has a bit of runway and you're thinking about the next 6 to 12 months, SEO is almost always the better investment. It costs less per lead over time, builds lasting visibility, and creates trust signals that Google Ads simply&nbsp;can't.
                 </p>
                 <p>
-                  SEO is especially valuable if you serve a specific geographic area and want to dominate the Map Pack. A well-optimized Google Business Profile paired with strong local SEO can turn your business into the default choice for anyone searching in your&nbsp;area.
+                  SEO is especially valuable if you serve a specific geographic area and want to dominate the Map Pack. A well-optimized <a href="/resources/google-business-profile-guide" className="text-primary">Google Business Profile</a> paired with strong local SEO can turn your business into the default choice for anyone searching in your&nbsp;area.
                 </p>
                 <blockquote>
                   <strong>Best for:</strong> Businesses with a 3 to 6 month timeline, those already getting some leads but wanting more, and companies looking to reduce their cost per lead over&nbsp;time.
@@ -93,7 +93,7 @@ export default function SEOvsGoogleAds() {
                   If you just launched your business, or you're entering a new service area, or you need the phone to ring this week, Google Ads is the move. It bridges the gap while your organic presence is still building. It also gives you immediate data on what keywords your customers actually use, which informs your SEO strategy&nbsp;later.
                 </p>
                 <p>
-                  Google Ads also shines for seasonal businesses. If you're an HVAC company heading into summer, running ads for "AC repair" and "AC installation" during peak demand is a no-brainer. You don't need to wait six months for that traffic. You need it&nbsp;now.
+                  Google Ads also shines for seasonal businesses. If you're an <a href="/industries/hvac" className="text-primary">HVAC company</a> heading into summer, running ads for "AC repair" and "AC installation" during peak demand is a no-brainer. You don't need to wait six months for that traffic. You need it&nbsp;now.
                 </p>
                 <blockquote>
                   <strong>Best for:</strong> New businesses, seasonal pushes, new service areas, and anyone who needs leads immediately while building long-term&nbsp;visibility.
@@ -128,6 +128,19 @@ export default function SEOvsGoogleAds() {
                 <p>
                   If you're not sure where your marketing dollars will have the most impact right now, that's exactly what our free visibility audit is designed to answer.
                 </p>
+
+                {/* Internal links to pillar guides */}
+                <div className="mt-8 p-6 bg-muted/50 rounded-lg border border-border/40">
+                  <p className="text-sm text-muted-foreground mb-3">Ready to go deeper on either channel?</p>
+                  <div className="flex flex-col gap-2">
+                    <a href="/resources/local-seo-guide-service-businesses" className="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
+                      Local SEO Guide for Service Businesses <ArrowRight className="w-4 h-4" />
+                    </a>
+                    <a href="/resources/google-ads-guide-contractors" className="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
+                      Google Ads Guide for Contractors <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
               </article>
 
               {/* CTA banner */}

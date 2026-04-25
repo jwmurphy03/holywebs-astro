@@ -352,11 +352,11 @@ export default function CharlestonPlumbingWebDesign() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets markets={[
+            <NearbyMarkets markets={[
+        { name: "Charleston Plumbing Marketing", to: "/locations/south-carolina/charleston/plumbing" },
+        { name: "Charleston Plumbing SEO", to: "/locations/south-carolina/charleston/plumbing/seo" },
         { name: "Houston Plumbing Web Design", to: "/locations/texas/houston/plumbing/web-design" },
-        { name: "Charleston Plumbing — All Services", to: "/locations/south-carolina/charleston/plumbing" },
-        { name: "Plumbing Digital Marketing", to: "/industries/plumbing" },
-        { name: "Web Design Services", to: "/services/web-design" },
+        { name: "Plumbing Industry Page", to: "/industries/plumbing" },
       ]} />
 
       <FinalCTASection

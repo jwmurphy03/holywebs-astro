@@ -227,14 +227,12 @@ export default function HoustonHvacWebDesign() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston HVAC Web Design", to: "/locations/south-carolina/charleston/hvac/web-design" },
-          { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
-          { name: "Houston Plumbing Web Design", to: "/locations/texas/houston/plumbing/web-design" },
-          { name: "HVAC Digital Marketing", to: "/industries/hvac" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston HVAC Marketing", to: "/locations/texas/houston/hvac" },
+        { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
+        { name: "Charleston HVAC Web Design", to: "/locations/south-carolina/charleston/hvac/web-design" },
+        { name: "HVAC Industry Page", to: "/industries/hvac" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Build an HVAC Website That Wins in Houston?"

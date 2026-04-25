@@ -227,14 +227,12 @@ export default function HoustonRoofingWebDesign() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Roofing Web Design", to: "/locations/south-carolina/charleston/roofing/web-design" },
-          { name: "Houston Roofing SEO", to: "/locations/texas/houston/roofing/seo" },
-          { name: "Houston Construction Web Design", to: "/locations/texas/houston/construction/web-design" },
-          { name: "Roofing Digital Marketing", to: "/industries/roofing" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Roofing Marketing", to: "/locations/texas/houston/roofing" },
+        { name: "Houston Roofing SEO", to: "/locations/texas/houston/roofing/seo" },
+        { name: "Charleston Roofing Web Design", to: "/locations/south-carolina/charleston/roofing/web-design" },
+        { name: "Roofing Industry Page", to: "/industries/roofing" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Build a Roofing Website That Wins in Houston?"

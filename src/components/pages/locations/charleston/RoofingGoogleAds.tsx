@@ -202,11 +202,11 @@ export default function CharlestonRoofingGoogleAds() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets markets={[
-        { name: "Charleston Roofing Marketing Hub", to: "/locations/south-carolina/charleston/roofing" },
+            <NearbyMarkets markets={[
+        { name: "Charleston Roofing Marketing", to: "/locations/south-carolina/charleston/roofing" },
         { name: "Charleston Roofing SEO", to: "/locations/south-carolina/charleston/roofing/seo" },
-        { name: "Charleston Roofing GBP", to: "/locations/south-carolina/charleston/roofing/google-business-profile" },
         { name: "Houston Roofing Google Ads", to: "/locations/texas/houston/roofing/google-ads" },
+        { name: "Roofing Industry Page", to: "/industries/roofing" },
       ]} />
 
       <FinalCTASection

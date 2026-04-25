@@ -445,14 +445,12 @@ export default function CharlestonHvacSeo() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
-          { name: "Charleston — All Services", to: "/locations/south-carolina/charleston" },
-          { name: "HVAC Digital Marketing", to: "/industries/hvac" },
-          { name: "Local SEO Services", to: "/services/seo" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Charleston HVAC Marketing", to: "/locations/south-carolina/charleston/hvac" },
+        { name: "Charleston HVAC Google Ads", to: "/locations/south-carolina/charleston/hvac/google-ads" },
+        { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
+        { name: "HVAC Industry Page", to: "/industries/hvac" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Dominate HVAC Search in Charleston?"

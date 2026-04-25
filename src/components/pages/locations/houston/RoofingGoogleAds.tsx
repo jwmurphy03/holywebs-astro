@@ -225,14 +225,12 @@ export default function HoustonRoofingGoogleAds() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Roofing Google Ads", to: "/locations/south-carolina/charleston/roofing/google-ads" },
-          { name: "Houston Roofing SEO", to: "/locations/texas/houston/roofing/seo" },
-          { name: "Houston Roofing GBP", to: "/locations/texas/houston/roofing/google-business-profile" },
-          { name: "Roofing Digital Marketing", to: "/industries/roofing" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Roofing Marketing", to: "/locations/texas/houston/roofing" },
+        { name: "Houston Roofing SEO", to: "/locations/texas/houston/roofing/seo" },
+        { name: "Charleston Roofing Google Ads", to: "/locations/south-carolina/charleston/roofing/google-ads" },
+        { name: "Roofing Industry Page", to: "/industries/roofing" },
+      ]} />
 
       <FinalCTASection
         headline="Don't Miss Houston's Next Storm Surge"

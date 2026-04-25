@@ -249,11 +249,11 @@ export default function CharlestonConstructionSeo() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets markets={[
-        { name: "Charleston Construction Marketing Hub", to: "/locations/south-carolina/charleston/construction" },
+            <NearbyMarkets markets={[
+        { name: "Charleston Construction Marketing", to: "/locations/south-carolina/charleston/construction" },
         { name: "Charleston Construction Google Ads", to: "/locations/south-carolina/charleston/construction/google-ads" },
-        { name: "Charleston Construction GBP", to: "/locations/south-carolina/charleston/construction/google-business-profile" },
         { name: "Houston Construction SEO", to: "/locations/texas/houston/construction/seo" },
+        { name: "Construction Industry Page", to: "/industries/construction" },
       ]} />
 
       <FinalCTASection

@@ -76,7 +76,7 @@ export default function ContractorWebsiteNotConverting() {
 
                 <h2>The 5 Most Common Reasons Contractor Websites Don't&nbsp;Convert</h2>
                 <p>
-                  After auditing hundreds of contractor websites across HVAC, plumbing, roofing, electrical, and landscaping businesses, the same five problems come up again and&nbsp;again.
+                  After auditing hundreds of contractor websites across <a href="/industries/hvac" className="text-primary">HVAC</a>, <a href="/industries/plumbing" className="text-primary">plumbing</a>, <a href="/industries/roofing" className="text-primary">roofing</a>, electrical, and landscaping businesses, the same five problems come up again and&nbsp;again.
                 </p>
 
                 <h3>1. No Clear Call to&nbsp;Action</h3>
@@ -113,7 +113,7 @@ export default function ContractorWebsiteNotConverting() {
                   Homeowners are cautious about who they let into their home. Before they call, they're looking for proof that you're legitimate, experienced, and reliable. A website with no reviews, no photos of real work, no license numbers, and no team photos feels like a&nbsp;gamble.
                 </p>
                 <p>
-                  This is especially true for higher-ticket services. A homeowner considering a $15,000 roof replacement or a $10,000 HVAC installation isn't going to call a company whose website feels thin or&nbsp;anonymous.
+                  This is especially true for higher-ticket services. A homeowner considering a <a href="/industries/roofing" className="text-primary">$15,000 roof replacement</a> or a <a href="/industries/hvac" className="text-primary">$10,000 HVAC installation</a> isn't going to call a company whose website feels thin or&nbsp;anonymous.
                 </p>
                 <blockquote>
                   <p>

@@ -221,14 +221,12 @@ export default function HoustonPlumbingGoogleAds() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Plumbing Google Ads", to: "/locations/south-carolina/charleston/plumbing/google-ads" },
-          { name: "Houston Plumbing SEO", to: "/locations/texas/houston/plumbing/seo" },
-          { name: "Houston HVAC Google Ads", to: "/locations/texas/houston/hvac/google-ads" },
-          { name: "Plumbing Digital Marketing", to: "/industries/plumbing" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Plumbing Marketing", to: "/locations/texas/houston/plumbing" },
+        { name: "Houston Plumbing SEO", to: "/locations/texas/houston/plumbing/seo" },
+        { name: "Charleston Plumbing Google Ads", to: "/locations/south-carolina/charleston/plumbing/google-ads" },
+        { name: "Plumbing Industry Page", to: "/industries/plumbing" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Capture Houston's Plumbing Demand?"

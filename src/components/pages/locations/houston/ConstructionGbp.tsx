@@ -225,14 +225,12 @@ export default function HoustonConstructionGbp() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Construction GBP", to: "/locations/south-carolina/charleston/construction/google-business-profile" },
-          { name: "Houston Construction SEO", to: "/locations/texas/houston/construction/seo" },
-          { name: "Houston Roofing GBP", to: "/locations/texas/houston/roofing/google-business-profile" },
-          { name: "Construction Digital Marketing", to: "/industries/construction" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Construction Marketing", to: "/locations/texas/houston/construction" },
+        { name: "Houston Construction SEO", to: "/locations/texas/houston/construction/seo" },
+        { name: "Charleston Construction GBP", to: "/locations/south-carolina/charleston/construction/google-business-profile" },
+        { name: "Construction Industry Page", to: "/industries/construction" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Build Your Construction Credibility in Houston Search?"

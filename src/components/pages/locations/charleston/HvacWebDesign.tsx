@@ -433,14 +433,12 @@ export default function CharlestonHvacWebDesign() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Houston HVAC Web Design", to: "/locations/texas/houston/hvac/web-design" },
-          { name: "Charleston — All Services", to: "/locations/south-carolina/charleston" },
-          { name: "HVAC Digital Marketing", to: "/industries/hvac" },
-          { name: "Web Design Services", to: "/services/web-design" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Charleston HVAC Marketing", to: "/locations/south-carolina/charleston/hvac" },
+        { name: "Charleston HVAC SEO", to: "/locations/south-carolina/charleston/hvac/seo" },
+        { name: "Houston HVAC Web Design", to: "/locations/texas/houston/hvac/web-design" },
+        { name: "HVAC Industry Page", to: "/industries/hvac" },
+      ]} />
 
       <FinalCTASection
         headline="Your HVAC Website Should Be Your Best Salesperson"

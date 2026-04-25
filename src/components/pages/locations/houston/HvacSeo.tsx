@@ -424,14 +424,12 @@ export default function HoustonHvacSeo() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston HVAC SEO", to: "/locations/south-carolina/charleston/hvac/seo" },
-          { name: "Houston Plumbing SEO", to: "/locations/texas/houston/plumbing/seo" },
-          { name: "Houston Roofing SEO", to: "/locations/texas/houston/roofing/seo" },
-          { name: "HVAC Digital Marketing", to: "/industries/hvac" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston HVAC Marketing", to: "/locations/texas/houston/hvac" },
+        { name: "Houston HVAC Google Ads", to: "/locations/texas/houston/hvac/google-ads" },
+        { name: "Charleston HVAC SEO", to: "/locations/south-carolina/charleston/hvac/seo" },
+        { name: "HVAC Industry Page", to: "/industries/hvac" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Dominate HVAC Search in Houston?"

@@ -9,12 +9,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedLinks from "@/components/RelatedLinks";
 
 const relatedLinks = [
-  { title: "SEO", description: "Rank higher for searches like 'AC repair near me' and 'HVAC installation' in your service area.", href: "/services/seo" },
-  { title: "Google Ads", description: "Capture emergency HVAC searches with targeted paid campaigns that convert.", href: "/services/google-ads" },
-  { title: "Web Design", description: "Your website should book calls, not just look good. See how we build HVAC sites that convert.", href: "/services/web-design" },
+  { title: "HVAC Marketing in Charleston, SC", description: "How we grow HVAC companies in one of the Southeast's most competitive cooling markets.", href: "/locations/south-carolina/charleston/hvac" },
+  { title: "HVAC Marketing in Houston, TX", description: "HVAC marketing strategy for the country's hottest major metro — 4+ months of 90°F+ weather annually.", href: "/locations/texas/houston/hvac" },
   { title: "Plumbing", description: "Many HVAC companies also offer plumbing. See how we market plumbing services.", href: "/industries/plumbing" },
   { title: "Electrical", description: "HVAC and electrical often overlap. See our approach for electrical contractors.", href: "/industries/electrical" },
   { title: "Multi-Location", description: "Running HVAC operations across multiple markets? See how we scale visibility.", href: "/industries/multi-location" },
+  { title: "All Locations", description: "See every market where we build HVAC visibility — and what makes each one different.", href: "/locations" },
 ];
 
 const hvacFaqs = [

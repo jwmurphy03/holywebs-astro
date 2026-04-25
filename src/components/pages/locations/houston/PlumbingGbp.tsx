@@ -225,14 +225,12 @@ export default function HoustonPlumbingGbp() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Plumbing GBP", to: "/locations/south-carolina/charleston/plumbing/google-business-profile" },
-          { name: "Houston Plumbing SEO", to: "/locations/texas/houston/plumbing/seo" },
-          { name: "Houston HVAC GBP", to: "/locations/texas/houston/hvac/google-business-profile" },
-          { name: "Plumbing Digital Marketing", to: "/industries/plumbing" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Plumbing Marketing", to: "/locations/texas/houston/plumbing" },
+        { name: "Houston Plumbing SEO", to: "/locations/texas/houston/plumbing/seo" },
+        { name: "Charleston Plumbing GBP", to: "/locations/south-carolina/charleston/plumbing/google-business-profile" },
+        { name: "Plumbing Industry Page", to: "/industries/plumbing" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Get Into Houston's Plumbing Map Pack?"

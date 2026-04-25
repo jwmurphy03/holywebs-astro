@@ -354,14 +354,12 @@ export default function HoustonPlumbingSeo() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Plumbing SEO", to: "/locations/south-carolina/charleston/plumbing/seo" },
-          { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
-          { name: "Houston Roofing SEO", to: "/locations/texas/houston/roofing/seo" },
-          { name: "Plumbing Digital Marketing", to: "/industries/plumbing" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Plumbing Marketing", to: "/locations/texas/houston/plumbing" },
+        { name: "Houston Plumbing Google Ads", to: "/locations/texas/houston/plumbing/google-ads" },
+        { name: "Charleston Plumbing SEO", to: "/locations/south-carolina/charleston/plumbing/seo" },
+        { name: "Plumbing Industry Page", to: "/industries/plumbing" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Dominate Plumbing Search in Houston?"

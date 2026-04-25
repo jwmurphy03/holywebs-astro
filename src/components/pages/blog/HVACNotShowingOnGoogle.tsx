@@ -171,6 +171,9 @@ export default function HVACNotShowingOnGoogle() {
                 <p>
                   In competitive markets, most HVAC companies that consistently rank in the Map Pack are investing in professional <a href="/industries/hvac" className="text-primary">HVAC marketing</a> — not because they can't do it themselves, but because the consistency and technical depth required is hard to maintain while running a&nbsp;business.
                 </p>
+                <p>
+                  We work with HVAC contractors in <a href="/locations/south-carolina/charleston/hvac" className="text-primary">Charleston, SC</a> and <a href="/locations/texas/houston/hvac" className="text-primary">Houston, TX</a> — two of the most competitive cooling markets in the country. The same fundamentals apply everywhere, but local competition density determines how long each fix takes to produce&nbsp;results.
+                </p>
 
                 <h2>The Bottom&nbsp;Line</h2>
                 <p>

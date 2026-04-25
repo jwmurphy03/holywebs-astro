@@ -50,7 +50,7 @@ export default function GoogleBusinessProfileTips() {
             <div className="lg:w-[70%]">
               <article className="blog-article">
                 <p className="text-lg leading-relaxed mb-8">
-                  When someone searches "plumber near me" or "HVAC repair in [City]," Google doesn't just show a list of websites. It shows the Map Pack — those three local businesses pinned to the top with reviews, hours, and a phone number ready to tap. Getting into that Map Pack starts with one thing: a well-optimized Google Business&nbsp;Profile.
+                  When someone searches "<a href="/industries/plumbing" className="text-primary">plumber</a> near me" or "<a href="/industries/hvac" className="text-primary">HVAC</a> repair in [City]," Google doesn't just show a list of websites. It shows the Map Pack — those three local businesses pinned to the top with reviews, hours, and a phone number ready to tap. Getting into that Map Pack starts with one thing: a well-optimized Google Business&nbsp;Profile.
                 </p>
                 <p>
                   The problem is that most profiles are half-finished. A business name, an address, maybe a phone number — and that's it. Google rewards profiles that are complete, active, and relevant. Here's what actually moves the&nbsp;needle.
@@ -128,6 +128,17 @@ export default function GoogleBusinessProfileTips() {
                 <p>
                   Most of these optimizations take less than 30 minutes per week. The returns, however, compound over&nbsp;time.
                 </p>
+
+                {/* Internal link to pillar guide */}
+                <div className="mt-8 p-6 bg-muted/50 rounded-lg border border-border/40">
+                  <p className="text-sm text-muted-foreground mb-2">Want the complete step-by-step GBP optimization walkthrough?</p>
+                  <a
+                    href="/resources/google-business-profile-guide"
+                    className="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all"
+                  >
+                    Read our Google Business Profile Optimization Guide <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
               </article>
 
               {/* CTA banner */}

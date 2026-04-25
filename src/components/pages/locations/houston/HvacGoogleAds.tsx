@@ -221,14 +221,12 @@ export default function HoustonHvacGoogleAds() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston HVAC Google Ads", to: "/locations/south-carolina/charleston/hvac/google-ads" },
-          { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
-          { name: "Houston HVAC GBP", to: "/locations/texas/houston/hvac/google-business-profile" },
-          { name: "HVAC Digital Marketing", to: "/industries/hvac" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston HVAC Marketing", to: "/locations/texas/houston/hvac" },
+        { name: "Houston HVAC SEO", to: "/locations/texas/houston/hvac/seo" },
+        { name: "Charleston HVAC Google Ads", to: "/locations/south-carolina/charleston/hvac/google-ads" },
+        { name: "HVAC Industry Page", to: "/industries/hvac" },
+      ]} />
 
       <FinalCTASection
         headline="Don't Miss Houston's Peak HVAC Season"

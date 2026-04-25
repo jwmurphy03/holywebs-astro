@@ -231,14 +231,12 @@ export default function HoustonConstructionWebDesign() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Construction Web Design", to: "/locations/south-carolina/charleston/construction/web-design" },
-          { name: "Houston Construction SEO", to: "/locations/texas/houston/construction/seo" },
-          { name: "Houston Roofing Web Design", to: "/locations/texas/houston/roofing/web-design" },
-          { name: "Construction Digital Marketing", to: "/industries/construction" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Construction Marketing", to: "/locations/texas/houston/construction" },
+        { name: "Houston Construction SEO", to: "/locations/texas/houston/construction/seo" },
+        { name: "Charleston Construction Web Design", to: "/locations/south-carolina/charleston/construction/web-design" },
+        { name: "Construction Industry Page", to: "/industries/construction" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Build a Construction Site That Wins Houston's Best Projects?"

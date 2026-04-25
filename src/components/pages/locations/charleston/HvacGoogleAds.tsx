@@ -429,14 +429,12 @@ export default function CharlestonHvacGoogleAds() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Houston HVAC Google Ads", to: "/locations/texas/houston/hvac/google-ads" },
-          { name: "Charleston — All Services", to: "/locations/south-carolina/charleston" },
-          { name: "HVAC Digital Marketing", to: "/industries/hvac" },
-          { name: "Google Ads Services", to: "/services/google-ads" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Charleston HVAC Marketing", to: "/locations/south-carolina/charleston/hvac" },
+        { name: "Charleston HVAC SEO", to: "/locations/south-carolina/charleston/hvac/seo" },
+        { name: "Houston HVAC Google Ads", to: "/locations/texas/houston/hvac/google-ads" },
+        { name: "HVAC Industry Page", to: "/industries/hvac" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Fill Your HVAC Schedule This Season?"

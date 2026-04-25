@@ -227,14 +227,12 @@ export default function HoustonPlumbingWebDesign() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets
-        markets={[
-          { name: "Charleston Plumbing Web Design", to: "/locations/south-carolina/charleston/plumbing/web-design" },
-          { name: "Houston Plumbing SEO", to: "/locations/texas/houston/plumbing/seo" },
-          { name: "Houston HVAC Web Design", to: "/locations/texas/houston/hvac/web-design" },
-          { name: "Plumbing Digital Marketing", to: "/industries/plumbing" },
-        ]}
-      />
+            <NearbyMarkets markets={[
+        { name: "Houston Plumbing Marketing", to: "/locations/texas/houston/plumbing" },
+        { name: "Houston Plumbing SEO", to: "/locations/texas/houston/plumbing/seo" },
+        { name: "Charleston Plumbing Web Design", to: "/locations/south-carolina/charleston/plumbing/web-design" },
+        { name: "Plumbing Industry Page", to: "/industries/plumbing" },
+      ]} />
 
       <FinalCTASection
         headline="Ready to Build a Plumbing Website That Wins in Houston?"

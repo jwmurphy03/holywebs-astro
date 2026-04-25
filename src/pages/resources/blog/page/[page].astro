@@ -3,13 +3,16 @@ import Layout from '../../../../layouts/Layout.astro';
 import Blog from '../../../../components/pages/Blog';
 
 export function getStaticPaths() {
-  // 8 posts at 6 per page = 2 pages total
-  return [
-    { params: { page: '2' } },
-  ];
+  const POSTS_PER_PAGE = 6;
+  const TOTAL_POSTS = 11; // keep in sync with publishedPosts in Blog.tsx
+  const totalPages = Math.ceil(TOTAL_POSTS / POSTS_PER_PAGE);
+  return Array.from({ length: totalPages - 1 }, (_, i) => ({
+    params: { page: String(i + 2) },
+  }));
 }
 
 const { page } = Astro.params;
+const pageNum = parseInt(page, 10);
 ---
 
 <Layout
@@ -17,5 +20,5 @@ const { page } = Astro.params;
   description="Practical marketing tips, SEO guides, and local business growth advice for contractors and service businesses."
   canonicalUrl={`https://holywebs.com/resources/blog/page/${page}`}
 >
-  <Blog client:idle />
+  <Blog page={pageNum} client:idle />
 </Layout>

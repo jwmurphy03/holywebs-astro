@@ -352,11 +352,11 @@ export default function CharlestonPlumbingGbp() {
         </div>
       </SectionWrapper>
 
-      <NearbyMarkets markets={[
+            <NearbyMarkets markets={[
+        { name: "Charleston Plumbing Marketing", to: "/locations/south-carolina/charleston/plumbing" },
+        { name: "Charleston Plumbing SEO", to: "/locations/south-carolina/charleston/plumbing/seo" },
         { name: "Houston Plumbing GBP", to: "/locations/texas/houston/plumbing/google-business-profile" },
-        { name: "Charleston Plumbing — All Services", to: "/locations/south-carolina/charleston/plumbing" },
-        { name: "Plumbing Digital Marketing", to: "/industries/plumbing" },
-        { name: "GBP Services", to: "/services/google-business-profile" },
+        { name: "Plumbing Industry Page", to: "/industries/plumbing" },
       ]} />
 
       <FinalCTASection

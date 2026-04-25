@@ -106,6 +106,20 @@ export default function AgencyWastingMoney() {
                 <p>
                   Then get a second opinion. An outside audit of your website, your Google Business Profile, and your current ad performance will show you exactly where you stand and where the gaps are. It's the fastest way to cut through the noise and figure out whether your current investment is working or if it's time to make a&nbsp;change.
                 </p>
+                <p>
+                  The same principles apply regardless of trade — whether you're an <a href="/industries/hvac" className="text-primary">HVAC company</a>, a <a href="/industries/roofing" className="text-primary">roofing contractor</a>, a <a href="/industries/plumbing" className="text-primary">plumber</a>, or a <a href="/industries/construction" className="text-primary">general contractor</a>. Good marketing produces attributable results. If yours doesn't, the problem is the agency, not the&nbsp;channel.
+                </p>
+
+                {/* Internal link to pillar guide */}
+                <div className="mt-8 p-6 bg-muted/50 rounded-lg border border-border/40">
+                  <p className="text-sm text-muted-foreground mb-2">Want to understand what good contractor marketing actually looks like?</p>
+                  <a
+                    href="/resources/local-seo-guide-service-businesses"
+                    className="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all"
+                  >
+                    Read our Local SEO Guide for Service Businesses <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
               </article>
 
               <div className="mt-12 bg-muted rounded-xl p-8 text-center">

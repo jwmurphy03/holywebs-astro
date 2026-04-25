@@ -54,7 +54,7 @@ export default function GoogleMapsRanking() {
                   When a homeowner searches "AC repair near me" or "plumber in [City]," Google doesn't just serve up a list of blue links. It shows the <strong>Map Pack</strong> — three local businesses pinned at the top of the page with star ratings, hours, and a tap-to-call button. For most service businesses, that Map Pack generates more phone calls than the ten organic results below it&nbsp;combined.
                 </p>
                 <p>
-                  If you're an HVAC tech, plumber, roofer, or any other home service contractor, ranking in the Google Maps 3-pack isn't optional. It's where the calls come from. This guide breaks down exactly how Google decides who shows up there and what you can do about&nbsp;it.
+                  If you're an <a href="/industries/hvac" className="text-primary">HVAC tech</a>, <a href="/industries/plumbing" className="text-primary">plumber</a>, <a href="/industries/roofing" className="text-primary">roofer</a>, or any other home service contractor, ranking in the Google Maps 3-pack isn't optional. It's where the calls come from. This guide breaks down exactly how Google decides who shows up there and what you can do about&nbsp;it.
                 </p>
 
                 <h2>What the Google Maps 3-Pack Is (and Why It&nbsp;Matters)</h2>
@@ -177,7 +177,7 @@ export default function GoogleMapsRanking() {
 
                 <h3>Build City-Specific Landing&nbsp;Pages</h3>
                 <p>
-                  Create pages on your website for each major city you serve. A plumber in Houston might build pages for "Plumber in Katy," "Plumber in Sugar Land," and "Plumber in The Woodlands." Each page should include unique, relevant content — not just the same template with the city name swapped in. A <a href="/services/web-design" className="text-primary">well-built website</a> makes this&nbsp;scalable.
+                  Create pages on your website for each major city you serve. A <a href="/locations/texas/houston/plumbing" className="text-primary">plumber in Houston</a> might build pages for "Plumber in Katy," "Plumber in Sugar Land," and "Plumber in The Woodlands." Each page should include unique, relevant content — not just the same template with the city name swapped in. A <a href="/services/web-design" className="text-primary">well-built website</a> makes this&nbsp;scalable.
                 </p>
                 <blockquote>
                   <strong>Pro tip:</strong> Reference local landmarks, neighborhoods, and specific service challenges unique to each area. Google rewards genuine local&nbsp;relevance.

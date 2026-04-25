@@ -9,12 +9,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedLinks from "@/components/RelatedLinks";
 
 const relatedLinks = [
-  { title: "Web Design", description: "Construction companies need websites that showcase their work and generate leads. See our approach.", href: "/services/web-design" },
-  { title: "SEO", description: "Rank for commercial and residential construction searches in your service area.", href: "/services/seo" },
-  { title: "Google Ads", description: "Target high-value construction projects with paid search campaigns.", href: "/services/google-ads" },
+  { title: "Construction Marketing in Charleston, SC", description: "How we grow construction companies in a market defined by Peninsula historic renovation and rapid Lowcountry expansion.", href: "/locations/south-carolina/charleston/construction" },
+  { title: "Construction Marketing in Houston, TX", description: "Construction marketing for a market fueled by energy-sector wealth, post-Harvey rebuilding, and non-stop suburban development.", href: "/locations/texas/houston/construction" },
   { title: "Roofing", description: "Roofing is a natural extension of construction. See how we market roofing companies.", href: "/industries/roofing" },
   { title: "Electrical", description: "Electrical contractors in construction need specialized marketing. See our strategy.", href: "/industries/electrical" },
   { title: "Plumbing", description: "New construction plumbing marketing requires a different approach. See how we help.", href: "/industries/plumbing" },
+  { title: "All Locations", description: "See every market where we build construction visibility — and what makes each one different.", href: "/locations" },
 ];
 import IndustryPortfolio from "@/components/IndustryPortfolio";
 const blackCreekImg = "/assets/portfolio-black-creek.png";
