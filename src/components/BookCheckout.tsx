@@ -3,18 +3,19 @@ import {
   EmbeddedCheckoutProvider,
   EmbeddedCheckout,
 } from "@stripe/react-stripe-js";
-import { getStripe, stripeEnvironment } from "@/lib/stripe";
+import { getStripe, getStripeEnvironment } from "@/lib/stripe";
 import { supabase } from "@/integrations/supabase/client";
 
 interface BookCheckoutProps {
+  stripePublicKey: string;
   priceIds: string[];
   customerEmail?: string;
   returnUrl?: string;
 }
 
-export function BookCheckout({ priceIds, customerEmail, returnUrl }: BookCheckoutProps) {
-  // Stable key so the iframe reloads when the order bump toggles
+export function BookCheckout({ stripePublicKey, priceIds, customerEmail, returnUrl }: BookCheckoutProps) {
   const key = useMemo(() => priceIds.join("|"), [priceIds]);
+  const stripeEnvironment = getStripeEnvironment(stripePublicKey);
 
   const fetchClientSecret = useCallback(async (): Promise<string> => {
     const { data, error } = await supabase.functions.invoke("create-checkout", {
@@ -31,11 +32,11 @@ export function BookCheckout({ priceIds, customerEmail, returnUrl }: BookCheckou
       throw new Error(error?.message || "Failed to create checkout session");
     }
     return data.clientSecret as string;
-  }, [priceIds, customerEmail, returnUrl]);
+  }, [priceIds, customerEmail, returnUrl, stripeEnvironment]);
 
   return (
     <div id="checkout" key={key}>
-      <EmbeddedCheckoutProvider stripe={getStripe()} options={{ fetchClientSecret }}>
+      <EmbeddedCheckoutProvider stripe={getStripe(stripePublicKey)} options={{ fetchClientSecret }}>
         <EmbeddedCheckout />
       </EmbeddedCheckoutProvider>
     </div>

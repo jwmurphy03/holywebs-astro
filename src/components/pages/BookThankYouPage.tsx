@@ -4,7 +4,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { CheckCircle2, Download, Mail, ArrowRight, BookOpen, Loader2 } from "lucide-react";
 const bookCover = "/assets/book-cover.png";
 import { supabase } from "@/integrations/supabase/client";
-import { stripeEnvironment } from "@/lib/stripe";
+import { getStripeEnvironment } from "@/lib/stripe";
 
 interface SessionItem {
   lookupKey: string | null;
@@ -22,7 +22,7 @@ interface SessionData {
   items: SessionItem[];
 }
 
-export default function BookThankYouPage() {
+export default function BookThankYouPage({ stripePublicKey }: { stripePublicKey?: string }) {
   const [params] = useSearchParams();
   const sessionId = params.get("session_id");
   const [session, setSession] = useState<SessionData | null>(null);
@@ -39,7 +39,7 @@ export default function BookThankYouPage() {
       try {
         const { data, error: fnError } = await supabase.functions.invoke(
           "get-checkout-session",
-          { body: { sessionId, environment: stripeEnvironment } }
+          { body: { sessionId, environment: getStripeEnvironment(stripePublicKey ?? '') } }
         );
         if (cancelled) return;
         if (fnError) throw new Error(fnError.message);

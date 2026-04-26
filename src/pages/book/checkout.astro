@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Page from '../../components/pages/BookCheckoutPage';
+const stripePublicKey = import.meta.env.VITE_PAYMENTS_CLIENT_TOKEN as string | undefined;
 ---
 <Layout title="Checkout | The Local Marketing Book | Holy Webs" description="Complete your purchase of The Local Marketing Book." canonicalUrl="https://holywebs.com/book/checkout">
-  <Page client:only="react" />
+  <Page client:only="react" stripePublicKey={stripePublicKey} />
 </Layout>

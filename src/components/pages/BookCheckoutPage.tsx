@@ -25,7 +25,7 @@ const bookCover = "/assets/book-cover.png";
 import { BookCheckout } from "@/components/BookCheckout";
 import { PaymentTestModeBanner } from "@/components/PaymentTestModeBanner";
 
-export default function BookCheckoutPage() {
+export default function BookCheckoutPage({ stripePublicKey }: { stripePublicKey?: string }) {
   const [bumpSelected, setBumpSelected] = useState(false);
 
   const BOOK_PRODUCT_ID = "prod_UMUim7JZ9mSYAq";
@@ -49,7 +49,7 @@ export default function BookCheckoutPage() {
         <link rel="canonical" href="https://holywebs.com/book/checkout" />
       </Helmet>
 
-      <PaymentTestModeBanner />
+      <PaymentTestModeBanner stripePublicKey={stripePublicKey} />
 
       <div className="min-h-screen bg-muted">
         <header className="bg-background border-b border-border">
@@ -190,7 +190,7 @@ export default function BookCheckoutPage() {
             {/* RIGHT — Stripe checkout */}
             <div>
               <div className="bg-background rounded-2xl border border-border p-2 lg:p-4 sticky top-6">
-                <BookCheckout priceIds={priceIds} />
+                <BookCheckout priceIds={priceIds} stripePublicKey={stripePublicKey ?? ''} />
               </div>
             </div>
           </div>

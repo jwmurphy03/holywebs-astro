@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Page from '../../components/pages/BookThankYouPage';
+const stripePublicKey = import.meta.env.VITE_PAYMENTS_CLIENT_TOKEN as string | undefined;
 ---
 <Layout title="Thank You! | Holy Webs" description="Thank you for your purchase. Your book is on its way." canonicalUrl="https://holywebs.com/book/thank-you">
-  <Page client:only="react" />
+  <Page client:only="react" stripePublicKey={stripePublicKey} />
 </Layout>
