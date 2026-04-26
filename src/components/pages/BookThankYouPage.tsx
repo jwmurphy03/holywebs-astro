@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useSearchParams } from "react-router-dom";
 import { CheckCircle2, Download, Mail, ArrowRight, BookOpen, Loader2 } from "lucide-react";
 const bookCover = "/assets/book-cover.png";
-import { supabase } from "@/integrations/supabase/client";
+import { createClient } from "@supabase/supabase-js";
 import { getStripeEnvironment } from "@/lib/stripe";
 
 interface SessionItem {
@@ -22,7 +22,8 @@ interface SessionData {
   items: SessionItem[];
 }
 
-export default function BookThankYouPage({ stripePublicKey }: { stripePublicKey?: string }) {
+export default function BookThankYouPage({ stripePublicKey, supabaseUrl, supabaseKey }: { stripePublicKey?: string; supabaseUrl?: string; supabaseKey?: string }) {
+  const supabase = useMemo(() => createClient(supabaseUrl ?? '', supabaseKey ?? ''), [supabaseUrl, supabaseKey]);
   const [params] = useSearchParams();
   const sessionId = params.get("session_id");
   const [session, setSession] = useState<SessionData | null>(null);
@@ -53,7 +54,7 @@ export default function BookThankYouPage({ stripePublicKey }: { stripePublicKey?
     return () => {
       cancelled = true;
     };
-  }, [sessionId]);
+  }, [sessionId, supabase, stripePublicKey]);
 
   const hasBump = !!session?.items?.some((i) => i.lookupKey === "action_plan_bump");
   const paid = session?.paymentStatus === "paid";

@@ -3,17 +3,20 @@ import {
   EmbeddedCheckoutProvider,
   EmbeddedCheckout,
 } from "@stripe/react-stripe-js";
+import { createClient } from "@supabase/supabase-js";
 import { getStripe, getStripeEnvironment } from "@/lib/stripe";
-import { supabase } from "@/integrations/supabase/client";
 
 interface BookCheckoutProps {
   stripePublicKey: string;
+  supabaseUrl: string;
+  supabaseKey: string;
   priceIds: string[];
   customerEmail?: string;
   returnUrl?: string;
 }
 
-export function BookCheckout({ stripePublicKey, priceIds, customerEmail, returnUrl }: BookCheckoutProps) {
+export function BookCheckout({ stripePublicKey, supabaseUrl, supabaseKey, priceIds, customerEmail, returnUrl }: BookCheckoutProps) {
+  const supabase = useMemo(() => createClient(supabaseUrl, supabaseKey), [supabaseUrl, supabaseKey]);
   const key = useMemo(() => priceIds.join("|"), [priceIds]);
   const stripeEnvironment = getStripeEnvironment(stripePublicKey);
 
@@ -32,7 +35,7 @@ export function BookCheckout({ stripePublicKey, priceIds, customerEmail, returnU
       throw new Error(error?.message || "Failed to create checkout session");
     }
     return data.clientSecret as string;
-  }, [priceIds, customerEmail, returnUrl, stripeEnvironment]);
+  }, [supabase, priceIds, customerEmail, returnUrl, stripeEnvironment]);
 
   return (
     <div id="checkout" key={key}>

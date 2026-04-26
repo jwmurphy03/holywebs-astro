@@ -25,7 +25,7 @@ const bookCover = "/assets/book-cover.png";
 import { BookCheckout } from "@/components/BookCheckout";
 import { PaymentTestModeBanner } from "@/components/PaymentTestModeBanner";
 
-export default function BookCheckoutPage({ stripePublicKey }: { stripePublicKey?: string }) {
+export default function BookCheckoutPage({ stripePublicKey, supabaseUrl, supabaseKey }: { stripePublicKey?: string; supabaseUrl?: string; supabaseKey?: string }) {
   const [bumpSelected, setBumpSelected] = useState(false);
 
   const BOOK_PRODUCT_ID = "prod_UMUim7JZ9mSYAq";
@@ -190,7 +190,7 @@ export default function BookCheckoutPage({ stripePublicKey }: { stripePublicKey?
             {/* RIGHT — Stripe checkout */}
             <div>
               <div className="bg-background rounded-2xl border border-border p-2 lg:p-4 sticky top-6">
-                <BookCheckout priceIds={priceIds} stripePublicKey={stripePublicKey ?? ''} />
+                <BookCheckout priceIds={priceIds} stripePublicKey={stripePublicKey ?? ''} supabaseUrl={supabaseUrl ?? ''} supabaseKey={supabaseKey ?? ''} />
               </div>
             </div>
           </div>
