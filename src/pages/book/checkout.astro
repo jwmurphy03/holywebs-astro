@@ -5,6 +5,6 @@ const stripePublicKey = import.meta.env.VITE_PAYMENTS_CLIENT_TOKEN as string | u
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string | undefined;
 const supabaseKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string | undefined;
 ---
-<Layout title="Checkout | The Local Marketing Book | Holy Webs" description="Complete your purchase of The Local Marketing Book." canonicalUrl="https://holywebs.com/book/checkout">
+<Layout title="Checkout | The Local Marketing Book | Holy Webs" description="Complete your purchase of The Local Marketing Book." canonicalUrl="https://holywebs.com/book/checkout" noExitIntent={true}>
   <Page client:only="react" stripePublicKey={stripePublicKey} supabaseUrl={supabaseUrl} supabaseKey={supabaseKey} />
 </Layout>
