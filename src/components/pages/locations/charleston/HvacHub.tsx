@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const charlestonWaterfront = "/assets/charleston-waterfront.jpg";
 
@@ -90,6 +91,25 @@ const faqs = [
   {
     q: "What does it cost to market an HVAC company in Charleston?",
     a: "It depends on what you're trying to accomplish and how fast. SEO and GBP optimization typically runs $750–$1,500/month. Google Ads management is our fee plus your ad spend — most Charleston HVAC companies spend $1,500–$3,500/month in ads during peak season, less in winter. A new website is a one-time project. We'll give you a specific number after we understand your goals.",
+  },
+];
+
+const answerSummary = [
+  {
+    question: "What should a Charleston HVAC company fix first?",
+    answer: "Start with the places customers see before they ever reach your website: Google Business Profile categories, service areas, reviews, photos, and click-to-call visibility. Then make sure the site has fast mobile pages for AC repair, replacement, maintenance, emergency service, and the Lowcountry towns you actually serve.",
+  },
+  {
+    question: "When do HVAC searches spike in Charleston?",
+    answer: "The biggest surge usually starts before the worst heat arrives. Spring tune-up searches build early, then AC repair and replacement searches climb hard from late spring through summer. Hurricane season adds a second layer of demand around system checks, outages, and post-storm repair.",
+  },
+  {
+    question: "Which Charleston HVAC keywords are strongest?",
+    answer: "The most useful terms tend to mix urgency, service, and place: AC repair Charleston, emergency HVAC Mount Pleasant, air conditioner replacement Summerville, HVAC maintenance West Ashley, and AC installation North Charleston.",
+  },
+  {
+    question: "How does local trust affect HVAC leads?",
+    answer: "In a hot, humid market, homeowners move fast but they still scan reviews. A contractor with recent reviews, real photos, clear service areas, and a site that loads quickly feels safer to call than a company with thin listings and vague service pages.",
   },
 ];
 
@@ -240,6 +260,13 @@ export default function CharlestonHvacHub() {
           </div>
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Charleston HVAC Marketing: Clear Answers"
+        intro="The Lowcountry HVAC market has a rhythm: spring prep, summer emergencies, storm-season calls, and steady replacement demand."
+        items={answerSummary}
+        variant="light"
+      />
 
       {/* Services */}
       <SectionWrapper variant="light">

@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const services = [
   {
@@ -84,6 +85,25 @@ const faqs = [
   {
     q: "How should we market for post-Harvey rebuild and elevation projects?",
     a: "With dedicated content targeting the specific searches these homeowners use: 'home elevation Houston,' 'flood mitigation contractor Meyerland,' 'Harvey rebuild contractor Friendswood.' These are lower-volume but high-value searches with clients who are motivated to act. Most construction websites in Houston have no content targeting this demand.",
+  },
+];
+
+const answerSummary = [
+  {
+    question: "What should Houston contractors show online?",
+    answer: "Houston construction clients want proof before they call. A strong site should show completed projects, neighborhoods served, project types, licensing or credentials, realistic capability statements, and clear next steps for homeowners, developers, or commercial clients.",
+  },
+  {
+    question: "Which Houston construction searches are most valuable?",
+    answer: "The money is usually in specific searches: custom home builder The Woodlands, general contractor Katy, commercial contractor Houston, tenant improvement contractor Houston, home addition Sugar Land, and renovation contractor Heights. Broad metro keywords matter, but the project-type and neighborhood searches usually convert better.",
+  },
+  {
+    question: "Why does construction SEO need portfolio content?",
+    answer: "Construction buyers vet more carefully than emergency service customers. Project pages give Google local context and give prospects confidence. A page about a Heights renovation or a Katy custom build can rank, support internal linking, and act as sales proof at the same time.",
+  },
+  {
+    question: "How do we avoid attracting the wrong project types?",
+    answer: "The content has to qualify the lead before the form fill. Your pages should name the project sizes, locations, specialties, and client types you want. That helps Google understand relevance and helps tire-kickers self-select out.",
   },
 ];
 
@@ -203,6 +223,13 @@ export default function HoustonConstructionHub() {
           </div>
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Houston Construction Marketing: Practical Answers"
+        intro="Construction leads are higher-ticket and slower to choose. The page needs to do more than rank; it needs to build confidence quickly."
+        items={answerSummary}
+        variant="light"
+      />
 
       <SectionWrapper variant="light">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">

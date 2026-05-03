@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const charlestonWaterfront = "/assets/charleston-waterfront.jpg";
 
@@ -86,6 +87,25 @@ const faqs = [
   {
     q: "Do you work with plumbers exclusively or other trades too?",
     a: "We work with plumbers, HVAC, roofing, construction, and other local service industries. We don't take competing clients in the same market — if a Charleston plumber is already working with us, we'll tell you before we go further.",
+  },
+];
+
+const answerSummary = [
+  {
+    question: "What should Charleston plumbers prioritize online?",
+    answer: "Get the Google Business Profile in order first, because most emergency plumbing calls start in Maps. Then build service pages for the jobs people search under pressure: emergency plumbing, drain cleaning, water heater repair, slab leaks, sewer backups, and leak detection.",
+  },
+  {
+    question: "Why is Charleston plumbing search different?",
+    answer: "Charleston has older homes, coastal humidity, a high water table, flood-prone areas, and fast suburban growth. That means emergency repair, repipe, drain, and new-installation demand all exist at the same time, but not in the same neighborhoods.",
+  },
+  {
+    question: "Which plumbing searches are worth the most?",
+    answer: "The highest-intent searches usually sound like a problem: emergency plumber Charleston, drain cleaning Mount Pleasant, water heater repair Summerville, slab leak repair Charleston, sewer backup West Ashley, and plumber near me.",
+  },
+  {
+    question: "How can an independent plumber beat larger brands?",
+    answer: "Local trust is the opening. Recent reviews, real job photos, specific service-area pages, fast click-to-call design, and neighborhood-focused content can make a local plumber feel more relevant than a franchise with a bigger ad budget.",
   },
 ];
 
@@ -206,6 +226,13 @@ export default function CharlestonPlumbingHub() {
           </div>
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Charleston Plumbing Marketing: What Drives Calls"
+        intro="Plumbing searches are rarely casual. The better your pages answer the emergency, the more likely you are to win the call."
+        items={answerSummary}
+        variant="light"
+      />
 
       <SectionWrapper variant="light">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">

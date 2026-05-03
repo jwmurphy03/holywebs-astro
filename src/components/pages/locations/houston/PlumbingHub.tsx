@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const services = [
   {
@@ -84,6 +85,25 @@ const faqs = [
   {
     q: "Do you work with plumbers outside the 610 loop or just in central Houston?",
     a: "The suburbs are where a lot of the opportunity is. Katy, Sugar Land, The Woodlands, Pearland, League City, Friendswood — these communities have their own search ecosystems with their own keyword volumes. We build strategies that cover your entire service area, not just the core city.",
+  },
+];
+
+const answerSummary = [
+  {
+    question: "What actually gets Houston plumbers more calls?",
+    answer: "For most plumbing companies, the first lift comes from a cleaner Google Business Profile: correct categories, emergency services, real job photos, recent reviews, and service areas that match where you actually want calls. Then the website and ads need to back that up with pages for slab leaks, water heaters, drain cleaning, sewer repair, and emergency plumbing.",
+  },
+  {
+    question: "Which Houston plumbing searches are worth chasing?",
+    answer: "The best searches are usually urgent or problem-specific: emergency plumber Houston, slab leak repair Houston, water heater replacement Katy, sewer line repair Sugar Land, drain cleaning Pearland, and plumber near me. Those are not casual research terms. They usually come from someone trying to solve a problem today.",
+  },
+  {
+    question: "Why does Houston need a different plumbing SEO plan?",
+    answer: "Houston has clay soil, flood history, aging inner-loop homes, and explosive suburban growth. A plumber serving Meyerland, Katy, and The Woodlands is really competing in several local markets at once, each with its own search behavior and map pack competition.",
+  },
+  {
+    question: "Where should a smaller plumbing company start?",
+    answer: "Do not start by trying to rank for the entire metro. Start with the neighborhoods and suburbs where you already win jobs. Build your GBP, reviews, service pages, and ad campaigns around those areas first, then expand once the core markets are producing.",
   },
 ];
 
@@ -203,6 +223,13 @@ export default function HoustonPlumbingHub() {
           </div>
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Houston Plumbing Marketing: What Matters First"
+        intro="Houston plumbing searches are urgent, local, and often expensive. These are the answers a business owner needs before spending another dollar."
+        items={answerSummary}
+        variant="light"
+      />
 
       <SectionWrapper variant="light">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">

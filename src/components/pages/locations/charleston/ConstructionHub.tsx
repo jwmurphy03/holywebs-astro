@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const charlestonWaterfront = "/assets/charleston-waterfront.jpg";
 
@@ -86,6 +87,25 @@ const faqs = [
   {
     q: "Do you work with specialty contractors — not just general contractors?",
     a: "Yes. We work with GCs, custom home builders, renovation contractors, commercial contractors, and specialty trades. The strategy varies by specialty — a custom home builder needs a different keyword set and content approach than a commercial general contractor. We tailor to your specific niche.",
+  },
+];
+
+const answerSummary = [
+  {
+    question: "What should Charleston contractors highlight online?",
+    answer: "Show the kind of work you want more of: historic renovations, additions, custom homes, commercial build-outs, investor renovations, or specialty construction. Charleston buyers care about local experience, project photos, credentials, and whether you understand the constraints of the neighborhood.",
+  },
+  {
+    question: "Which construction searches matter in Charleston?",
+    answer: "Valuable searches include general contractor Charleston SC, custom home builder Mount Pleasant, home addition Summerville, renovation contractor downtown Charleston, commercial contractor North Charleston, and historic renovation Charleston.",
+  },
+  {
+    question: "Why does Charleston construction marketing need local nuance?",
+    answer: "A Peninsula renovation, a Mount Pleasant custom home, and a Summerville commercial build-out are three different buying journeys. The copy, proof, keywords, and calls to action should reflect that instead of treating every construction lead the same.",
+  },
+  {
+    question: "How do project pages help contractors rank?",
+    answer: "Project pages turn completed work into search assets. A well-written page with photos, location context, scope, and outcome can rank for neighborhood searches while giving prospects the confidence to reach out about similar work.",
   },
 ];
 
@@ -206,6 +226,13 @@ export default function CharlestonConstructionHub() {
           </div>
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Charleston Construction Marketing: Useful Answers"
+        intro="Construction buyers are careful. They want evidence, local familiarity, and a reason to believe you can handle their specific type of project."
+        items={answerSummary}
+        variant="light"
+      />
 
       <SectionWrapper variant="light">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
