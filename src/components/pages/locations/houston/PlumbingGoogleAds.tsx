@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import LocalSpokeAnswers from "@/components/LocalSpokeAnswers";
 
 const adFeatures = [
   {
@@ -133,6 +134,8 @@ export default function HoustonPlumbingGoogleAds() {
           </div>
         </div>
       </section>
+
+      <LocalSpokeAnswers city="Houston" state="Texas" industry="plumbing" service="google-ads" />
 
       {/* Market Stats */}
       <SectionWrapper variant="light">

@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import LocalSpokeAnswers from "@/components/LocalSpokeAnswers";
 
 const marketStats = [
   { stat: "7M+", label: "Houston metro population — the largest HVAC market in Texas and one of the top 5 in the country" },
@@ -222,6 +223,8 @@ export default function HoustonHvacSeo() {
           </div>
         </div>
       </section>
+
+      <LocalSpokeAnswers city="Houston" state="Texas" industry="hvac" service="seo" />
 
       {/* Market Stats */}
       <SectionWrapper variant="light">

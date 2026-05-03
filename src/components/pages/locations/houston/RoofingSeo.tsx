@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import LocalSpokeAnswers from "@/components/LocalSpokeAnswers";
 
 const marketStats = [
   { stat: "8–10 yr", label: "Average roof lifespan in Houston — shortened dramatically by extreme heat, UV exposure, and storm damage vs. the national 15–20 year standard" },
@@ -202,6 +203,8 @@ export default function HoustonRoofingSeo() {
           </div>
         </div>
       </section>
+
+      <LocalSpokeAnswers city="Houston" state="Texas" industry="roofing" service="seo" />
 
       {/* Market Stats */}
       <SectionWrapper variant="light">

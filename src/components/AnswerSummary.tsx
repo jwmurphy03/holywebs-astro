@@ -1,8 +1,9 @@
 import SectionWrapper from "./SectionWrapper";
+import type { ReactNode } from "react";
 
 interface AnswerSummaryItem {
   question: string;
-  answer: string;
+  answer: ReactNode;
 }
 
 interface AnswerSummaryProps {

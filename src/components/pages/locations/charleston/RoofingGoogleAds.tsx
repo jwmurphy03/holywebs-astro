@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import LocalSpokeAnswers from "@/components/LocalSpokeAnswers";
 
 const charlestonWaterfront = "/assets/charleston-waterfront.jpg";
 
@@ -124,6 +125,8 @@ export default function CharlestonRoofingGoogleAds() {
           </div>
         </div>
       </section>
+
+      <LocalSpokeAnswers city="Charleston" state="South Carolina" industry="roofing" service="google-ads" />
 
       <SectionWrapper variant="light">
         <div className="max-w-4xl mx-auto">

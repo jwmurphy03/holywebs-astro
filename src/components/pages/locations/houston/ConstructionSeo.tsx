@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import LocalSpokeAnswers from "@/components/LocalSpokeAnswers";
 
 const marketStats = [
   { stat: "7M+", label: "Houston metro population — one of the largest and wealthiest construction markets in the southern United States" },
@@ -202,6 +203,8 @@ export default function HoustonConstructionSeo() {
           </div>
         </div>
       </section>
+
+      <LocalSpokeAnswers city="Houston" state="Texas" industry="construction" service="seo" />
 
       {/* Market Stats */}
       <SectionWrapper variant="light">

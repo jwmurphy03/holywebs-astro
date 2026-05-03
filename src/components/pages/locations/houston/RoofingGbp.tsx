@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import LocalSpokeAnswers from "@/components/LocalSpokeAnswers";
 
 const gbpFeatures = [
   {
@@ -144,6 +145,8 @@ export default function HoustonRoofingGbp() {
           </div>
         </div>
       </section>
+
+      <LocalSpokeAnswers city="Houston" state="Texas" industry="roofing" service="google-business-profile" />
 
       {/* Market Stats */}
       <SectionWrapper variant="light">

@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import LocalSpokeAnswers from "@/components/LocalSpokeAnswers";
 
 const marketStats = [
   { stat: "68%", label: "Of plumbing searches have emergency intent — the highest rate of any home service trade" },
@@ -202,6 +203,8 @@ export default function HoustonPlumbingSeo() {
           </div>
         </div>
       </section>
+
+      <LocalSpokeAnswers city="Houston" state="Texas" industry="plumbing" service="seo" />
 
       {/* Market Stats */}
       <SectionWrapper variant="light">
