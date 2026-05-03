@@ -50,7 +50,7 @@ export default function FinalCTASection({ headline, subtitle }: FinalCTASectionP
 
   return (
     <section className="relative overflow-hidden py-24 lg:py-32 bg-gradient-to-b from-[#0F1729] to-[#1a2640]">
-      <div className="absolute inset-0 bg-[url('/grain.png')] opacity-[0.08] mix-blend-overlay" />
+      <div className="absolute inset-0 bg-[url('/grain.svg')] opacity-[0.08] mix-blend-overlay" />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto items-center">
           {/* Left — Copy */}

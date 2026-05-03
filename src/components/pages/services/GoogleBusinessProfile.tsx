@@ -158,7 +158,7 @@ export default function GoogleBusinessProfile() {
       {/* Hero */}
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-[#0F1729]" />
-        <div className="absolute inset-0 bg-[url('/grain.png')] opacity-[0.12] mix-blend-overlay" />
+        <div className="absolute inset-0 bg-[url('/grain.svg')] opacity-[0.12] mix-blend-overlay" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
           <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "Google Business Profile" }]} />
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Google Business Profile Management</p>
