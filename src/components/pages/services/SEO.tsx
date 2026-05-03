@@ -9,6 +9,7 @@ import WhereWeServe from "@/components/WhereWeServe";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import RelatedLinks from "@/components/RelatedLinks";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const relatedLinks = [
   {
@@ -157,6 +158,25 @@ const faqs = [
   },
 ];
 
+const answerSummary = [
+  {
+    question: "What does local SEO do for a service business?",
+    answer: "Local SEO helps your business appear when nearby customers search for services you provide. For contractors, that usually means stronger Google Maps visibility, better organic rankings, more calls, and more booked jobs from people already looking for help.",
+  },
+  {
+    question: "What should a contractor prioritize first?",
+    answer: "Start with Google Business Profile optimization, technical website cleanup, location-and-service pages, review generation, and clear internal links between your core services, industries, and markets. Those pieces give Google and AI answer engines the strongest foundation.",
+  },
+  {
+    question: "How is Holy Webs different from a generic SEO agency?",
+    answer: "Holy Webs focuses on local service businesses, especially contractors and home service companies in Texas and South Carolina. The strategy is built around calls, booked estimates, Google Maps visibility, and service-area demand instead of generic national rankings.",
+  },
+  {
+    question: "Does SEO still matter with AI search?",
+    answer: "Yes. AI search depends on crawlable, trusted, well-structured sources. Strong SEO gives answer engines the content, schema, reviews, and authority signals they need to understand and recommend your business.",
+  },
+];
+
 export default function SEO() {
   return (
     <Layout>
@@ -218,6 +238,13 @@ export default function SEO() {
           ))}
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Local SEO for Contractors, in Plain English"
+        intro="These are the direct answers searchers, AI tools, and business owners need before they decide what to do next."
+        items={answerSummary}
+        variant="light"
+      />
 
       {/* Problem Section */}
       <SectionWrapper variant="light">

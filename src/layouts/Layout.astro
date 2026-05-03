@@ -3,6 +3,19 @@ import '../styles/global.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ExitIntentPopup from '../components/ExitIntentPopup';
+import {
+  DEFAULT_OG_IMAGE,
+  SITE_NAME,
+  absoluteUrl,
+  breadcrumbSchema,
+  cleanCanonical,
+  getRobotsForPath,
+  graphSchema,
+  organizationSchema,
+  serviceSchema,
+  webpageSchema,
+  websiteSchema,
+} from '../lib/seo';
 
 interface Props {
   title: string;
@@ -11,16 +24,45 @@ interface Props {
   canonicalUrl?: string;
   schema?: object | object[];
   noExitIntent?: boolean;
+  robots?: string;
+  pageType?: string;
+  dateModified?: string;
+  isServicePage?: boolean;
 }
 
 const {
   title,
   description = 'Holy Webs helps service businesses get found online with web design, SEO, and local marketing.',
-  ogImage = '/og/og-seo.jpg',
+  ogImage = DEFAULT_OG_IMAGE,
   canonicalUrl = Astro.url.href,
   schema,
   noExitIntent = false,
+  robots,
+  pageType = 'WebPage',
+  dateModified,
+  isServicePage = false,
 } = Astro.props;
+
+const canonical = cleanCanonical(canonicalUrl);
+const canonicalPath = new URL(canonical).pathname;
+const absoluteOgImage = absoluteUrl(ogImage);
+const pageRobots = getRobotsForPath(canonicalPath, robots);
+const extraSchema = Array.isArray(schema) ? schema : schema ? [schema] : [];
+const structuredData = graphSchema([
+  organizationSchema(),
+  websiteSchema(),
+  webpageSchema({
+    canonicalUrl: canonical,
+    title,
+    description,
+    ogImage,
+    pageType,
+    dateModified,
+  }),
+  breadcrumbSchema(canonical),
+  isServicePage ? serviceSchema({ canonicalUrl: canonical, title, description }) : undefined,
+  ...extraSchema,
+]);
 ---
 
 <!doctype html>
@@ -30,32 +72,25 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonicalUrl} />
+    <meta name="robots" content={pageRobots} />
+    <meta name="author" content={SITE_NAME} />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={`https://holywebs.com${ogImage}`} />
-    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={absoluteOgImage} />
+    <meta property="og:image:alt" content={`${SITE_NAME} digital marketing for local service businesses`} />
+    <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={absoluteOgImage} />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "@id": "https://holywebs.com/#organization",
-      "name": "Holy Webs",
-      "url": "https://holywebs.com",
-      "logo": "https://holywebs.com/assets/logo-white.png",
-      "description": "Web design, SEO, Google Ads, and local digital marketing for contractors and service businesses across Texas and South Carolina.",
-      "telephone": "(843) 847-0181",
-      "email": "hello@holywebs.com",
-      "priceRange": "$$",
-      "areaServed": [
-        { "@type": "State", "name": "Texas" },
-        { "@type": "State", "name": "South Carolina" }
-      ],
-      "sameAs": []
-    })} />
-    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Non-render-blocking font load: page paints first, fonts swap in -->

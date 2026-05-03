@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const houstonSkyline = "/assets/houston-skyline.jpg";
 
@@ -86,6 +87,25 @@ const faqs = [
   {
     q: "Is Houston too competitive for a smaller HVAC company to rank well?",
     a: "No — but the strategy matters. Competing for 'HVAC Houston' city-wide is hard. Competing for 'AC repair Katy TX,' 'HVAC replacement Sugar Land,' or 'emergency heating Cypress TX' is far more achievable and often just as profitable. Houston's size is an advantage — there are thousands of high-value local searches across dozens of communities where the competition is much thinner.",
+  },
+];
+
+const answerSummary = [
+  {
+    question: "What is the best digital marketing strategy for a Houston HVAC company?",
+    answer: "Houston HVAC companies should prioritize Google Business Profile optimization first, then pair local SEO with emergency-intent Google Ads. The website needs fast mobile performance, AC repair and replacement pages, financing calls to action, and service-area pages for the communities the company actually serves.",
+  },
+  {
+    question: "Which HVAC searches are most valuable in Houston?",
+    answer: "The highest-value searches include AC repair Houston, emergency AC repair near me, HVAC replacement Houston, air conditioning repair Katy, AC installation Sugar Land, and HVAC company The Woodlands. These searches usually come from homeowners ready to call.",
+  },
+  {
+    question: "Why is Houston HVAC search so competitive?",
+    answer: "Houston has a massive population, months of extreme heat, high humidity, and a shorter equipment replacement cycle than milder markets. Demand is high, but so is competition from national brands, franchises, and aggressive local contractors.",
+  },
+  {
+    question: "What should an HVAC contractor fix first online?",
+    answer: "Fix the Google Business Profile first: categories, services, review velocity, photos, and service areas. Then tighten website conversion, launch peak-season Google Ads, and build SEO pages for AC repair, replacement, maintenance, financing, and major suburbs.",
   },
 ];
 
@@ -205,6 +225,13 @@ export default function HoustonHvacHub() {
           </div>
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Houston HVAC Marketing: Direct Answers"
+        intro="Compact answers help buyers make faster decisions and help AI search tools understand exactly why this page exists."
+        items={answerSummary}
+        variant="light"
+      />
 
       <SectionWrapper variant="light">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">

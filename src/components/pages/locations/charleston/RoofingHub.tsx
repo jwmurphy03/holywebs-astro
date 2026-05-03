@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const charlestonWaterfront = "/assets/charleston-waterfront.jpg";
 
@@ -86,6 +87,25 @@ const faqs = [
   {
     q: "Can you help with storm surge marketing specifically?",
     a: "Yes. We build roofing campaigns with storm-ready ad groups, landing pages for hail and wind damage, and GBP updates that can go live within hours of a significant weather event. The window after a storm is short — contractors who have the infrastructure ready capture the demand. Contractors who don't miss it entirely.",
+  },
+];
+
+const answerSummary = [
+  {
+    question: "What is the best marketing strategy for Charleston roofers?",
+    answer: "Charleston roofers need Google Business Profile optimization, storm-ready Google Ads, local SEO for replacement and storm-damage searches, and a website that proves local trust with photos, reviews, licensing, insurance, and clear emergency contact options.",
+  },
+  {
+    question: "Which roofing searches matter most in Charleston?",
+    answer: "High-intent searches include roof repair Charleston SC, roof replacement Charleston, storm damage roof repair, metal roofing Charleston, roofing contractor Mount Pleasant, and roofer Summerville. These keywords often come from homeowners ready to schedule an estimate.",
+  },
+  {
+    question: "Why is Charleston a unique roofing market?",
+    answer: "Charleston combines hurricane season, salt air corrosion, humid summers, older housing stock, and fast suburban growth. That creates both emergency repair demand and steady replacement demand across the Lowcountry.",
+  },
+  {
+    question: "What should a Charleston roofer optimize first?",
+    answer: "Start with the Google Business Profile and review system, then build storm-damage landing pages, local service pages, Google Ads campaigns, and website content for communities like Mount Pleasant, Summerville, West Ashley, James Island, and North Charleston.",
   },
 ];
 
@@ -206,6 +226,13 @@ export default function CharlestonRoofingHub() {
           </div>
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Charleston Roofing Marketing: Direct Answers"
+        intro="These short, specific answers reinforce local relevance for both search engines and AI-powered discovery tools."
+        items={answerSummary}
+        variant="light"
+      />
 
       <SectionWrapper variant="light">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">

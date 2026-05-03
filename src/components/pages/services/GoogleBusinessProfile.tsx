@@ -9,6 +9,7 @@ import WhereWeServe from "@/components/WhereWeServe";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import RelatedLinks from "@/components/RelatedLinks";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const relatedLinks = [
   { title: "SEO", description: "Your GBP and website SEO work hand in hand. We optimize both for maximum local visibility.", href: "/services/seo" },
@@ -113,6 +114,25 @@ const faqs = [
   },
 ];
 
+const answerSummary = [
+  {
+    question: "What is Google Business Profile optimization?",
+    answer: "Google Business Profile optimization improves the Google listing that appears in Maps and local search. It covers categories, services, descriptions, photos, hours, service areas, reviews, posts, and ongoing monitoring so Google and customers understand why you are relevant.",
+  },
+  {
+    question: "Why does GBP matter for contractors?",
+    answer: "For HVAC, plumbing, roofing, electrical, landscaping, and other service businesses, many buyers call directly from Google Maps without visiting a website first. A stronger profile can mean more calls from high-intent local searches.",
+  },
+  {
+    question: "What GBP signals usually move the needle?",
+    answer: "The highest-impact signals are correct primary and secondary categories, complete service listings, proximity and service-area relevance, review quantity and recency, keyword-aligned descriptions, fresh photos, active posts, and consistent citations across the web.",
+  },
+  {
+    question: "How does GBP support AI search?",
+    answer: "AI systems use public business data to understand who you are, where you operate, and whether customers trust you. A complete, consistent Google profile reinforces the entity signals also found on your website, review platforms, and local citations.",
+  },
+];
+
 export default function GoogleBusinessProfile() {
   return (
     <Layout>
@@ -194,6 +214,13 @@ export default function GoogleBusinessProfile() {
           </p>
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Google Business Profile Optimization, Clearly Answered"
+        intro="For local service businesses, your Google profile is often the first conversion point. These are the signals that matter most."
+        items={answerSummary}
+        variant="muted"
+      />
 
       {/* What You Get */}
       <SectionWrapper variant="muted">

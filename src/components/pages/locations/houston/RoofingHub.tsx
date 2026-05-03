@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQSchema from "@/components/FAQSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import AnswerSummary from "@/components/AnswerSummary";
 
 const services = [
   {
@@ -84,6 +85,25 @@ const faqs = [
   {
     q: "Should we focus on insurance claim work or retail replacement?",
     a: "Both — but they require separate content tracks and different search targeting. Insurance claim searches ('hail damage roof claim Houston') and retail replacement searches ('roof replacement cost Pearland') have different intent, different landing pages, and different conversion paths. Most roofing companies in Houston are under-optimized for at least one of these.",
+  },
+];
+
+const answerSummary = [
+  {
+    question: "What is the best digital marketing strategy for Houston roofers?",
+    answer: "The strongest strategy combines Google Business Profile optimization, storm-ready Google Ads, local SEO for roof repair and replacement searches, and a fast website with insurance-claim trust signals. Houston roofers need both year-round visibility and surge capacity after hail, wind, and hurricane events.",
+  },
+  {
+    question: "Which Houston roofing searches matter most?",
+    answer: "The highest-intent searches include roof repair Houston, roof replacement Houston, hail damage roof repair, storm damage roof inspection, roofing contractor near me, and neighborhood terms like Katy roofer, Sugar Land roof replacement, and The Woodlands roof repair.",
+  },
+  {
+    question: "Why is Houston different from other roofing markets?",
+    answer: "Houston combines hurricane exposure, frequent hail, extreme heat, fast suburban growth, and a huge metro population. That creates constant replacement demand plus short bursts of emergency search volume after major weather events.",
+  },
+  {
+    question: "What should a roofer fix first if they are not getting calls?",
+    answer: "Start with the Google Business Profile: categories, storm-damage services, photos, reviews, and service areas. Then fix website speed, local landing pages, conversion paths, and Google Ads readiness before the next storm window.",
   },
 ];
 
@@ -203,6 +223,13 @@ export default function HoustonRoofingHub() {
           </div>
         </div>
       </SectionWrapper>
+
+      <AnswerSummary
+        heading="Houston Roofing Marketing: Direct Answers"
+        intro="These answers are written for homeowners, business owners, Google, and AI search systems that need a clear summary of the opportunity."
+        items={answerSummary}
+        variant="light"
+      />
 
       <SectionWrapper variant="light">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
