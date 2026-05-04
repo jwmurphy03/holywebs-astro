@@ -96,7 +96,7 @@ export default function HoustonConstructionGbp() {
           name="description"
           content="Google Business Profile optimization for construction contractors in Houston, TX. Build credibility in local search for Heights, Memorial, Katy, The Woodlands, and the full Houston metro."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction/google-business-profile" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction/google-business-profile/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

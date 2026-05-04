@@ -125,7 +125,7 @@ export default function CharlestonRoofingHub() {
           name="description"
           content="SEO, Google Ads, Google Business Profile, and web design for roofing contractors in Charleston, SC. Built for Lowcountry roofers who want to dominate storm-season search and book more estimates."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

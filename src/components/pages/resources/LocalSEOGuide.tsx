@@ -81,7 +81,7 @@ export default function LocalSEOGuide() {
           name="description"
           content="Learn how to dominate Google Maps and local search. The complete 2026 local SEO playbook for HVAC, plumbing, roofing, and home service businesses."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/local-seo-guide-service-businesses" />
+        <link rel="canonical" href="https://holywebs.com/resources/local-seo-guide-service-businesses/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

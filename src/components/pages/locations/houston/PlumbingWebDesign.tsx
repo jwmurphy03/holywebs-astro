@@ -98,7 +98,7 @@ export default function HoustonPlumbingWebDesign() {
           name="description"
           content="Plumbing website design built for Houston, TX contractors. Emergency-first mobile design, slab leak pages, and suburb-specific pages for Katy, Sugar Land, Pearland, and beyond."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/plumbing/web-design" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/plumbing/web-design/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

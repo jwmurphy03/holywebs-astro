@@ -14,7 +14,7 @@ export default function AgencyWastingMoney() {
           name="description"
           content="Paying for marketing but can't point to a single new customer it brought in? Here are five warning signs your agency isn't delivering real results."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/signs-marketing-agency-wasting-money" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/signs-marketing-agency-wasting-money/" />
       </Helmet>
 
       <section className="section-dark py-20 lg:py-28 relative overflow-hidden">

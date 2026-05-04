@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
         <title>Privacy Policy | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Holy Webs privacy policy. Learn how we collect, use, and protect your personal information." />
-        <link rel="canonical" href="https://holywebs.com/privacy-policy" />
+        <link rel="canonical" href="https://holywebs.com/privacy-policy/" />
       </Helmet>
       <section className="section-dark py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">

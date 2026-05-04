@@ -105,7 +105,7 @@ export default function Workshop() {
           name="description"
           content="Free live workshop for HVAC, plumbing & home service contractors. Learn the exact system to get found on Google and start generating calls."
         />
-        <link rel="canonical" href="https://holywebs.com/workshop" />
+        <link rel="canonical" href="https://holywebs.com/workshop/" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Event",

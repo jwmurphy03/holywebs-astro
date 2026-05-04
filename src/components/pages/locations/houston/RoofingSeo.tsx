@@ -138,7 +138,7 @@ export default function HoustonRoofingSeo() {
           name="description"
           content="Rank higher on Google Maps for roofing searches in Houston, TX. Local SEO for Houston roofers — storm damage, insurance claims, hail, and replacement. Built for Houston's market."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/roofing/seo" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/roofing/seo/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

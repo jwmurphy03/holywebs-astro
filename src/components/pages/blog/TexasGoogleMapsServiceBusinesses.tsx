@@ -14,7 +14,7 @@ export default function TexasGoogleMapsServiceBusinesses() {
           name="description"
           content="A practical Google Maps ranking guide for Texas service businesses in Dallas, Austin, San Antonio, Waco, Houston, and beyond."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/texas-service-business-google-maps" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/texas-service-business-google-maps/" />
       </Helmet>
 
       <section className="section-dark py-20 lg:py-28 relative overflow-hidden">

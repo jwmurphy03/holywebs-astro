@@ -14,7 +14,7 @@ export default function HowFastShouldWebsiteLoad() {
           name="description"
           content="Page speed affects your Google rankings, your conversion rate, and your credibility. Here's what local service businesses should aim for and how to get there."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/how-fast-should-website-load" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/how-fast-should-website-load/" />
       </Helmet>
 
       <section className="section-dark py-20 lg:py-28 relative overflow-hidden">

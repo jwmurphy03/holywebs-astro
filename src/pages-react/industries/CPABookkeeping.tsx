@@ -101,7 +101,7 @@ export default function CPABookkeeping() {
         <title>Digital Marketing for CPA & Bookkeeping Firms | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Web design, SEO, and advertising built for accounting firms, CPAs, and bookkeeping services. Attract more clients and grow your practice online." />
-              <link rel="canonical" href="https://holywebs.com/industries/cpa-bookkeeping" />
+              <link rel="canonical" href="https://holywebs.com/industries/cpa-bookkeeping/" />
         <meta property="og:image" content="https://holywebs.com/og/og-cpa-bookkeeping.jpg" />
         <meta property="og:type" content="website" />
       </Helmet>

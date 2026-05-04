@@ -15,7 +15,7 @@ export default function RoofingNotShowingOnGoogle() {
           content="Roofing clients search Google Maps immediately after a storm. If your company isn't in the top 3 local results, you're invisible when it matters most. Here's why — and how to fix it."
         />
         <meta name="keywords" content="roofing company not showing up on Google, why is my roofing company not on Google, roofer SEO problems, roofing contractor Google ranking" />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/roofing-not-showing-on-google" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/roofing-not-showing-on-google/" />
       </Helmet>
 
       {/* Dark navy hero */}

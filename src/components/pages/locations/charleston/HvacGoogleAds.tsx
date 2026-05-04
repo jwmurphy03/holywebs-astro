@@ -148,7 +148,7 @@ export default function CharlestonHvacGoogleAds() {
           name="description"
           content="Get your HVAC company to the top of Google search in Charleston, SC with targeted pay-per-click campaigns. Call-only ads, emergency targeting, and seasonal budget management for Lowcountry contractors."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac/google-ads" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac/google-ads/" />
         <meta property="og:title" content="Google Ads for HVAC Companies in Charleston, SC | Holy Webs" />
         <meta
           property="og:description"

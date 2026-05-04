@@ -138,7 +138,7 @@ export default function HoustonConstructionSeo() {
           name="description"
           content="Rank higher on Google for construction searches in Houston, TX. Local SEO for Houston general contractors and home builders — Heights, Memorial, Katy, Sugar Land, The Woodlands."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction/seo" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction/seo/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

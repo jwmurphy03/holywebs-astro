@@ -14,7 +14,7 @@ export default function ContractorWebsiteNotConverting() {
           name="description"
           content="Your contractor website is getting visitors but the phone isn't ringing. Here are the five most common reasons home service websites fail to convert traffic into leads."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/contractor-website-not-converting" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/contractor-website-not-converting/" />
         <meta property="og:title" content="Why Your Contractor Website Gets Traffic But No Calls" />
         <meta property="og:description" content="Your contractor website is getting visitors but the phone isn't ringing. Here are the five most common conversion killers and how to fix each one." />
         <meta property="og:type" content="article" />

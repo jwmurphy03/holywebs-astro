@@ -61,7 +61,7 @@ export default function CharlestonConstructionGbp() {
           name="description"
           content="GBP optimization for general contractors and construction companies in Charleston, SC. Get into the top 3 of Google Maps for construction, renovation, and custom home searches across the Lowcountry."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction/google-business-profile" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction/google-business-profile/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

@@ -42,7 +42,7 @@ export default function WorkshopThankYou() {
         <title>You're Registered — See You May 7th | Holy Webs</title>
         <meta name="robots" content="noindex, nofollow" />
         <meta name="description" content="You're registered for the Stop Being Invisible workshop. Check your email for your Zoom link and get ready for May 7th." />
-        <link rel="canonical" href="https://holywebs.com/workshop/thank-you" />
+        <link rel="canonical" href="https://holywebs.com/workshop/thank-you/" />
       </Helmet>
 
       {/* Hero */}

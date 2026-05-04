@@ -109,7 +109,7 @@ export default function Roofing() {
         <title>Digital Marketing for Roofing Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Web design, SEO, and digital advertising built for roofing contractors. Get found for roof repair, replacement, and storm damage searches in your service area." />
-              <link rel="canonical" href="https://holywebs.com/industries/roofing" />
+              <link rel="canonical" href="https://holywebs.com/industries/roofing/" />
         <meta property="og:image" content="https://holywebs.com/og/og-roofing.jpg" />
         <meta property="og:type" content="website" />
       </Helmet>

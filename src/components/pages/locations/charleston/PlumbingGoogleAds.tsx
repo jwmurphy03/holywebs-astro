@@ -140,7 +140,7 @@ export default function CharlestonPlumbingGoogleAds() {
           name="description"
           content="Capture emergency plumbing calls in Charleston, SC with Google Ads campaigns built for high-intent searches. Call-only ads, service-specific campaigns, and full tri-county targeting."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing/google-ads" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing/google-ads/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

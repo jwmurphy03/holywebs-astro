@@ -83,7 +83,7 @@ export default function CharlestonRoofingGoogleAds() {
           name="description"
           content="Storm-ready Google Ads campaigns for roofing contractors in Charleston, SC. Call-only ads, storm-surge activation, and tri-county geo-targeting built for the Lowcountry roofing market."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing/google-ads" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing/google-ads/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

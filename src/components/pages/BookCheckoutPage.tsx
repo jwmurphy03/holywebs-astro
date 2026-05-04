@@ -46,7 +46,7 @@ export default function BookCheckoutPage({ stripePublicKey, supabaseUrl, supabas
         <title>Checkout — Stop Being Invisible | Holy Webs</title>
         <meta name="description" content="Complete your order for the digital book Stop Being Invisible." />
         <meta name="robots" content="noindex" />
-        <link rel="canonical" href="https://holywebs.com/book/checkout" />
+        <link rel="canonical" href="https://holywebs.com/book/checkout/" />
       </Helmet>
 
       <PaymentTestModeBanner stripePublicKey={stripePublicKey} />

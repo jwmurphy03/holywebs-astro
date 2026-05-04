@@ -99,7 +99,7 @@ export default function Plumbers() {
         <title>Digital Marketing for Plumbing Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Web design, SEO, and advertising built for plumbing contractors. Dominate local search and turn emergency plumbing searches into booked jobs." />
-              <link rel="canonical" href="https://holywebs.com/industries/plumbing" />
+              <link rel="canonical" href="https://holywebs.com/industries/plumbing/" />
         <meta property="og:image" content="https://holywebs.com/og/og-plumbing.jpg" />
         <meta property="og:type" content="website" />
       </Helmet>

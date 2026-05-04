@@ -125,7 +125,7 @@ export default function HoustonHvacHub() {
           name="description"
           content="SEO, Google Ads, Google Business Profile, and web design for HVAC contractors in Houston, TX. Built for Greater Houston HVAC companies who want to dominate local search and book more jobs."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/hvac" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/hvac/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

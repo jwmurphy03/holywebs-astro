@@ -85,7 +85,7 @@ export default function HoustonPlumbingGoogleAds() {
           name="description"
           content="Google Ads campaigns for Houston plumbers. Emergency call-only ads, suburb-level targeting, slab leak campaigns, and storm-surge activation for the Houston plumbing market."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/plumbing/google-ads" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/plumbing/google-ads/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

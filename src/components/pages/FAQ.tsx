@@ -290,7 +290,7 @@ export default function FAQ() {
           name="description"
           content="Answers to the most common questions about digital marketing, SEO, web design, Google Ads, and local visibility for contractors and home service businesses."
         />
-        <link rel="canonical" href="https://holywebs.com/faq" />
+        <link rel="canonical" href="https://holywebs.com/faq/" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 

@@ -149,7 +149,7 @@ export default function HoustonHvacSeo() {
           name="description"
           content="Rank higher on Google Maps and dominate local search for HVAC services in Houston, TX. Holy Webs builds local SEO strategies for Houston HVAC contractors that drive real calls year-round."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/hvac/seo" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/hvac/seo/" />
         <meta property="og:title" content="Local SEO for HVAC Contractors in Houston, TX | Holy Webs" />
         <meta
           property="og:description"

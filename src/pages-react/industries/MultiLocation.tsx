@@ -85,7 +85,7 @@ export default function MultiLocation() {
         <title>Multi-Location & Franchise Marketing | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Holy Webs helps multi-location service businesses and franchise brands build a coordinated local marketing presence across every market they serve." />
-        <link rel="canonical" href="https://holywebs.com/industries/multi-location" />
+        <link rel="canonical" href="https://holywebs.com/industries/multi-location/" />
         <meta property="og:image" content="https://holywebs.com/og/og-multi-location.jpg" />
         <meta property="og:type" content="website" />
       </Helmet>

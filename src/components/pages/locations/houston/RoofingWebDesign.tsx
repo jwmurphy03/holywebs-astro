@@ -98,7 +98,7 @@ export default function HoustonRoofingWebDesign() {
           name="description"
           content="Roofing website design built for Houston, TX contractors. Storm damage pages, insurance claim content, suburb-specific pages for Katy, Pearland, The Woodlands, and more."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/roofing/web-design" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/roofing/web-design/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

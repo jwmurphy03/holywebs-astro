@@ -84,7 +84,7 @@ export default function ReviewsReputationGuide() {
           content="Learn how to get more Google reviews, manage your online reputation, and turn customer feedback into your strongest competitive advantage as a local service business."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://holywebs.com/resources/online-reviews-reputation-guide" />
+        <link rel="canonical" href="https://holywebs.com/resources/online-reviews-reputation-guide/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

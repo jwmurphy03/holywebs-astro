@@ -102,7 +102,7 @@ export default function HoustonConstructionWebDesign() {
           name="description"
           content="Portfolio-first construction websites built for Houston, TX contractors. Showcase your Houston-area projects, establish credentials, and convert research into consultation requests."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction/web-design" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction/web-design/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

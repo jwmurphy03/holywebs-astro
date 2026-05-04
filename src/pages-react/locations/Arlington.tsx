@@ -63,7 +63,7 @@ export default function Arlington() {
         <title>Arlington Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Grow your Arlington service business with marketing built for the Mid-Cities. Web design, local SEO, and Google Ads that drive real calls and booked jobs." />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/arlington" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/arlington/" />
       </Helmet>
       <LocalBusinessSchema
         city="Arlington"

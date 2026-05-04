@@ -153,7 +153,7 @@ export default function CharlestonPlumbingGbp() {
           name="description"
           content="Get your plumbing company into the top 3 of Google Maps in Charleston, SC. Full GBP optimization, review generation system, and map pack strategy for Lowcountry plumbers."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing/google-business-profile" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing/google-business-profile/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

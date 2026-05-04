@@ -96,7 +96,7 @@ export default function CharlestonRoofingWebDesign() {
           name="description"
           content="Fast, conversion-focused roofing websites built for Charleston, SC contractors. Storm damage landing pages, emergency-first design, and credibility signals that convert storm-season visitors into signed estimates."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing/web-design" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing/web-design/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

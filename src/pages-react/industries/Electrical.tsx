@@ -99,7 +99,7 @@ export default function Electrical() {
         <title>Digital Marketing for Electrical Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Web design, SEO, and advertising built for electrical contractors. Dominate local search for electrical repair, panel upgrades, and installation services." />
-              <link rel="canonical" href="https://holywebs.com/industries/electrical" />
+              <link rel="canonical" href="https://holywebs.com/industries/electrical/" />
         <meta property="og:image" content="https://holywebs.com/og/og-electrical.jpg" />
         <meta property="og:type" content="website" />
       </Helmet>

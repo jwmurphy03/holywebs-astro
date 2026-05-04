@@ -78,7 +78,7 @@ export default function Industries() {
         <title>Industries We Serve — Contractors & Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Specialized digital marketing for HVAC, plumbing, roofing, electrical, construction, power washing, landscaping, and CPA firms. Built for contractors." />
-        <link rel="canonical" href="https://holywebs.com/industries" />
+        <link rel="canonical" href="https://holywebs.com/industries/" />
       </Helmet>
       <section className="section-dark py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">

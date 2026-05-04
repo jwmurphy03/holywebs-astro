@@ -99,7 +99,7 @@ export default function HVAC() {
         <title>Digital Marketing for HVAC Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Web design, SEO, and digital advertising built for HVAC contractors. Get found when homeowners search for AC repair, heating installation, and HVAC services near them." />
-              <link rel="canonical" href="https://holywebs.com/industries/hvac" />
+              <link rel="canonical" href="https://holywebs.com/industries/hvac/" />
         <meta property="og:image" content="https://holywebs.com/og/og-hvac.jpg" />
         <meta property="og:type" content="website" />
       </Helmet>

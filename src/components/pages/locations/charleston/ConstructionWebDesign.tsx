@@ -96,7 +96,7 @@ export default function CharlestonConstructionWebDesign() {
           name="description"
           content="Portfolio-first construction websites built for Charleston, SC contractors. Showcase your projects, communicate your credentials, and convert the clients planning the biggest projects in the Lowcountry."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction/web-design" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction/web-design/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

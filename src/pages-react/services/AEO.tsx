@@ -101,7 +101,7 @@ export default function AEO() {
         <title>Answer Engine Optimization (AEO) for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Get your service business featured in AI-powered search results. AEO strategies for ChatGPT, Google AI Overviews, and voice search that drive qualified leads." />
-        <link rel="canonical" href="https://holywebs.com/services/aeo" />
+        <link rel="canonical" href="https://holywebs.com/services/aeo/" />
         <meta property="og:image" content="https://holywebs.com/og/og-aeo.jpg" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">

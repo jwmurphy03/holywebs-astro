@@ -84,7 +84,7 @@ export default function GoogleAdsGuide() {
           content="The definitive 2026 guide to Google Ads for local service businesses. Learn campaign setup, keyword strategy, ad copy, bidding, and how to stop wasting money on clicks that never convert."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://holywebs.com/resources/google-ads-guide-contractors" />
+        <link rel="canonical" href="https://holywebs.com/resources/google-ads-guide-contractors/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

@@ -123,7 +123,7 @@ export default function HoustonConstructionHub() {
           name="description"
           content="SEO, Google Ads, Google Business Profile, and web design for general contractors and construction companies in Houston, TX. Built for Greater Houston contractors who want to win more bids and bigger projects."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

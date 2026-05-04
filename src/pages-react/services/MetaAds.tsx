@@ -108,7 +108,7 @@ export default function MetaAds() {
         <title>Facebook & Instagram Ads for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Targeted Facebook and Instagram ad campaigns for contractors and service businesses. Reach homeowners in your area with Meta Ads that drive real leads." />
-        <link rel="canonical" href="https://holywebs.com/services/meta-ads" />
+        <link rel="canonical" href="https://holywebs.com/services/meta-ads/" />
         <meta property="og:image" content="https://holywebs.com/og/og-meta-ads.jpg" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">

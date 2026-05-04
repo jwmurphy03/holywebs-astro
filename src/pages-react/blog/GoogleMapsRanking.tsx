@@ -15,7 +15,7 @@ export default function GoogleMapsRanking() {
           content="Learn how to rank higher on Google Maps as an HVAC, plumbing, or roofing business. A step-by-step guide to the local 3-pack covering GBP optimization, reviews, citations, and multi-city strategies."
         />
         <meta name="keywords" content="how to rank on Google Maps home service business, rank higher Google Maps contractor, local map pack SEO, Google Maps ranking factors 2026" />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/google-maps-ranking" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/google-maps-ranking/" />
       </Helmet>
 
       {/* Dark navy hero */}

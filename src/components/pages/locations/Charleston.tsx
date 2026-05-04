@@ -58,7 +58,7 @@ export default function Charleston() {
         <title>Charleston Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Charleston's Lowcountry market is growing fast. Local SEO, professional web design, and ad campaigns that connect your service business with homeowners who need you." />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/" />
       </Helmet>
       <LocalBusinessSchema
         city="Charleston"

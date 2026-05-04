@@ -64,7 +64,7 @@ export default function FreeAudit() {
         <title>Free Visibility Audit for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Get a free audit of your website, Google Business Profile, and local search visibility. No cost, no obligation — see exactly where you're losing leads." />
-        <link rel="canonical" href="https://holywebs.com/resources/free-visibility-audit" />
+        <link rel="canonical" href="https://holywebs.com/resources/free-visibility-audit/" />
       </Helmet>
 
       {/* Hero */}

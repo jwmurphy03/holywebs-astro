@@ -113,7 +113,7 @@ export default function Construction() {
         <title>Digital Marketing for Construction Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Web design, SEO, and advertising built for general contractors and construction companies. Build a digital presence that wins more projects and bids." />
-              <link rel="canonical" href="https://holywebs.com/industries/construction" />
+              <link rel="canonical" href="https://holywebs.com/industries/construction/" />
         <meta property="og:image" content="https://holywebs.com/og/og-construction.jpg" />
         <meta property="og:type" content="website" />
       </Helmet>

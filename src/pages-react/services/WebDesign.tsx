@@ -104,7 +104,7 @@ export default function WebDesign() {
         <title>Web Design for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Custom, mobile-first websites built for contractors and service businesses. Fast-loading, conversion-focused web design that turns visitors into booked jobs." />
-        <link rel="canonical" href="https://holywebs.com/services/web-design" />
+        <link rel="canonical" href="https://holywebs.com/services/web-design/" />
         <meta property="og:image" content="https://holywebs.com/og/og-web-design.jpg" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">

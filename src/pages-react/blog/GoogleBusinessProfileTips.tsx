@@ -14,7 +14,7 @@ export default function GoogleBusinessProfileTips() {
           name="description"
           content="Practical Google Business Profile optimizations that improve your local visibility fast — no technical skills required. A guide for local service businesses."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/google-business-profile-tips" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/google-business-profile-tips/" />
       </Helmet>
 
       {/* Dark navy hero */}

@@ -157,7 +157,7 @@ export default function CharlestonHvacWebDesign() {
           name="description"
           content="Professional HVAC website design for Charleston, SC contractors. Fast, mobile-first sites built to convert emergency calls, support local SEO, and earn trust from Lowcountry homeowners."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac/web-design" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac/web-design/" />
         <meta property="og:title" content="Web Design for HVAC Companies in Charleston, SC | Holy Webs" />
         <meta
           property="og:description"

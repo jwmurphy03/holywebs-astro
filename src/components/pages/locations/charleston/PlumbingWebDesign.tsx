@@ -153,7 +153,7 @@ export default function CharlestonPlumbingWebDesign() {
           name="description"
           content="Professional plumbing website design for Charleston, SC contractors. Fast, mobile-first, emergency-conversion-optimized sites built for Lowcountry plumbers."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing/web-design" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing/web-design/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

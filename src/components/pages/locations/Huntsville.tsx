@@ -63,7 +63,7 @@ export default function Huntsville() {
         <title>Huntsville Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Put your Huntsville business on the map. Web design, SEO, and digital ads tailored for Walker County contractors looking to grow their local customer base." />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/huntsville" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/huntsville/" />
       </Helmet>
       <LocalBusinessSchema
         city="Huntsville"

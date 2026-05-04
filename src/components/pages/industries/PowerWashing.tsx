@@ -107,7 +107,7 @@ export default function PowerWashing() {
         <title>Digital Marketing for Power Washing Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Web design, SEO, and advertising built for pressure washing contractors. Get found locally, book more jobs, and fill your schedule year-round." />
-              <link rel="canonical" href="https://holywebs.com/industries/power-washing" />
+              <link rel="canonical" href="https://holywebs.com/industries/power-washing/" />
         <meta property="og:image" content="https://holywebs.com/og/og-power-washing.jpg" />
         <meta property="og:type" content="website" />
       </Helmet>

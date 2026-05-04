@@ -140,7 +140,7 @@ export default function CharlestonPlumbingSeo() {
           name="description"
           content="Rank higher on Google Maps for plumbing searches in Charleston, SC. Local SEO strategies for Lowcountry plumbers — slab leaks, emergency repairs, water heaters, and more."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing/seo" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing/seo/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

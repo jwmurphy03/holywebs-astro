@@ -63,7 +63,7 @@ export default function Tyler() {
         <title>Tyler Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Be the first call in East Texas. Custom websites, local SEO strategies, and targeted advertising that help Tyler contractors dominate local search." />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/tyler" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/tyler/" />
       </Helmet>
       <LocalBusinessSchema
         city="Tyler"

@@ -15,7 +15,7 @@ export default function HVACNotShowingOnGoogle() {
           content="Can't find your HVAC company on Google? Here are the three most common reasons HVAC businesses don't rank — and a 15-minute self-audit to start fixing it today."
         />
         <meta name="keywords" content="HVAC business not showing up on Google, why is my HVAC company not on Google, HVAC SEO problems, HVAC Google ranking" />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/hvac-not-showing-on-google" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/hvac-not-showing-on-google/" />
       </Helmet>
 
       {/* Dark navy hero */}

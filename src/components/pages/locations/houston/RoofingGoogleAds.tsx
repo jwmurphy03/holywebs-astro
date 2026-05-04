@@ -89,7 +89,7 @@ export default function HoustonRoofingGoogleAds() {
           name="description"
           content="Storm-ready Google Ads campaigns for roofing contractors in Houston, TX. Insurance claim targeting, suburb-level geo-targeting, and storm-surge activation built for the Houston roofing market."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/roofing/google-ads" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/roofing/google-ads/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

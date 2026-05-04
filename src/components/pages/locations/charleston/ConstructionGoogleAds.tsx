@@ -83,7 +83,7 @@ export default function CharlestonConstructionGoogleAds() {
           name="description"
           content="Google Ads campaigns for construction contractors in Charleston, SC. Residential, commercial, and renovation campaigns that target the right clients and the right project types across the Lowcountry."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction/google-ads" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction/google-ads/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

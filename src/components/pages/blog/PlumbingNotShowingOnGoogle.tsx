@@ -15,7 +15,7 @@ export default function PlumbingNotShowingOnGoogle() {
           content="Can't find your plumbing company on Google Maps? Here are the most common reasons plumbers don't rank locally — and how to fix each one before it costs you more jobs."
         />
         <meta name="keywords" content="plumbing business not showing up on Google, why is my plumbing company not on Google, plumber SEO problems, plumber Google ranking" />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/plumbing-not-showing-on-google" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/plumbing-not-showing-on-google/" />
       </Helmet>
 
       {/* Dark navy hero */}

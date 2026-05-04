@@ -125,7 +125,7 @@ export default function CharlestonPlumbingHub() {
           name="description"
           content="SEO, Google Ads, Google Business Profile, and web design for plumbers in Charleston, SC. Built for Lowcountry plumbing contractors who want to dominate local search and book more jobs."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/plumbing/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

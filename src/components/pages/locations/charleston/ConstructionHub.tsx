@@ -125,7 +125,7 @@ export default function CharlestonConstructionHub() {
           name="description"
           content="SEO, Google Ads, Google Business Profile, and web design for general contractors and construction companies in Charleston, SC. Built for Lowcountry contractors who want to win more bids."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

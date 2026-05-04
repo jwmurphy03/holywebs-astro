@@ -123,7 +123,7 @@ export default function HoustonRoofingHub() {
           name="description"
           content="SEO, Google Ads, Google Business Profile, and web design for roofing contractors in Houston, TX. Built for Greater Houston roofers who want to dominate storm-season search and book more estimates."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/roofing" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/roofing/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

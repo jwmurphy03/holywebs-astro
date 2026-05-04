@@ -138,7 +138,7 @@ export default function HoustonPlumbingSeo() {
           name="description"
           content="Rank higher on Google Maps for plumbing searches in Houston, TX. Local SEO strategies for Houston plumbers — slab leaks, emergency repairs, water heaters, repiping, and more."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/plumbing/seo" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/plumbing/seo/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

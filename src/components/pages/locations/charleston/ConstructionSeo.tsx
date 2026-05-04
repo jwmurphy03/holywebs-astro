@@ -96,7 +96,7 @@ export default function CharlestonConstructionSeo() {
           name="description"
           content="Rank at the top of Google for construction searches in Charleston, SC. Local SEO built for general contractors, custom home builders, and renovation companies across the Lowcountry."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction/seo" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/construction/seo/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

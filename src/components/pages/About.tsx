@@ -52,7 +52,7 @@ export default function About() {
         <title>About Holy Webs — Digital Marketing for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="20+ years helping local service businesses grow online. Meet the team behind Holy Webs and learn why contractors trust us for web design, SEO, and digital marketing." />
-        <link rel="canonical" href="https://holywebs.com/about" />
+        <link rel="canonical" href="https://holywebs.com/about/" />
       </Helmet>
 
       {/* Hero */}

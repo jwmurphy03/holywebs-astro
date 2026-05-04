@@ -17,7 +17,7 @@ export default function WorkshopReplay() {
         <title>Watch the Replay — Stop Being Invisible Workshop | Holy Webs</title>
         <meta name="robots" content="noindex, nofollow" />
         <meta name="description" content="Watch the full replay of the Stop Being Invisible workshop. Learn the exact system contractors use to get found on Google and generate more calls." />
-        <link rel="canonical" href="https://holywebs.com/workshop/replay" />
+        <link rel="canonical" href="https://holywebs.com/workshop/replay/" />
       </Helmet>
 
       {/* Hero */}

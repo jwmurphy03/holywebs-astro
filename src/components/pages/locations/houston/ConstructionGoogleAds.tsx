@@ -85,7 +85,7 @@ export default function HoustonConstructionGoogleAds() {
           name="description"
           content="Google Ads for Houston construction contractors. Neighborhood-level targeting for Heights, Memorial, Katy, The Woodlands. Reach high-value buyers searching for custom homes and additions."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction/google-ads" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/construction/google-ads/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

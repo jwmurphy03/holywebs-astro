@@ -133,7 +133,7 @@ export default function GoogleAds() {
         <title>Google Ads Management for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="PPC campaigns built for contractors and service businesses. Targeted Google Ads that put you in front of ready-to-buy customers searching for your services." />
-        <link rel="canonical" href="https://holywebs.com/services/google-ads" />
+        <link rel="canonical" href="https://holywebs.com/services/google-ads/" />
         <meta property="og:image" content="https://holywebs.com/og/og-google-ads.jpg" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">

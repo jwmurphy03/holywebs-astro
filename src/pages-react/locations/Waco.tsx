@@ -62,7 +62,7 @@ export default function Waco() {
         <title>Waco Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Help your Waco business stand out in Central Texas. Custom websites, local SEO, and Google Ads that bring in more calls from the Waco–Temple–Killeen corridor." />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/waco" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/waco/" />
       </Helmet>
       <LocalBusinessSchema
         city="Waco"

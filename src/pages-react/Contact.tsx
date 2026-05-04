@@ -107,7 +107,7 @@ export default function Contact() {
         <title>Contact Holy Webs — Get a Free Marketing Consultation | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Ready to grow your service business? Contact Holy Webs to discuss web design, SEO, and digital marketing. Serving contractors across Texas and South Carolina." />
-        <link rel="canonical" href="https://holywebs.com/contact" />
+        <link rel="canonical" href="https://holywebs.com/contact/" />
       </Helmet>
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">

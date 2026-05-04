@@ -98,7 +98,7 @@ export default function BookSalesPage() {
           name="description"
           content="The no-nonsense guide to getting found online, building trust fast, and winning more local jobs. Written for contractors, tradespeople, and local service businesses. Just $19."
         />
-        <link rel="canonical" href="https://holywebs.com/book" />
+        <link rel="canonical" href="https://holywebs.com/book/" />
       </Helmet>
 
       {/* ═══════════════ HERO ═══════════════ */}

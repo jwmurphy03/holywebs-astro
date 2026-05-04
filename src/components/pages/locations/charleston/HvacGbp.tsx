@@ -157,7 +157,7 @@ export default function CharlestonHvacGbp() {
           name="description"
           content="Get your HVAC company into the top 3 of Google Maps in Charleston, SC. Full Google Business Profile optimization, review generation, and map pack strategy for Lowcountry HVAC contractors."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac/google-business-profile" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac/google-business-profile/" />
         <meta property="og:title" content="Google Business Profile for HVAC in Charleston, SC | Holy Webs" />
         <meta
           property="og:description"

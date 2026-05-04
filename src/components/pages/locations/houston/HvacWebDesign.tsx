@@ -98,7 +98,7 @@ export default function HoustonHvacWebDesign() {
           name="description"
           content="HVAC website design built for Houston, TX contractors. Mobile-first, suburb-specific pages for Katy, Sugar Land, The Woodlands, and beyond. Convert emergency searches into calls."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/hvac/web-design" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/hvac/web-design/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

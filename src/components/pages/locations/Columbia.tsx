@@ -65,7 +65,7 @@ export default function Columbia() {
         <title>Columbia Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Columbia's Midlands market has opportunity — if you show up online. Websites, Google profile optimization, and ads that help SC service businesses win local customers." />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/columbia" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/columbia/" />
       </Helmet>
       <LocalBusinessSchema
         city="Columbia"

@@ -80,7 +80,7 @@ export default function WebsiteGuide() {
           name="description"
           content="Learn how to turn your local service business website into a 24/7 lead generation machine. The complete 2026 web design playbook for contractors and home services."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/website-guide-service-businesses" />
+        <link rel="canonical" href="https://holywebs.com/resources/website-guide-service-businesses/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

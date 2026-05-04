@@ -129,7 +129,7 @@ export default function CharlestonHvacHub() {
           name="description"
           content="SEO, Google Ads, Google Business Profile, and web design for HVAC companies in Charleston, SC. Built for Lowcountry contractors who want to dominate local search and fill their schedule."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac/" />
         <meta property="og:title" content="HVAC Digital Marketing in Charleston, SC | Holy Webs" />
         <meta
           property="og:description"

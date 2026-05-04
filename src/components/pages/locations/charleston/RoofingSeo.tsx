@@ -100,7 +100,7 @@ export default function CharlestonRoofingSeo() {
           name="description"
           content="Rank at the top of Google for storm damage repair, roof replacement, and roofing searches in Charleston, SC. Local SEO built for Lowcountry roofing contractors."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing/seo" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing/seo/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

@@ -3,4 +3,4 @@ http://www.holywebs.com/*    https://holywebs.com/:splat    301!
 https://www.holywebs.com/*    https://holywebs.com/:splat    301!
 http://dev.holywebs.com/*    https://holywebs.com    301!
 /resources/blog/why-your-website-isnt-getting-calls    /resources/blog/contractor-website-not-converting    301!
-/*    /index.html    200
+/industries/plumbers    /industries/plumbing    301!

@@ -100,7 +100,7 @@ export default function BookResources() {
           name="description"
           content="Access free tools, checklists, and your custom visibility audit. Exclusive resources for readers of Stop Being Invisible by Holy Webs."
         />
-        <link rel="canonical" href="https://holywebs.com/free" />
+        <link rel="canonical" href="https://holywebs.com/free/" />
       </Helmet>
 
       {/* ─── HERO (dark, branded) ─── */}

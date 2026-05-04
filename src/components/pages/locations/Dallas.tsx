@@ -65,7 +65,7 @@ export default function Dallas() {
         <title>Dallas Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Outrank competitors in the DFW metroplex. High-converting websites, Google Ads, and local SEO for Dallas-area contractors and service businesses." />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/dallas" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/dallas/" />
       </Helmet>
       <LocalBusinessSchema
         city="Dallas"

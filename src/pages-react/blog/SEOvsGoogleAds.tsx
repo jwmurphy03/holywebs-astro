@@ -14,7 +14,7 @@ export default function SEOvsGoogleAds() {
           name="description"
           content="When should you invest in SEO and when should you run Google Ads? A practical breakdown for local service businesses that want more calls without wasting money."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/seo-vs-google-ads" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/seo-vs-google-ads/" />
       </Helmet>
 
       {/* Dark navy hero */}

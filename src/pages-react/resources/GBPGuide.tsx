@@ -83,7 +83,7 @@ export default function GBPGuide() {
           content="The definitive 2026 guide to Google Business Profile optimization for service businesses. Learn how to claim, optimize, and rank in the Map Pack, step by step."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://holywebs.com/resources/google-business-profile-guide" />
+        <link rel="canonical" href="https://holywebs.com/resources/google-business-profile-guide/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

@@ -85,7 +85,7 @@ export default function HoustonHvacGoogleAds() {
           name="description"
           content="Google Ads campaigns built for Houston HVAC contractors. Suburb-level geo-targeting, summer surge scaling, and call-only ads for emergency intent. Capture Houston's year-round HVAC demand."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/hvac/google-ads" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/hvac/google-ads/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

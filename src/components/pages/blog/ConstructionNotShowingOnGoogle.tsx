@@ -15,7 +15,7 @@ export default function ConstructionNotShowingOnGoogle() {
           content="Most general contractors and custom home builders are invisible on Google Maps — not because they lack credibility, but because their GBP and website aren't built to rank. Here's what to fix."
         />
         <meta name="keywords" content="construction company not showing up on Google, general contractor SEO problems, custom home builder Google ranking, contractor local search visibility" />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/construction-not-showing-on-google" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/construction-not-showing-on-google/" />
       </Helmet>
 
       {/* Dark navy hero */}

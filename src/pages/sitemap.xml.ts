@@ -1,7 +1,7 @@
 import { SITE_URL } from "../lib/seo";
 
 const pages = import.meta.glob("./**/*.astro");
-const lastmod = "2026-05-03";
+const lastmod = "2026-05-04";
 const excluded = new Set([
   "/book/checkout",
   "/book/thank-you",
@@ -60,7 +60,7 @@ export async function GET() {
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
     ...routes.map((route) => {
-      const loc = route === "/" ? `${SITE_URL}/` : `${SITE_URL}${route}`;
+      const loc = route === "/" ? `${SITE_URL}/` : `${SITE_URL}${route}/`;
       return [
         "  <url>",
         `    <loc>${escapeXml(loc)}</loc>`,

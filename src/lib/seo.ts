@@ -36,8 +36,10 @@ export function cleanCanonical(url: string) {
   parsed.search = "";
 
   const isHome = parsed.pathname === "/";
-  if (!isHome && parsed.pathname.endsWith("/")) {
-    parsed.pathname = parsed.pathname.slice(0, -1);
+  const hasFileExtension = /\.[a-z0-9]+$/i.test(parsed.pathname);
+
+  if (!isHome && !hasFileExtension && !parsed.pathname.endsWith("/")) {
+    parsed.pathname = `${parsed.pathname}/`;
   }
 
   return parsed.href;

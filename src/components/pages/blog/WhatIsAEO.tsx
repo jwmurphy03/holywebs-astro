@@ -14,7 +14,7 @@ export default function WhatIsAEO() {
           name="description"
           content="Answer Engine Optimization is changing how customers find local businesses. Learn what AEO means, how it differs from traditional SEO, and what you should do about it."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/what-is-aeo" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/what-is-aeo/" />
       </Helmet>
 
       <section className="section-dark py-20 lg:py-28 relative overflow-hidden">

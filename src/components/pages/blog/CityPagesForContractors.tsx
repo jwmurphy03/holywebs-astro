@@ -14,7 +14,7 @@ export default function CityPagesForContractors() {
           name="description"
           content="City pages can help contractors rank across more service areas, but only when they are useful, specific, and connected to a real local SEO strategy."
         />
-        <link rel="canonical" href="https://holywebs.com/resources/blog/city-pages-for-contractors" />
+        <link rel="canonical" href="https://holywebs.com/resources/blog/city-pages-for-contractors/" />
       </Helmet>
 
       <section className="section-dark py-20 lg:py-28 relative overflow-hidden">

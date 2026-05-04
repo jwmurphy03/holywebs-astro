@@ -140,7 +140,7 @@ export default function SocialMedia() {
         <title>Social Media Management for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Professional social media management for contractors and service businesses. Custom content, consistent posting, and brand growth on Facebook, Instagram, and LinkedIn." />
-        <link rel="canonical" href="https://holywebs.com/services/social-media" />
+        <link rel="canonical" href="https://holywebs.com/services/social-media/" />
         <meta property="og:image" content="https://holywebs.com/og/og-social-media.jpg" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">

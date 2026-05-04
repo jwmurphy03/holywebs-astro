@@ -65,7 +65,7 @@ export default function Austin() {
         <title>Austin Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Austin is booming — make sure your service business grows with it. Local SEO, fast-loading websites, and paid ads that capture demand across greater Austin." />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/austin" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/austin/" />
       </Helmet>
       <LocalBusinessSchema
         city="Austin"

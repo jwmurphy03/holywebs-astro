@@ -65,7 +65,7 @@ export default function Locations() {
         <title>Service Areas — Texas & South Carolina | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Holy Webs serves contractors and service businesses across Texas and South Carolina with market-specific digital marketing, SEO, and web design strategies." />
-        <link rel="canonical" href="https://holywebs.com/locations" />
+        <link rel="canonical" href="https://holywebs.com/locations/" />
       </Helmet>
       {/* Hero */}
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">

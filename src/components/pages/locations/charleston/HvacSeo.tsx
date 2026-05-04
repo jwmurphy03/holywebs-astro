@@ -151,7 +151,7 @@ export default function CharlestonHvacSeo() {
           name="description"
           content="Rank higher on Google Maps and dominate local search for HVAC services in Charleston, SC. Holy Webs builds local SEO strategies for Lowcountry HVAC contractors that drive real calls."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac/seo" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/hvac/seo/" />
         <meta property="og:title" content="Local SEO for HVAC Companies in Charleston, SC | Holy Webs" />
         <meta
           property="og:description"

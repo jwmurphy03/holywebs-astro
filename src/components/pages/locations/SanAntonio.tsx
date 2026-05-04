@@ -65,7 +65,7 @@ export default function SanAntonio() {
         <title>San Antonio Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="San Antonio contractors deserve marketing that works as hard as they do. Websites that convert, SEO that ranks, and ads that bring in local leads." />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/san-antonio" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/san-antonio/" />
       </Helmet>
       <LocalBusinessSchema
         city="San Antonio"

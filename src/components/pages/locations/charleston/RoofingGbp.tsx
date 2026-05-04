@@ -61,7 +61,7 @@ export default function CharlestonRoofingGbp() {
           name="description"
           content="GBP optimization for roofing contractors in Charleston, SC. Get into the top 3 of Google Maps for storm damage repair, roof replacement, and roofing searches across the Lowcountry."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing/google-business-profile" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/charleston/roofing/google-business-profile/" />
         <meta property="og:type" content="website" />
       </Helmet>
 

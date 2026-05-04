@@ -9,7 +9,7 @@ export default function Terms() {
         <title>Terms of Service | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Holy Webs terms of service. Read our terms and conditions for using our website and services." />
-        <link rel="canonical" href="https://holywebs.com/terms" />
+        <link rel="canonical" href="https://holywebs.com/terms/" />
       </Helmet>
       <section className="section-dark py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">

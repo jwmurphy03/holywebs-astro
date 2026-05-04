@@ -123,7 +123,7 @@ export default function HoustonPlumbingHub() {
           name="description"
           content="SEO, Google Ads, Google Business Profile, and web design for plumbers in Houston, TX. Built for Greater Houston plumbing contractors who want to dominate local search and book more jobs."
         />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/plumbing" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/plumbing/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({

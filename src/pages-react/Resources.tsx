@@ -103,7 +103,7 @@ export default function Resources() {
         <title>Free Marketing Resources for Contractors & Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Free SEO guides, marketing checklists, and tools built for contractors and local service businesses. Download resources to grow your online presence." />
-        <link rel="canonical" href="https://holywebs.com/resources" />
+        <link rel="canonical" href="https://holywebs.com/resources/" />
       </Helmet>
       {/* Hero */}
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">

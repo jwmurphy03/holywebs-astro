@@ -164,7 +164,7 @@ export default function SEO() {
         <title>Local SEO Services for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Dominate Google Maps and local search results with SEO strategies built for contractors. Rank higher, get more calls, and grow your service business organically." />
-        <link rel="canonical" href="https://holywebs.com/services/seo" />
+        <link rel="canonical" href="https://holywebs.com/services/seo/" />
         <meta property="og:image" content="https://holywebs.com/og/og-seo.jpg" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">

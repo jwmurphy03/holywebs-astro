@@ -120,7 +120,7 @@ export default function GoogleBusinessProfile() {
         <title>Google Business Profile Optimization for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Optimize your Google Business Profile to dominate local search. Get more reviews, better Map Pack rankings, and increased visibility for your service business." />
-        <link rel="canonical" href="https://holywebs.com/services/google-business-profile" />
+        <link rel="canonical" href="https://holywebs.com/services/google-business-profile/" />
         <meta property="og:image" content="https://holywebs.com/og/og-google-business-profile.jpg" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">

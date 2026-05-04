@@ -107,7 +107,7 @@ export default function Landscaping() {
         <title>Digital Marketing for Landscaping Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Web design, SEO, and digital advertising built for landscaping contractors. Get found when homeowners search for lawn care, hardscaping, and landscaping services." />
-        <link rel="canonical" href="https://holywebs.com/industries/landscaping" />
+        <link rel="canonical" href="https://holywebs.com/industries/landscaping/" />
         <meta property="og:image" content="https://holywebs.com/og/og-landscaping.jpg" />
         <meta property="og:type" content="website" />
       </Helmet>

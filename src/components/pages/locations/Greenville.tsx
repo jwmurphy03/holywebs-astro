@@ -65,7 +65,7 @@ export default function Greenville() {
         <title>Greenville Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Upstate SC service businesses trust Holy Webs for results-driven marketing. Web design, local SEO, and paid search that help Greenville contractors get found and hired." />
-        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/greenville" />
+        <link rel="canonical" href="https://holywebs.com/locations/south-carolina/greenville/" />
       </Helmet>
       <LocalBusinessSchema
         city="Greenville"

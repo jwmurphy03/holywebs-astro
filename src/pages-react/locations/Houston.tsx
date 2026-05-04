@@ -64,7 +64,7 @@ export default function Houston() {
         <title>Houston Digital Marketing & SEO for Contractors | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Houston's competitive market demands more than a basic website. SEO, web design, and targeted ads that help Greater Houston contractors rank higher and generate leads." />
-        <link rel="canonical" href="https://holywebs.com/locations/texas/houston" />
+        <link rel="canonical" href="https://holywebs.com/locations/texas/houston/" />
       </Helmet>
       <LocalBusinessSchema
         city="Houston"

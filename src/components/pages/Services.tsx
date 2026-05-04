@@ -52,7 +52,7 @@ export default function Services() {
         <title>Digital Marketing Services for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Web design, local SEO, Google Ads, Meta Ads, AEO, and Google Business Profile optimization — all built for contractors and service businesses." />
-        <link rel="canonical" href="https://holywebs.com/services" />
+        <link rel="canonical" href="https://holywebs.com/services/" />
       </Helmet>
       <section className="section-dark py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
