@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet-async";
 import {
   ArrowRight,
   BarChart3,
-  Check,
   FileText,
   Globe,
   MapPin,
@@ -41,7 +40,6 @@ interface PageConfig {
   h1: string;
   intro: string;
   primaryCta: string;
-  oldUrls: string[];
   stats: Array<{ value: string; label: string }>;
   answers: Array<{ question: string; answer: string }>;
   features: Feature[];
@@ -65,9 +63,8 @@ const configs: Record<CharlestonService, PageConfig> = {
     intro:
       "Charleston businesses do not need generic SEO. They need a local search strategy that understands Mount Pleasant, Summerville, West Ashley, James Island, North Charleston, and the way people actually choose service companies in the Lowcountry.",
     primaryCta: "Get a Free SEO Audit",
-    oldUrls: ["/charleston-seo-company/", "/search-engine-optimization-charleston-sc/"],
     stats: [
-      { value: "31K+", label: "3-month impressions on the legacy Charleston SEO page before migration planning" },
+      { value: "Local intent", label: "The difference between people researching and people ready to call" },
       { value: "Top 3", label: "The map pack positions that matter most for local service calls" },
       { value: "6-9 mo.", label: "A realistic window for meaningful SEO traction in a competitive local market" },
       { value: "Tri-county", label: "Charleston, Berkeley, and Dorchester counties require distinct local signals" },
@@ -76,12 +73,12 @@ const configs: Record<CharlestonService, PageConfig> = {
       {
         question: "What does Charleston SEO need to do first?",
         answer:
-          "It needs to clarify what you do, where you do it, and why your business is relevant in the Lowcountry. That means Google Business Profile work, location-aware service pages, reviews, internal links, and technical cleanup.",
+          "It needs to clarify what you do, where you do it, and why your business is relevant in the Lowcountry. That means Google Business Profile work, location-aware service pages, reviews, connected pages, and technical cleanup.",
       },
       {
-        question: "Why not redirect the old Charleston SEO page to a generic SEO page?",
+        question: "Why does Charleston SEO need a local plan?",
         answer:
-          "Because the old page has Charleston-specific search equity. A broad local SEO page is useful, but this page gives those rankings a more relevant destination and protects the local intent.",
+          "Because Charleston search is not one market. Downtown, Mount Pleasant, Summerville, West Ashley, James Island, and North Charleston all create different customer behavior, competitors, and service-area signals.",
       },
       {
         question: "Which businesses benefit most?",
@@ -91,7 +88,7 @@ const configs: Record<CharlestonService, PageConfig> = {
       {
         question: "Does this support AI search too?",
         answer:
-          "Yes. Clear answers, structured data, local context, and strong internal links help both Google and answer engines understand when Holy Webs is relevant for Charleston marketing questions.",
+          "Yes. Clear answers, local context, helpful page structure, and connected service pages help both Google and answer engines understand when Holy Webs is relevant for Charleston marketing questions.",
       },
     ],
     features: [
@@ -118,8 +115,8 @@ const configs: Record<CharlestonService, PageConfig> = {
     ],
     marketCopy: [
       "Charleston search is not one market. A homeowner in Mount Pleasant searches differently than a family in Summerville or a business owner downtown. SEO has to respect that geography.",
-      "The old Charleston site earned visibility for SEO terms because it spoke directly to this market. As we migrate that equity into HolyWebs.com, the goal is to preserve local relevance while improving the depth, structure, and conversion path.",
-      "This page is built to become the main destination for Charleston SEO demand, while the industry-specific pages handle more focused searches for HVAC, plumbing, roofing, and construction companies.",
+      "Good local SEO starts with clarity. Google and customers both need to understand what you do, where you work, what kind of customers you help, and why your business is a strong local choice.",
+      "The broad Charleston SEO plan should connect to more specific pages for HVAC, plumbing, roofing, construction, and other service businesses, so every page has a clear job instead of repeating the same generic pitch.",
     ],
     faqs: [
       {
@@ -127,15 +124,15 @@ const configs: Record<CharlestonService, PageConfig> = {
         a: "Most businesses should expect 3 to 6 months for early movement and 6 to 9 months for stronger traction. Competitive Charleston SEO terms take time, especially when map pack visibility and organic rankings both matter.",
       },
       {
-        q: "Will this page replace the old holywebscharleston.com SEO pages?",
-        a: "Yes, but only when the migration is ready. The old Charleston SEO URLs should be redirected here after this page is live, indexed, internally linked, and validated.",
+        q: "Do I need separate pages for each service area?",
+        a: "Sometimes. If you serve multiple Lowcountry communities, the site should make that clear. The key is making each page useful and specific instead of cloning the same paragraph with a different city name.",
       },
       {
         q: "Do you only work with contractors?",
         a: "Contractors and service businesses are the core focus, but the same local SEO foundation can help many Charleston businesses that depend on local customers.",
       },
     ],
-    finalHeadline: "Ready to Protect and Grow Your Charleston Search Visibility?",
+    finalHeadline: "Ready to Improve Your Charleston Search Visibility?",
     finalSubtitle:
       "Charleston customers are already searching. We will show you where you stand now, what is holding you back, and what to fix first.",
   },
@@ -150,11 +147,10 @@ const configs: Record<CharlestonService, PageConfig> = {
     intro:
       "Your website is often the first real conversation a Charleston customer has with your business. It needs to load fast, look trustworthy, explain what you do, and make the next step obvious.",
     primaryCta: "Plan a Better Website",
-    oldUrls: ["/charleston-web-design-company/", "/web-design-charleston-sc/"],
     stats: [
-      { value: "20K+", label: "3-month impressions across the legacy Charleston web design pages" },
       { value: "Mobile first", label: "Most local service searches happen on a phone, often with urgency" },
       { value: "Trust", label: "The main thing a service-business website has to earn before someone calls" },
+      { value: "Speed", label: "A slow site quietly loses good leads before they ever read the offer" },
       { value: "Local proof", label: "Neighborhoods, reviews, photos, and work examples matter in Charleston" },
     ],
     answers: [
@@ -164,14 +160,14 @@ const configs: Record<CharlestonService, PageConfig> = {
           "It should quickly explain who you help, what you do, where you work, why people trust you, and how to contact you. Pretty is not enough. The site has to help people make a decision.",
       },
       {
-        question: "Why does this page need to exist before migration?",
+        question: "Why does web design matter for local search?",
         answer:
-          "The old Charleston web design URLs have search equity. Redirecting them to a specific Charleston web design page is safer than sending that traffic to a generic service page.",
+          "Google can send people to the site, but the website still has to earn the call. Clear pages, fast load times, helpful copy, reviews, photos, and simple next steps all support both rankings and conversions.",
       },
       {
         question: "What should be on the page?",
         answer:
-          "Clear service sections, city and neighborhood context, proof, FAQs, calls to action, schema, and internal links to SEO, Google Ads, GBP, and industry pages.",
+          "Clear service sections, city and neighborhood context, proof, FAQs, calls to action, and easy paths to related services like SEO, Google Ads, and Google Business Profile help.",
       },
       {
         question: "Can a better website help SEO?",
@@ -188,7 +184,7 @@ const configs: Record<CharlestonService, PageConfig> = {
       {
         icon: Search,
         title: "Built for Local SEO",
-        desc: "The site structure, headings, internal links, and schema are built with Charleston search visibility in mind from day one.",
+        desc: "The site structure, headings, and related service pages are built with Charleston search visibility in mind from day one.",
       },
       {
         icon: Users,
@@ -204,16 +200,16 @@ const configs: Record<CharlestonService, PageConfig> = {
     marketCopy: [
       "Charleston buyers compare more than price. They look for trust, local proof, responsiveness, reviews, and signs that you understand the work they need.",
       "A website for a Mount Pleasant remodeler should not feel the same as a site for a Summerville HVAC company or a James Island plumber. The bones can be consistent, but the message needs to fit the customer.",
-      "This page gives the legacy Charleston web design URLs a clean destination on HolyWebs.com and supports the broader local SEO strategy.",
+      "A strong Charleston website should work with the rest of your marketing. SEO, Google Business Profile, ads, reviews, and service pages all perform better when the website is clear and easy to trust.",
     ],
     faqs: [
       {
         q: "How long does a Charleston business website take to build?",
-        a: "Most service-business websites take a few weeks once the content, structure, and goals are clear. Larger sites or migration projects can take longer because redirects, SEO, and content mapping need careful handling.",
+        a: "Most service-business websites take a few weeks once the content, structure, and goals are clear. Larger sites can take longer when there are more services, locations, photos, reviews, and page types to organize.",
       },
       {
-        q: "Should the old web design pages redirect here?",
-        a: "Yes. After this page is live and checked, the old web design URLs on holywebscharleston.com should redirect here because the search intent matches closely.",
+        q: "Can you redesign an existing site?",
+        a: "Yes. A redesign is often the right move when the business has outgrown the current site, the messaging is unclear, or the pages are not turning visitors into real leads.",
       },
       {
         q: "Do you write the website copy too?",
@@ -233,25 +229,24 @@ const configs: Record<CharlestonService, PageConfig> = {
       "Digital marketing for Charleston, SC service businesses. SEO, web design, Google Ads, GBP optimization, and local strategy for the Lowcountry.",
     h1: "Digital Marketing for Charleston Service Businesses",
     intro:
-      "Charleston is where Holy Webs started, and this page is the new home for the broad Charleston marketing demand that used to live on the Charleston-only domain.",
+      "Charleston is where Holy Webs started, so the strategy here is grounded in the Lowcountry: local search, service-area trust, reviews, useful content, and websites built to turn attention into real leads.",
     primaryCta: "Build Your Charleston Plan",
-    oldUrls: ["/charleston-digital-marketing-agency/"],
     stats: [
-      { value: "5.6K+", label: "3-month impressions on the legacy Charleston digital marketing agency page" },
       { value: "4 parts", label: "SEO, website, GBP, and paid search usually need to work together" },
       { value: "Local first", label: "Charleston businesses need local proof, not generic agency language" },
       { value: "Measured", label: "Calls, forms, rankings, and booked jobs matter more than vanity metrics" },
+      { value: "Focused", label: "The best plan starts with the channels closest to revenue" },
     ],
     answers: [
       {
         question: "What does digital marketing include for Charleston businesses?",
         answer:
-          "The main pieces are local SEO, web design, Google Business Profile optimization, Google Ads, content, reviews, and internal links that help people and search engines understand your business.",
+          "The main pieces are local SEO, web design, Google Business Profile optimization, Google Ads, content, reviews, and clear service pages that help people understand your business.",
       },
       {
-        question: "Why not send this traffic to the homepage?",
+        question: "Why not rely on the homepage alone?",
         answer:
-          "The homepage is broad. The old Charleston digital marketing page earned local visibility, so the safer destination is a Charleston-specific marketing page with stronger local context.",
+          "The homepage has to introduce the whole business. A Charleston marketing page can answer local questions more directly and connect visitors to SEO, web design, GBP, ads, and industry-specific help.",
       },
       {
         question: "What should a business fix first?",
@@ -297,8 +292,8 @@ const configs: Record<CharlestonService, PageConfig> = {
         a: "It depends on the business. SEO and GBP are usually the best long-term foundation. Google Ads can help faster when calls are needed now. A strong website supports both.",
       },
       {
-        q: "Will this replace the old Charleston digital marketing agency page?",
-        a: "Yes. This is the best destination for that legacy page once the migration is ready.",
+        q: "How do we know what to do first?",
+        a: "Start with an audit of the website, rankings, Google Business Profile, reviews, competitors, and lead flow. The first move should be the one most likely to improve calls, forms, or booked jobs.",
       },
       {
         q: "Do you work with businesses outside Charleston?",
@@ -320,11 +315,10 @@ const configs: Record<CharlestonService, PageConfig> = {
     intro:
       "Social media will not replace search, but for local Charleston businesses it can build trust, show real work, support referrals, and make the business feel active and approachable.",
     primaryCta: "Talk Through Social Media",
-    oldUrls: ["/charleston-social-media-marketing/", "/social-media-charleston-sc/"],
     stats: [
-      { value: "10K+", label: "3-month impressions across legacy Charleston social media pages" },
       { value: "Trust", label: "The main job of organic social for most local service businesses" },
       { value: "Local proof", label: "Real work, real people, real places beat generic content every time" },
+      { value: "Consistency", label: "A realistic rhythm beats random bursts of content every time" },
       { value: "Support", label: "Social works best when it supports SEO, reviews, website trust, and ads" },
     ],
     answers: [
@@ -334,9 +328,9 @@ const configs: Record<CharlestonService, PageConfig> = {
           "It can, but usually as part of a broader system. Social helps people trust the business, remember the name, and see recent work. Search and ads often capture the direct intent.",
       },
       {
-        question: "Why build a Charleston social media page?",
+        question: "Why does Charleston social media need local context?",
         answer:
-          "The old Charleston social pages have search visibility. This gives them a local destination on HolyWebs.com instead of sending everything to a generic service page.",
+          "People want to see real work, real places, and signs that the business understands the community. Local context makes social content feel useful instead of interchangeable.",
       },
       {
         question: "What should local social content show?",
@@ -374,7 +368,7 @@ const configs: Record<CharlestonService, PageConfig> = {
     marketCopy: [
       "Charleston is a relationship-heavy market. People ask neighbors, check reviews, look at recent work, and pay attention to whether a business feels present and trustworthy.",
       "That is where social media can help. It should not be a random pile of holiday graphics and vague tips. It should show the business doing real work for real people in real places.",
-      "This page gives the legacy social media URLs a clear home while the broader service page remains available for businesses outside Charleston.",
+      "The goal is to make social media support the larger marketing system. A good post can reinforce reviews, show proof for the website, support referral trust, and keep the business visible between high-intent searches.",
     ],
     faqs: [
       {
@@ -382,8 +376,8 @@ const configs: Record<CharlestonService, PageConfig> = {
         a: "Usually not. Social media is strongest when it supports the website, SEO, reviews, paid ads, and referral trust.",
       },
       {
-        q: "Will old Charleston social media URLs redirect here?",
-        a: "That is the safest plan once this page is live and validated because the intent is a close match.",
+        q: "How often should a local business post?",
+        a: "It depends on the business and the available proof. For most local service businesses, a steady schedule with useful project photos, customer questions, reviews, and seasonal reminders is better than daily filler.",
       },
       {
         q: "Do you create the posts?",
@@ -498,9 +492,9 @@ export default function CharlestonBroadServicePage({ service }: { service: Charl
       </section>
 
       <AnswerSummary
-        eyebrow="Migration-Safe Local Answers"
+        eyebrow="Charleston Local Answers"
         heading={`${page.title}, answered plainly`}
-        intro="These pages are being built as careful destination pages for the Charleston site migration. They need to help customers first and preserve search intent second."
+        intro="If you run a service business in Charleston, here is the practical version: what matters, what to fix first, and how the pieces work together."
         variant="muted"
         items={page.answers}
       />
@@ -508,10 +502,10 @@ export default function CharlestonBroadServicePage({ service }: { service: Charl
       <SectionWrapper variant="light">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
-            Why This Page Matters for the Charleston Migration
+            Why Charleston Businesses Need a Local Strategy
           </h2>
           <p className="text-muted-foreground text-lg text-center max-w-3xl mx-auto mb-12 leading-relaxed">
-            The old Charleston site has real search equity. Before any redirect happens, the new destination page has to match the intent, improve the content, and fit the larger Holy Webs structure.
+            Charleston is full of distinct neighborhoods, fast-growing suburbs, seasonal demand, and service buyers who compare businesses carefully. Your marketing should make it easy for people to understand where you work, what you do, and why they can trust you.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {page.stats.map((stat) => (
@@ -528,7 +522,7 @@ export default function CharlestonBroadServicePage({ service }: { service: Charl
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-start">
           <div>
             <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">
-              Built for Charleston, Not Just Moved From Another Domain
+              Built Around How Charleston Customers Decide
             </h2>
             {page.marketCopy.map((copy) => (
               <p key={copy} className="text-muted-foreground text-lg leading-relaxed mb-6">
@@ -552,25 +546,6 @@ export default function CharlestonBroadServicePage({ service }: { service: Charl
         </div>
       </SectionWrapper>
 
-      <SectionWrapper variant="light">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
-            Legacy URLs This Page Can Protect
-          </h2>
-          <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-10">
-            These are the Charleston-domain URLs this page is designed to receive when the migration is ready.
-          </p>
-          <div className="space-y-3">
-            {page.oldUrls.map((url) => (
-              <div key={url} className="flex items-start gap-3 bg-muted rounded-xl p-4 border border-border">
-                <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-foreground font-medium">holywebscharleston.com{url}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </SectionWrapper>
-
       <SectionWrapper variant="muted">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-12">
           Questions About {page.title}
@@ -587,7 +562,7 @@ export default function CharlestonBroadServicePage({ service }: { service: Charl
 
       <RelatedLinks
         heading="Explore More Charleston Marketing Pages"
-        subheading="These internal links help visitors and search engines understand how the Charleston cluster fits together."
+        subheading="Find the next page that matches what you are trying to improve, from SEO and web design to industry-specific marketing."
         links={filteredRelatedLinks(page.slug)}
       />
 
