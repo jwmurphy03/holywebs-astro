@@ -4,7 +4,7 @@ import Blog from '../../../../components/pages/Blog';
 
 export function getStaticPaths() {
   const POSTS_PER_PAGE = 6;
-  const TOTAL_POSTS = 11; // keep in sync with publishedPosts in Blog.tsx
+  const TOTAL_POSTS = 13; // keep in sync with publishedPosts in Blog.tsx
   const totalPages = Math.ceil(TOTAL_POSTS / POSTS_PER_PAGE);
   return Array.from({ length: totalPages - 1 }, (_, i) => ({
     params: { page: String(i + 2) },

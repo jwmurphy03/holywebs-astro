@@ -7,6 +7,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import CityQuickAnswers from "@/components/CityQuickAnswers";
 const dallasSkyline = "/assets/dallas-skyline.png";
 
 const services = [
@@ -104,6 +105,8 @@ export default function Dallas() {
           </div>
         </div>
       </section>
+
+      <CityQuickAnswers city="Dallas" />
 
       {/* Market Opportunity */}
       <SectionWrapper variant="light">

@@ -7,6 +7,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import CityQuickAnswers from "@/components/CityQuickAnswers";
 const sanAntonioRiverwalk = "/assets/san-antonio-riverwalk.png";
 
 const services = [
@@ -103,6 +104,8 @@ export default function SanAntonio() {
           </div>
         </div>
       </section>
+
+      <CityQuickAnswers city="San Antonio" />
 
       <SectionWrapper variant="light">
         <div className="max-w-4xl mx-auto">

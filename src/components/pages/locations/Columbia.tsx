@@ -7,6 +7,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import CityQuickAnswers from "@/components/CityQuickAnswers";
 const columbiaSkyline = "/assets/columbia-skyline.png";
 
 const services = [
@@ -103,6 +104,8 @@ export default function Columbia() {
           </div>
         </div>
       </section>
+
+      <CityQuickAnswers city="Columbia" />
 
       <SectionWrapper variant="light">
         <div className="max-w-4xl mx-auto">

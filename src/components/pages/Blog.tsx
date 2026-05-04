@@ -20,6 +20,22 @@ const POSTS_PER_PAGE = 6;
 
 const publishedPosts = [
   {
+    title: "How Texas Service Businesses Can Show Up in Google Maps",
+    desc: "A practical Google Maps ranking guide for Texas service businesses in Dallas, Austin, San Antonio, Waco, Houston, and beyond.",
+    category: "Local SEO",
+    readTime: "8 min read",
+    slug: "texas-service-business-google-maps",
+    thumb: googleMapsThumb,
+  },
+  {
+    title: "Why City Pages Help Contractors Rank in More Places",
+    desc: "City pages can help contractors rank across more service areas, but only when they are useful, specific, and connected to a real local SEO strategy.",
+    category: "Local SEO",
+    readTime: "7 min read",
+    slug: "city-pages-for-contractors",
+    thumb: contractorNoCallsThumb,
+  },
+  {
     title: "The Real Reason Your HVAC Business Isn't Showing Up on Google",
     desc: "Can't find your HVAC company on Google? Here are the three most common reasons and a 15-minute self-audit to start fixing it today.",
     category: "HVAC Marketing",
