@@ -15,25 +15,25 @@ const services = [
     icon: Globe,
     title: "Web Design",
     desc: "Charleston customers expect quality — your website should reflect the same standard as your work. We build clean, fast, professional sites that earn trust and drive calls from the Lowcountry.",
-    link: "/services/web-design",
+    link: "/locations/south-carolina/charleston/web-design",
   },
   {
     icon: Search,
     title: "Local SEO",
     desc: "When someone in Mount Pleasant, Summerville, or West Ashley searches for your service, you need to be the first name they see. We build local SEO strategies tailored to the Charleston tri-county area.",
-    link: "/services/seo",
+    link: "/locations/south-carolina/charleston/seo",
   },
   {
     icon: MousePointerClick,
-    title: "Google & Meta Ads",
-    desc: "Capture high-intent searches across Charleston, Dorchester, and Berkeley counties with Google Ads, and put your business in front of ideal customers on Facebook and Instagram with hyper-local targeting.",
-    link: "/services/google-ads",
+    title: "Digital Marketing Strategy",
+    desc: "Bring the pieces together across SEO, website, Google Business Profile, paid search, and local content so your Charleston marketing has a clear plan.",
+    link: "/locations/south-carolina/charleston/digital-marketing",
   },
   {
     icon: Share2,
-    title: "AEO — Answer Engine Optimization",
-    desc: "AI search is reshaping how Lowcountry residents find local businesses. We position your business to show up when ChatGPT, Google AI Overviews, and voice assistants answer questions about services in your area.",
-    link: "/services/aeo",
+    title: "Social Media Marketing",
+    desc: "Build trust with local customers through consistent content, project proof, reviews, seasonal reminders, and a social presence that feels real.",
+    link: "/locations/south-carolina/charleston/social-media",
   },
 ];
 
