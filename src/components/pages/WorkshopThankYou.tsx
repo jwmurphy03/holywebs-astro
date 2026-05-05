@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import { useState } from "react";
 
 const calendarUrl =
-  "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Stop+Being+Invisible+%E2%80%94+Free+Workshop&dates=20260507T190000Z/20260507T200000Z&details=Live+workshop+for+contractors+and+service+businesses.+Learn+the+exact+system+to+get+found+on+Google.&location=Zoom+(link+in+email)";
+  "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Stop+Being+Invisible+%E2%80%94+Free+Workshop&dates=20260514T190000Z/20260514T203000Z&details=Live+workshop+for+contractors+and+service+businesses.+Learn+the+exact+system+to+get+found+on+Google.&location=Zoom+(link+in+email)";
 
 const steps = [
   {
@@ -16,7 +16,7 @@ const steps = [
   {
     number: "2",
     title: "Add it to your calendar",
-    desc: "May 7th, 2026 at 2:00 PM Central. Block it off so you don't miss it.",
+    desc: "May 14th, 2026 at 2:00 PM Central. Block it off so you don't miss it.",
     cta: true,
   },
   {
@@ -39,9 +39,9 @@ export default function WorkshopThankYou() {
   return (
     <Layout>
       <Helmet>
-        <title>You're Registered — See You May 7th | Holy Webs</title>
+        <title>You're Registered — See You May 14th | Holy Webs</title>
         <meta name="robots" content="noindex, nofollow" />
-        <meta name="description" content="You're registered for the Stop Being Invisible workshop. Check your email for your Zoom link and get ready for May 7th." />
+        <meta name="description" content="You're registered for the Stop Being Invisible workshop. Check your email for your Zoom link and get ready for May 14th." />
         <link rel="canonical" href="https://holywebs.com/workshop/thank-you/" />
       </Helmet>
 
@@ -52,7 +52,7 @@ export default function WorkshopThankYou() {
             <CheckCircle className="w-20 h-20 text-green-500" strokeWidth={1.5} />
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4">
-            You're In. See You on May 7th.
+            You're In. See You on May 14th.
           </h1>
           <p className="text-white/60 text-lg md:text-xl max-w-xl mx-auto">
             Check your email — your Zoom link is on its way.

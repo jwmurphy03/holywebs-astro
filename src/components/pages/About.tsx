@@ -56,13 +56,16 @@ export default function About() {
       </Helmet>
 
       {/* Hero */}
-      <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
+      <section className="section-dark py-28 lg:py-40 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute bottom-0 left-20 w-96 h-96 rounded-full bg-primary/50 blur-[150px]" />
         </div>
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-6">About Holy&nbsp;Webs</h1>
-          <p className="text-white/70 text-lg max-w-2xl leading-relaxed">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-5xl">
+          <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">About</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-6 leading-tight max-w-4xl">
+            About Holy&nbsp;Webs
+          </h1>
+          <p className="text-white/70 text-lg md:text-xl max-w-3xl leading-relaxed">
             A small, faith-driven digital marketing team helping local service businesses get found, build trust, and&nbsp;grow.
           </p>
         </div>

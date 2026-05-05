@@ -6,7 +6,7 @@ import { postToGHL } from "@/lib/ghl";
 import { toast } from "sonner";
 const jeremyPhoto = "/assets/jeremy-workshop.jpeg";
 
-const WORKSHOP_DATE = new Date("2026-05-07T19:00:00Z"); // 2 PM Central = 7 PM UTC
+const WORKSHOP_DATE = new Date("2026-05-14T19:00:00Z"); // 2 PM Central = 7 PM UTC
 
 function useCountdown(target: Date) {
   const [now, setNow] = useState(new Date());
@@ -111,8 +111,8 @@ export default function Workshop() {
           "@type": "Event",
           "name": "Stop Being Invisible: Free Live Training for Home Service Contractors",
           "description": "Free live workshop for HVAC, plumbing & home service contractors. Learn the 3-part local visibility system to get found on Google and generate more calls without paid ads.",
-          "startDate": "2026-05-07T19:00:00Z",
-          "endDate": "2026-05-07T20:30:00Z",
+          "startDate": "2026-05-14T19:00:00Z",
+          "endDate": "2026-05-14T20:30:00Z",
           "eventStatus": "https://schema.org/EventScheduled",
           "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
           "location": { "@type": "VirtualLocation", "url": "https://holywebs.com/workshop" },
@@ -131,7 +131,7 @@ export default function Workshop() {
               {/* Left column — copy */}
               <div className="text-center lg:text-left">
                 <span className="inline-block text-sm sm:text-base font-bold uppercase tracking-[0.2em] text-primary bg-white/5 border border-white/10 rounded-xl px-6 py-3 mb-8">
-                  Free Live Training — May 7th, 2026
+                  Free Live Training — May 14th, 2026
                 </span>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.95] mb-6 tracking-tight">
                   Stop Being<br />
@@ -147,7 +147,7 @@ export default function Workshop() {
                 {/* Event details */}
                 <div className="flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 mb-10 text-sm sm:text-base text-white/80">
                   <span className="flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-primary" /> Thursday, May 7th, 2026
+                    <Calendar className="w-5 h-5 text-primary" /> Thursday, May 14th, 2026
                   </span>
                   <span className="flex items-center gap-2">
                     <Clock className="w-5 h-5 text-primary" /> 2:00 PM Central
@@ -378,7 +378,7 @@ export default function Workshop() {
             >
               Save My Spot →
             </button>
-            <p className="text-white/30 text-sm mt-4">Thursday, May 7th · 2:00 PM Central · Live on Zoom · 90 Minutes</p>
+            <p className="text-white/30 text-sm mt-4">Thursday, May 14th · 2:00 PM Central · Live on Zoom · 90 Minutes</p>
           </div>
         </section>
 

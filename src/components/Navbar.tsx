@@ -74,10 +74,9 @@ const resourceSubLinks = [
 ];
 
 const navLinks = [
+  { label: "Pricing", to: "/pricing" },
   { label: "About", to: "/about" },
 ];
-
-const highlightedLink = { label: "Free Workshop", to: "/workshop" };
 
 type DropdownKey = "services" | "industries" | "locations" | "resources" | null;
 
@@ -146,7 +145,7 @@ export default function Navbar() {
         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === "services" ? "rotate-180" : ""}`} />
       </button>
       {activeDropdown === "services" && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[580px] bg-dark border border-white/10 rounded-lg shadow-2xl p-6">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[580px] bg-[#0B1220] border border-white/10 rounded-lg shadow-2xl shadow-black/35 p-6">
           <a
             href="/services"
             onClick={() => setActiveDropdown(null)}
@@ -161,8 +160,8 @@ export default function Navbar() {
                   key={s.to}
                   href={s.to}
                   onClick={() => setActiveDropdown(null)}
-                  className={`block px-3 py-2.5 rounded-md transition-colors hover:bg-white/5 group ${
-                    pathname === s.to ? "bg-white/5" : ""
+                  className={`block px-3 py-2.5 rounded-md transition-colors hover:bg-white/[0.06] group ${
+                    pathname === s.to ? "bg-white/[0.07]" : ""
                   }`}
                 >
                   <span className={`text-sm font-medium ${pathname === s.to ? "text-primary" : "text-white/90 group-hover:text-primary"}`}>
@@ -178,8 +177,8 @@ export default function Navbar() {
                   key={s.to}
                   href={s.to}
                   onClick={() => setActiveDropdown(null)}
-                  className={`block px-3 py-2.5 rounded-md transition-colors hover:bg-white/5 group ${
-                    pathname === s.to ? "bg-white/5" : ""
+                  className={`block px-3 py-2.5 rounded-md transition-colors hover:bg-white/[0.06] group ${
+                    pathname === s.to ? "bg-white/[0.07]" : ""
                   }`}
                 >
                   <span className={`text-sm font-medium ${pathname === s.to ? "text-primary" : "text-white/90 group-hover:text-primary"}`}>
@@ -190,8 +189,8 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-          <div className="border-t border-white/5 mt-4 pt-4">
-            <div className="bg-white/5 border border-primary/30 rounded-lg px-5 py-4 flex items-center justify-between gap-4">
+          <div className="border-t border-white/10 mt-4 pt-4">
+            <div className="bg-[#101A2E] border border-primary/25 rounded-lg px-5 py-4 flex items-center justify-between gap-4">
               <div>
                 <span className="text-sm font-semibold text-white">Not Sure Where to&nbsp;Start?</span>
                 <p className="text-xs text-white/50 mt-0.5">Get a free audit of your online visibility and a clear action plan.</p>
@@ -233,7 +232,7 @@ export default function Navbar() {
         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === "industries" ? "rotate-180" : ""}`} />
       </button>
       {activeDropdown === "industries" && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[480px] bg-dark border border-white/10 rounded-lg shadow-2xl p-6">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[480px] bg-[#0B1220] border border-white/10 rounded-lg shadow-2xl shadow-black/35 p-6">
           <a
             href="/industries"
             onClick={() => setActiveDropdown(null)}
@@ -251,8 +250,8 @@ export default function Navbar() {
                       key={ind.to}
                       href={ind.to}
                       onClick={() => setActiveDropdown(null)}
-                      className={`flex items-center gap-2.5 px-3 py-2.5 rounded-md transition-colors hover:bg-white/5 group ${
-                        pathname === ind.to ? "bg-white/5" : ""
+                      className={`flex items-center gap-2.5 px-3 py-2.5 rounded-md transition-colors hover:bg-white/[0.06] group ${
+                        pathname === ind.to ? "bg-white/[0.07]" : ""
                       }`}
                     >
                       {Icon && <Icon className="w-4 h-4 text-primary flex-shrink-0" />}
@@ -265,7 +264,7 @@ export default function Navbar() {
               </div>
             ))}
           </div>
-          <div className="border-t border-white/5 mt-4 pt-3">
+          <div className="border-t border-white/10 mt-4 pt-3">
             <a
               href="/contact"
               onClick={() => setActiveDropdown(null)}
@@ -297,7 +296,7 @@ export default function Navbar() {
         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === "resources" ? "rotate-180" : ""}`} />
       </button>
       {activeDropdown === "resources" && (
-        <div className="absolute top-full right-0 mt-3 w-[560px] bg-dark border border-white/10 rounded-lg shadow-2xl p-6">
+        <div className="absolute top-full right-0 mt-3 w-[560px] bg-[#0B1220] border border-white/10 rounded-lg shadow-2xl shadow-black/35 p-6">
           <div className="grid grid-cols-2 gap-x-8">
             {/* Left column - Featured */}
             <div className="space-y-1">
@@ -305,7 +304,7 @@ export default function Navbar() {
               <a
                 href="/book"
                 onClick={() => setActiveDropdown(null)}
-                className="flex items-start gap-3 px-3 py-2.5 rounded-md hover:bg-white/5 group"
+                className="flex items-start gap-3 px-3 py-2.5 rounded-md hover:bg-white/[0.06] group"
               >
                 <BookOpen className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <div>
@@ -316,7 +315,7 @@ export default function Navbar() {
               <a
                 href="/workshop"
                 onClick={() => setActiveDropdown(null)}
-                className="flex items-start gap-3 px-3 py-2.5 rounded-md hover:bg-white/5 group"
+                className="flex items-start gap-3 px-3 py-2.5 rounded-md hover:bg-white/[0.06] group"
               >
                 <Video className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <div>
@@ -327,7 +326,7 @@ export default function Navbar() {
               <a
                 href="/resources/free-visibility-audit"
                 onClick={() => setActiveDropdown(null)}
-                className="flex items-start gap-3 px-3 py-2.5 rounded-md hover:bg-white/5 group"
+                className="flex items-start gap-3 px-3 py-2.5 rounded-md hover:bg-white/[0.06] group"
               >
                 <Search className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <div>
@@ -342,7 +341,7 @@ export default function Navbar() {
               <a
                 href="/resources/local-seo-guide-service-businesses"
                 onClick={() => setActiveDropdown(null)}
-                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/5 group"
+                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/[0.06] group"
               >
                 <FileText className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-sm font-medium text-white/80 group-hover:text-primary">Local SEO Guide</span>
@@ -350,7 +349,7 @@ export default function Navbar() {
               <a
                 href="/resources/website-guide-service-businesses"
                 onClick={() => setActiveDropdown(null)}
-                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/5 group"
+                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/[0.06] group"
               >
                 <FileText className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-sm font-medium text-white/80 group-hover:text-primary">Website Guide</span>
@@ -358,7 +357,7 @@ export default function Navbar() {
               <a
                 href="/resources/google-business-profile-guide"
                 onClick={() => setActiveDropdown(null)}
-                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/5 group"
+                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/[0.06] group"
               >
                 <FileText className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-sm font-medium text-white/80 group-hover:text-primary">GBP Optimization Guide</span>
@@ -366,7 +365,7 @@ export default function Navbar() {
               <a
                 href="/resources/google-ads-guide-contractors"
                 onClick={() => setActiveDropdown(null)}
-                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/5 group"
+                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/[0.06] group"
               >
                 <FileText className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-sm font-medium text-white/80 group-hover:text-primary">Google Ads Guide</span>
@@ -374,16 +373,16 @@ export default function Navbar() {
               <a
                 href="/resources/online-reviews-reputation-guide"
                 onClick={() => setActiveDropdown(null)}
-                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/5 group"
+                className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/[0.06] group"
               >
                 <FileText className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-sm font-medium text-white/80 group-hover:text-primary">Reviews &amp; Reputation Guide</span>
               </a>
-              <div className="border-t border-white/5 mt-2 pt-2">
+              <div className="border-t border-white/10 mt-2 pt-2">
                 <a
                   href="/resources/blog"
                   onClick={() => setActiveDropdown(null)}
-                  className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/5 group"
+                  className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/[0.06] group"
                 >
                   <Newspaper className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="text-sm font-medium text-white/80 group-hover:text-primary">Blog</span>
@@ -391,7 +390,7 @@ export default function Navbar() {
                 <a
                   href="/faq"
                   onClick={() => setActiveDropdown(null)}
-                  className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/5 group"
+                  className="flex items-center gap-2.5 px-3 py-2 rounded-md hover:bg-white/[0.06] group"
                 >
                   <HelpCircle className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="text-sm font-medium text-white/80 group-hover:text-primary">FAQ</span>
@@ -399,7 +398,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <div className="border-t border-white/5 mt-4 pt-3">
+          <div className="border-t border-white/10 mt-4 pt-3">
             <a
               href="/resources"
               onClick={() => setActiveDropdown(null)}
@@ -434,15 +433,15 @@ export default function Navbar() {
         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === key ? "rotate-180" : ""}`} />
       </button>
       {activeDropdown === key && (
-        <div className="absolute top-full left-0 mt-3 w-72 bg-dark border border-white/10 rounded-lg shadow-xl py-2">
+        <div className="absolute top-full left-0 mt-3 w-72 bg-[#0B1220] border border-white/10 rounded-lg shadow-xl shadow-black/35 py-2">
           <a
             href={allLink}
             onClick={() => setActiveDropdown(null)}
-            className="block px-4 py-2.5 text-sm text-white/60 hover:text-primary hover:bg-white/5 transition-colors"
+            className="block px-4 py-2.5 text-sm text-white/60 hover:text-primary hover:bg-white/[0.06] transition-colors"
           >
             All {label}
           </a>
-          <div className="border-t border-white/5 my-1" />
+          <div className="border-t border-white/10 my-1" />
           {subLinks.map((link) => (
             <a
               key={link.to}
@@ -451,7 +450,7 @@ export default function Navbar() {
               className={`block px-4 py-2.5 text-sm transition-colors ${
                 pathname === link.to
                   ? "text-primary"
-                  : "text-white/80 hover:text-primary hover:bg-white/5"
+                  : "text-white/80 hover:text-primary hover:bg-white/[0.06]"
               }`}
             >
               {link.label}
@@ -479,7 +478,7 @@ export default function Navbar() {
         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === "locations" ? "rotate-180" : ""}`} />
       </button>
       {activeDropdown === "locations" && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[480px] bg-dark border border-white/10 rounded-lg shadow-2xl p-6">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[480px] bg-[#0B1220] border border-white/10 rounded-lg shadow-2xl shadow-black/35 p-6">
           <a
             href="/locations"
             onClick={() => setActiveDropdown(null)}
@@ -500,8 +499,8 @@ export default function Navbar() {
                       key={city.to}
                       href={city.to}
                       onClick={() => setActiveDropdown(null)}
-                      className={`block px-3 py-2 rounded-md transition-colors hover:bg-white/5 group ${
-                        pathname === city.to ? "bg-white/5" : ""
+                      className={`block px-3 py-2 rounded-md transition-colors hover:bg-white/[0.06] group ${
+                        pathname === city.to ? "bg-white/[0.07]" : ""
                       }`}
                     >
                       <span className={`text-sm font-medium ${pathname === city.to ? "text-primary" : "text-white/80 group-hover:text-primary"}`}>
@@ -513,7 +512,7 @@ export default function Navbar() {
               </div>
             ))}
           </div>
-          <div className="border-t border-white/5 mt-2 pt-3">
+          <div className="border-t border-white/10 mt-2 pt-3">
             <a
               href="/contact"
               onClick={() => setActiveDropdown(null)}
@@ -609,29 +608,31 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-md border-b border-white/10">
+      <a
+        href="/workshop"
+        className="block border-b border-white/10 bg-[#0B1220] text-white transition-colors hover:bg-[#101A2E]"
+      >
+        <div className="container mx-auto flex min-h-12 items-center justify-center gap-2 px-4 text-center text-xs font-semibold sm:min-h-10 sm:text-sm">
+          <Video className="hidden h-4 w-4 text-primary sm:block" />
+          <span className="rounded-full bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary sm:text-xs">
+            Free Workshop
+          </span>
+          <span>Free live workshop: Stop Being Invisible</span>
+          <span className="hidden text-white/35 sm:inline">|</span>
+          <span className="text-white/75">Thurs, May 14th at 2 PM Central</span>
+        </div>
+      </a>
       <div className="container mx-auto flex items-center justify-between px-4 lg:px-8 h-16">
         <a href="/">
           <img src={logoWhite} alt="Holy Webs" className="h-8 w-[160px]" width={160} height={32} />
         </a>
 
         {/* Desktop */}
-        <div ref={navRef} className="hidden md:flex items-center gap-8 ml-4">
+        <div ref={navRef} className="hidden lg:flex items-center gap-8 ml-4">
           {renderServicesMegaMenu()}
           {renderIndustriesMegaMenu()}
           {renderLocationsMegaMenu()}
           {renderResourcesMegaMenu()}
-
-          <a
-            href={highlightedLink.to}
-            className={`text-sm font-medium transition-colors ${
-              pathname.startsWith(highlightedLink.to)
-                ? "text-primary"
-                : "text-primary hover:text-primary/80"
-            }`}
-          >
-            {highlightedLink.label}
-            <span className="ml-1.5 text-[10px] font-bold uppercase tracking-wider bg-primary/15 text-primary px-1.5 py-0.5 rounded">Live</span>
-          </a>
 
           {navLinks.map((link) => (
             <a
@@ -654,7 +655,7 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-dark-foreground"
+          className="lg:hidden text-dark-foreground"
           aria-label="Toggle menu"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -663,19 +664,11 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-dark border-t border-white/10 px-4 pb-6 pt-2">
+        <div className="lg:hidden bg-dark border-t border-white/10 px-4 pb-6 pt-2">
           {renderMobileAccordion("Services", mobileServicesOpen, () => setMobileServicesOpen(!mobileServicesOpen), "/services", serviceSubLinks)}
           {renderMobileAccordion("Industries", mobileIndustriesOpen, () => setMobileIndustriesOpen(!mobileIndustriesOpen), "/industries", industrySubLinks)}
           {renderMobileLocationsAccordion()}
           {renderMobileAccordion("Resources", mobileResourcesOpen, () => setMobileResourcesOpen(!mobileResourcesOpen), "/resources", resourceSubLinks)}
-          <a
-            href={highlightedLink.to}
-            onClick={() => setOpen(false)}
-            className="block py-3 text-primary hover:text-primary/80 font-medium"
-          >
-            {highlightedLink.label}
-            <span className="ml-1.5 text-[10px] font-bold uppercase tracking-wider bg-primary/15 text-primary px-1.5 py-0.5 rounded">Live</span>
-          </a>
           {navLinks.map((link) => (
             <a
               key={link.to}

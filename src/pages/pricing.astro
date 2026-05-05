@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Pricing from '../components/pages/Pricing';
+
+const pricingSchema = {
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "name": "Holy Webs Monthly Growth Plans",
+  "url": "https://holywebs.com/pricing",
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "name": "Local Growth",
+      "price": "1997",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "1997",
+        "priceCurrency": "USD",
+        "unitText": "month"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Local Growth Plan",
+        "description": "Website, one-market local SEO, Google Business Profile management, citation submissions, monthly content, tracking, and reporting for local service businesses."
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Local Authority",
+      "price": "2997",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "2997",
+        "priceCurrency": "USD",
+        "unitText": "month"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Local Authority Plan",
+        "description": "Website, expanded local SEO, Google Business Profile management, increased citation submissions, two monthly content pages, tracking, and reporting for local service businesses."
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Market Leader",
+      "price": "4997",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "4997",
+        "priceCurrency": "USD",
+        "unitText": "month"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Market Leader Plan",
+        "description": "High-output regional SEO, increased citation submissions, three monthly content pages, tracking, landing pages, and Google Ads or Facebook Ads management for local service businesses."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Pricing | Holy Webs Monthly Growth Plans"
+  description="Transparent monthly pricing for Holy Webs local growth plans. Website, local SEO, Google Business Profile, content, tracking, and paid ads management options for service businesses."
+  canonicalUrl="https://holywebs.com/pricing"
+  schema={pricingSchema}
+>
+  <Pricing client:idle />
+</Layout>
