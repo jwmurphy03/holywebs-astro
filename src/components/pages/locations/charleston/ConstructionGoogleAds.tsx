@@ -104,7 +104,7 @@ export default function CharlestonConstructionGoogleAds() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <Breadcrumbs items={[
               { label: "Locations", href: "/locations" },
-              { label: "South Carolina" },
+              { label: "South Carolina", href: "/locations/south-carolina" },
               { label: "Charleston", href: "/locations/south-carolina/charleston" },
               { label: "Construction", href: "/locations/south-carolina/charleston/construction" },
               { label: "Google Ads" },

@@ -2,6 +2,7 @@ import AnswerSummary from "@/components/AnswerSummary";
 import FAQSchema from "@/components/FAQSchema";
 
 type City =
+  | "Houston"
   | "Dallas"
   | "Austin"
   | "San Antonio"
@@ -20,9 +21,19 @@ const cityData: Record<
     market: string;
     localAngle: string;
     priority: string;
-    serviceAreas: string;
+  serviceAreas: string;
   }
 > = {
+  Houston: {
+    state: "Texas",
+    market: "Greater Houston",
+    localAngle:
+      "Houston is a massive, spread-out market. Katy, Sugar Land, Cypress, The Heights, Pearland, The Woodlands, and the city core all have different competitors, search patterns, and service-area expectations.",
+    priority:
+      "Start by making the highest-value service areas obvious. Then tighten the website, Google Business Profile, reviews, and service pages so customers and Google can understand where you are strongest.",
+    serviceAreas:
+      "A Houston strategy should not pretend the whole metro behaves the same. The site should name the areas you actually serve and connect those places to the services that drive revenue.",
+  },
   Dallas: {
     state: "Texas",
     market: "DFW",

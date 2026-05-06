@@ -34,21 +34,24 @@ const companyLinks = [
 const locationGroups = [
   {
     state: "South Carolina",
+    stateTo: "/locations/south-carolina",
     cities: [
       { label: "Charleston", to: "/locations/south-carolina/charleston" },
       { label: "Greenville", to: "/locations/south-carolina/greenville" },
       { label: "Columbia", to: "/locations/south-carolina/columbia" },
     ],
+    seeAll: { label: "See All SC Markets →", to: "/locations/south-carolina" },
   },
   {
     state: "Texas",
+    stateTo: "/locations/texas",
     cities: [
       { label: "Houston", to: "/locations/texas/houston" },
       { label: "Waco", to: "/locations/texas/waco" },
       { label: "Dallas", to: "/locations/texas/dallas" },
       { label: "Austin", to: "/locations/texas/austin" },
     ],
-    seeAll: { label: "See All Texas Markets →", to: "/locations" },
+    seeAll: { label: "See All Texas Markets →", to: "/locations/texas" },
   },
 ];
 
@@ -76,7 +79,9 @@ export default function Footer() {
                 {locationGroups.map((group) => (
                   <div key={group.state}>
                     <div className="flex flex-wrap items-center gap-x-0.5 text-sm leading-relaxed">
-                      <span className="font-bold text-white/70 mr-1">{group.state}:</span>
+                      <a href={group.stateTo} className="font-bold text-white/70 hover:text-primary transition-colors mr-1">
+                        {group.state}:
+                      </a>
                       {group.cities.map((city, i) => (
                         <span key={city.to} className="inline-flex items-center">
                           <a

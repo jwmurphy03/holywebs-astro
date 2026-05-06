@@ -118,7 +118,7 @@ export default function HoustonRoofingWebDesign() {
             <Breadcrumbs
               items={[
                 { label: "Locations", href: "/locations" },
-                { label: "Texas" },
+                { label: "Texas", href: "/locations/texas" },
                 { label: "Houston", href: "/locations/texas/houston" },
                 { label: "Roofing", href: "/locations/texas/houston/roofing" },
                 { label: "Web Design" },

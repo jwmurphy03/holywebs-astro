@@ -7,6 +7,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import CityQuickAnswers from "@/components/CityQuickAnswers";
+import RelatedLinks from "@/components/RelatedLinks";
 const wacoSkyline = "/assets/waco-bridge.png";
 
 const services = [
@@ -85,7 +86,7 @@ export default function Waco() {
         </div>
         <div className="relative z-10 py-24 lg:py-36">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "Texas", href: "/locations" }, { label: "Waco" }]} />
+            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "Texas", href: "/locations/texas" }, { label: "Waco" }]} />
             <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Waco, Texas</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
               SEO &amp; Digital Marketing for Waco, Texas&nbsp;Businesses
@@ -255,6 +256,38 @@ export default function Waco() {
           </div>
         </div>
       </SectionWrapper>
+
+      <RelatedLinks
+        heading="Helpful Pages for Waco Service Businesses"
+        subheading="Use these resources to move from market context into the service or guide that matches the next problem you need to solve."
+        links={[
+          {
+            title: "Local SEO Guide",
+            description: "Understand how service businesses can improve organic visibility and Google Maps relevance.",
+            href: "/resources/local-seo-guide-service-businesses",
+          },
+          {
+            title: "Google Business Profile Guide",
+            description: "Learn how profile categories, services, reviews, photos, and local proof affect map visibility.",
+            href: "/resources/google-business-profile-guide",
+          },
+          {
+            title: "Website Guide",
+            description: "See what a service-business website needs to turn visitors into real leads.",
+            href: "/resources/website-guide-service-businesses",
+          },
+          {
+            title: "Houston SEO",
+            description: "Explore the deeper Houston SEO page as the model for broader Texas local search work.",
+            href: "/locations/texas/houston/seo",
+          },
+          {
+            title: "Texas Markets",
+            description: "See how Waco fits into the broader Texas local marketing footprint.",
+            href: "/locations/texas",
+          },
+        ]}
+      />
 
       {/* Nearby Markets */}
       <SectionWrapper variant="light">

@@ -179,7 +179,7 @@ export default function CharlestonHvacHub() {
             <Breadcrumbs
               items={[
                 { label: "Locations", href: "/locations" },
-                { label: "South Carolina" },
+                { label: "South Carolina", href: "/locations/south-carolina" },
                 { label: "Charleston", href: "/locations/south-carolina/charleston" },
                 { label: "HVAC" },
               ]}

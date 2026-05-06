@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-import { ArrowRight, Globe, Search, MousePointerClick, Share2, TrendingUp, Users, MapPin, Building, Check, Phone } from "lucide-react";
+import { ArrowRight, Globe, Search, MousePointerClick, TrendingUp, Users, MapPin, Building, Check, Phone } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const HOUSTON_PHONE = "(713) 487-7332";
@@ -11,6 +11,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
+import CityQuickAnswers from "@/components/CityQuickAnswers";
 const houstonSkyline = "/assets/houston-skyline.jpg";
 const houstonBeSomeone = "/assets/houston-be-someone.jpg";
 
@@ -19,25 +20,25 @@ const services = [
     icon: Globe,
     title: "Web Design",
     desc: "Houston customers judge your business by your website before they ever call. We build fast, professional sites that reflect the quality of your work and make it easy for Houstonians to reach you.",
-    link: "/services/web-design",
+    link: "/locations/texas/houston/web-design",
   },
   {
     icon: Search,
     title: "Local SEO",
     desc: "When someone in Katy, Sugar Land, or the Heights searches for your service, you need to show up. We build local SEO strategies that dominate the Houston metro — Google Business Profile, local citations, and content that ranks.",
-    link: "/services/seo",
+    link: "/locations/texas/houston/seo",
   },
   {
     icon: MousePointerClick,
     title: "Google & Meta Ads",
     desc: "Capture high-intent searches across the Greater Houston Area with Google Ads, and generate new demand with targeted Facebook and Instagram campaigns reaching your ideal customers by zip code.",
-    link: "/services/google-ads",
+    link: "/locations/texas/houston/google-ads",
   },
   {
-    icon: Share2,
-    title: "AEO — Answer Engine Optimization",
-    desc: "AI-powered search is changing how Houstonians find local businesses. We make sure your business shows up when ChatGPT, Google AI Overviews, and voice assistants answer questions about services in your area.",
-    link: "/services/aeo",
+    icon: MapPin,
+    title: "Google Business Profile",
+    desc: "For many Houston service businesses, Google Maps is where the first serious decision happens. We improve the profile signals that support map visibility, trust, and calls.",
+    link: "/locations/texas/houston/google-business-profile",
   },
 ];
 
@@ -86,7 +87,7 @@ export default function Houston() {
         </div>
         <div className="relative z-10 py-24 lg:py-36">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "Texas", href: "/locations" }, { label: "Houston" }]} />
+            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "Texas", href: "/locations/texas" }, { label: "Houston" }]} />
             <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Houston, Texas</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
               Digital Marketing for Houston Local Service&nbsp;Businesses
@@ -116,6 +117,8 @@ export default function Houston() {
           </div>
         </div>
       </section>
+
+      <CityQuickAnswers city="Houston" />
 
       {/* Houston Market Opportunity */}
       <SectionWrapper variant="light">

@@ -116,7 +116,7 @@ export default function HoustonHvacGbp() {
             <Breadcrumbs
               items={[
                 { label: "Locations", href: "/locations" },
-                { label: "Texas" },
+                { label: "Texas", href: "/locations/texas" },
                 { label: "Houston", href: "/locations/texas/houston" },
                 { label: "HVAC", href: "/locations/texas/houston/hvac" },
                 { label: "Google Business Profile" },

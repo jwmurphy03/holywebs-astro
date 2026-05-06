@@ -155,7 +155,7 @@ export default function HoustonHvacHub() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <Breadcrumbs items={[
               { label: "Locations", href: "/locations" },
-              { label: "Texas" },
+              { label: "Texas", href: "/locations/texas" },
               { label: "Houston", href: "/locations/texas/houston" },
               { label: "HVAC" },
             ]} />

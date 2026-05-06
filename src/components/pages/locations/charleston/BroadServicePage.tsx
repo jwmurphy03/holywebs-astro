@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet-async";
 import {
   ArrowRight,
   BarChart3,
@@ -432,13 +431,6 @@ export default function CharlestonBroadServicePage({ service }: { service: Charl
 
   return (
     <Layout>
-      <Helmet>
-        <title>{page.metaTitle}</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content={page.metaDescription} />
-        <link rel="canonical" href={`https://holywebs.com${page.slug}/`} />
-        <meta property="og:type" content="website" />
-      </Helmet>
       <FAQSchema faqs={page.faqs} />
       <LocalBusinessSchema
         city="Charleston"
@@ -463,7 +455,7 @@ export default function CharlestonBroadServicePage({ service }: { service: Charl
             <Breadcrumbs
               items={[
                 { label: "Locations", href: "/locations" },
-                { label: "South Carolina" },
+                { label: "South Carolina", href: "/locations/south-carolina" },
                 { label: "Charleston", href: "/locations/south-carolina/charleston" },
                 { label: page.title },
               ]}

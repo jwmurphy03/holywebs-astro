@@ -122,7 +122,7 @@ export default function HoustonConstructionWebDesign() {
             <Breadcrumbs
               items={[
                 { label: "Locations", href: "/locations" },
-                { label: "Texas" },
+                { label: "Texas", href: "/locations/texas" },
                 { label: "Houston", href: "/locations/texas/houston" },
                 { label: "Construction", href: "/locations/texas/houston/construction" },
                 { label: "Web Design" },

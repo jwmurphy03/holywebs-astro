@@ -1,7 +1,7 @@
 import { SITE_URL } from "../lib/seo";
 
 const pages = import.meta.glob("./**/*.astro");
-const lastmod = "2026-05-04";
+const lastmod = "2026-05-05";
 const excluded = new Set([
   "/book/checkout",
   "/book/thank-you",

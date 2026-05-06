@@ -8,6 +8,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
 import CityQuickAnswers from "@/components/CityQuickAnswers";
+import RelatedLinks from "@/components/RelatedLinks";
 const columbiaSkyline = "/assets/columbia-skyline.png";
 
 const services = [
@@ -87,7 +88,7 @@ export default function Columbia() {
         </div>
         <div className="relative z-10 py-24 lg:py-36">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "South Carolina", href: "/locations" }, { label: "Columbia" }]} />
+            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "South Carolina", href: "/locations/south-carolina" }, { label: "Columbia" }]} />
             <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Columbia, South Carolina</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
               Digital Marketing for Columbia &amp; Midlands Service&nbsp;Businesses
@@ -200,6 +201,38 @@ export default function Columbia() {
           </div>
         </div>
       </SectionWrapper>
+
+      <RelatedLinks
+        heading="Helpful Pages for Columbia Service Businesses"
+        subheading="Use these resources to move from Midlands context into the service or guide that matches the next problem you need to solve."
+        links={[
+          {
+            title: "Local SEO Guide",
+            description: "Understand how service businesses can improve organic visibility and Google Maps relevance.",
+            href: "/resources/local-seo-guide-service-businesses",
+          },
+          {
+            title: "Google Business Profile Guide",
+            description: "Learn how profile categories, services, reviews, photos, and local proof affect map visibility.",
+            href: "/resources/google-business-profile-guide",
+          },
+          {
+            title: "Charleston SEO",
+            description: "See the deeper Charleston SEO page that supports the South Carolina local search cluster.",
+            href: "/locations/south-carolina/charleston/seo",
+          },
+          {
+            title: "Charleston Web Design",
+            description: "Explore how service-business website strategy is handled in the Lowcountry cluster.",
+            href: "/locations/south-carolina/charleston/web-design",
+          },
+          {
+            title: "South Carolina Markets",
+            description: "See how Columbia fits into the broader South Carolina local marketing footprint.",
+            href: "/locations/south-carolina",
+          },
+        ]}
+      />
 
       <NearbyMarkets markets={nearbyMarkets} />
       <FinalCTASection headline="Ready to Be the Go-To Service Company in Columbia?" subtitle="Columbia homeowners are searching for service companies right now. Fill out the form and we'll show you how to win more of those jobs." />

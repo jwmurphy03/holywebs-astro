@@ -88,7 +88,7 @@ export default function Dallas() {
         </div>
         <div className="relative z-10 py-24 lg:py-36">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "Texas", href: "/locations" }, { label: "Dallas" }]} />
+            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "Texas", href: "/locations/texas" }, { label: "Dallas" }]} />
             <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Dallas, Texas</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
               Digital Marketing for Dallas &amp; DFW Service&nbsp;Businesses

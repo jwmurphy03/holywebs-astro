@@ -80,7 +80,7 @@ export default function Charleston() {
         </div>
         <div className="relative z-10 py-24 lg:py-36">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "South Carolina", href: "/locations" }, { label: "Charleston" }]} />
+            <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: "South Carolina", href: "/locations/south-carolina" }, { label: "Charleston" }]} />
             <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Charleston, South Carolina — Where It All Started</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
               Digital Marketing for Charleston &amp; Lowcountry Service&nbsp;Businesses
