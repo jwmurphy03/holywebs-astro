@@ -11,7 +11,7 @@ const services = [
     icon: Globe,
     title: "Web Design",
     to: "/services/web-design",
-    desc: "Your website is your hardest-working employee. We build sites that look sharp, load fast, and turn visitors into calls — not just clicks. Every site we build is mobile-first, conversion-focused, and designed to make your business look as professional online as it is in person.",
+    desc: "Your website is your hardest-working employee. We build sites that look sharp, load fast, and turn visitors into calls, not just clicks. Every site we build is mobile-first, conversion-focused, and designed to make your business look as professional online as it is in person.",
   },
   {
     icon: Search,
@@ -23,25 +23,25 @@ const services = [
     icon: MousePointerClick,
     title: "Google Ads",
     to: "/services/google-ads",
-    desc: "Get in front of buyers the moment they're searching. Our campaigns are built around your margins, not your impressions. We focus on high-intent local searches that drive calls and booked jobs — not vanity metrics.",
+    desc: "Get in front of buyers the moment they're searching. Our campaigns are built around your margins, not your impressions. We focus on high-intent local searches that drive calls and booked jobs, not vanity metrics.",
   },
   {
     icon: Share2,
     title: "Meta Ads",
     to: "/services/meta-ads",
-    desc: "Create demand before people even know they need you. We run targeted Facebook and Instagram campaigns that put your business in front of the right audience — driving awareness, leads, and booked jobs.",
+    desc: "Create demand before people even know they need you. We run targeted Facebook and Instagram campaigns that put your business in front of the right audience, driving awareness, leads, and booked jobs.",
   },
   {
     icon: BrainCircuit,
-    title: "Answer Engine Optimization (AEO)",
+    title: "AI Search Optimization",
     to: "/services/aeo",
-    desc: "AI-powered search is changing how customers find local businesses. We optimize your content to appear in AI answers, featured snippets, and voice search results — so you show up where the future of search is heading.",
+    desc: "AI-powered search is changing how customers find local businesses. We optimize your content to appear in AI answers, featured snippets, and voice search results, so you show up where the future of search is heading.",
   },
   {
     icon: MessageCircle,
     title: "Google Business Profile",
     to: "/services/google-business-profile",
-    desc: "Your GBP listing is often the first thing potential customers see. We optimize every detail — categories, photos, posts, reviews, and Q&A — to help you rank in the Map Pack and convert searchers into callers.",
+    desc: "Your GBP listing is often the first thing potential customers see. We optimize every detail, categories, photos, posts, reviews, and Q&A, to help you rank in the Map Pack and convert searchers into callers.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function Services() {
       <Helmet>
         <title>Digital Marketing Services for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Web design, local SEO, Google Ads, Meta Ads, AEO, and Google Business Profile optimization — all built for contractors and service businesses." />
+        <meta name="description" content="Web design, local SEO, Google Ads, Meta Ads, AI Search, and Google Business Profile optimization, all built for contractors and service businesses." />
         <link rel="canonical" href="https://holywebs.com/services/" />
       </Helmet>
       <section className="section-dark py-24 lg:py-32">
@@ -81,7 +81,7 @@ export default function Services() {
       </SectionWrapper>
 
       <ServicesSocialProof />
-      <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work — let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />
+      <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work, let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />
     </Layout>
   );
 }

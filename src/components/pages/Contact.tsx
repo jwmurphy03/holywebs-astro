@@ -13,7 +13,7 @@ const serviceOptions = [
   "Google Ads",
   "Meta Ads (Facebook & Instagram)",
   "Social Media Management",
-  "AEO (Answer Engine Optimization)",
+  "AI Search (AI Search Optimization)",
   "Multiple Services",
   "Not sure yet, help me figure it out",
 ];
@@ -36,7 +36,7 @@ const contactFaqs = [
   },
   {
     question: "How long before I start seeing results?",
-    answer: "It varies by service. Google Ads and Meta Ads can start generating leads within the first few weeks once campaigns are dialed in. SEO and AEO are longer-term investments. Most clients start seeing meaningful movement in organic rankings within 6-9 months. We set clear expectations upfront and provide regular reporting so you always know where things stand.",
+    answer: "It varies by service. Google Ads and Meta Ads can start generating leads within the first few weeks once campaigns are dialed in. SEO and AI Search are longer-term investments. Most clients start seeing meaningful movement in organic rankings within 6-9 months. We set clear expectations upfront and provide regular reporting so you always know where things stand.",
   },
   {
     question: "What's the onboarding process like?",

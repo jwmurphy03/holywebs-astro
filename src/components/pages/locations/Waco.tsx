@@ -31,7 +31,7 @@ const services = [
   },
   {
     icon: Share2,
-    title: "AEO — Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "AI-powered search is changing how Waco residents find local businesses. When someone asks ChatGPT, Google AI Overviews, or Siri for a recommendation in Waco, we make sure your business is part of the answer — not just a link buried on page two.",
     link: "/services/aeo",
   },

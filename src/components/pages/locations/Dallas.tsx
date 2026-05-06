@@ -8,6 +8,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
 import CityQuickAnswers from "@/components/CityQuickAnswers";
+import CityTradeSeoLinks from "@/components/CityTradeSeoLinks";
 const dallasSkyline = "/assets/dallas-skyline.png";
 
 const services = [
@@ -31,7 +32,7 @@ const services = [
   },
   {
     icon: Share2,
-    title: "AEO — Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "AI-powered search is changing how Dallas residents find local businesses. When someone asks ChatGPT, Google AI Overviews, or Siri for a recommendation in DFW, we make sure your business is part of the answer.",
     link: "/services/aeo",
   },
@@ -186,6 +187,8 @@ export default function Dallas() {
           ))}
         </div>
       </SectionWrapper>
+
+      <CityTradeSeoLinks city="Dallas" basePath="/locations/texas/dallas" />
 
       {/* Areas We Serve */}
       <SectionWrapper variant="muted">

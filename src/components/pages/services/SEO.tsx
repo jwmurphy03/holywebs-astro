@@ -10,6 +10,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import RelatedLinks from "@/components/RelatedLinks";
 import AnswerSummary from "@/components/AnswerSummary";
+import ServiceOfferAlignment from "@/components/ServiceOfferAlignment";
 
 const relatedLinks = [
   {
@@ -23,7 +24,7 @@ const relatedLinks = [
     href: "/services/google-ads",
   },
   {
-    title: "Answer Engine Optimization",
+    title: "AI Search Optimization",
     description: "AI search is changing the game. Learn how we optimize your content for ChatGPT, AI Overviews, and voice search.",
     href: "/services/aeo",
   },
@@ -53,17 +54,17 @@ const features = [
   {
     icon: Search,
     title: "Keyword Strategy That Targets Buyers",
-    desc: "We don't chase vanity keywords. We target the search terms your ideal customers are actually using — the ones that lead to phone calls and booked jobs.",
+    desc: "We don't chase vanity keywords. We target the search terms your ideal customers are actually using, the ones that lead to phone calls and booked jobs.",
   },
   {
     icon: FileText,
     title: "On-Page Optimization",
-    desc: "Title tags, meta descriptions, heading structure, internal linking, schema markup — we handle all the technical details that tell Google exactly what your pages are about.",
+    desc: "Title tags, meta descriptions, heading structure, internal linking, schema markup, we handle all the technical details that tell Google exactly what your pages are about.",
   },
   {
     icon: TrendingUp,
-    title: "AEO — Answer Engine Optimization",
-    desc: "AI-powered search is here. We structure your content to show up in AI overviews, featured snippets, and voice search results — not just traditional rankings.",
+    title: "AI Search Optimization",
+    desc: "AI-powered search is here. We structure your content to show up in AI overviews, featured snippets, and voice search results, not just traditional rankings.",
   },
   {
     icon: Star,
@@ -87,7 +88,7 @@ const stats = [
 const technicalItems = [
   { icon: Gauge, title: "Site Speed Optimization", desc: "Slow sites lose rankings and customers. We optimize load times, compress images, and eliminate render-blocking code so Google and users get a fast experience." },
   { icon: Code, title: "Clean, Crawlable Code", desc: "We ensure your site's HTML is semantic, your URLs are structured, and your robots.txt and sitemap are configured so Google can crawl and index every important page." },
-  { icon: Globe, title: "Schema Markup & Structured Data", desc: "We add JSON-LD structured data — LocalBusiness, FAQ, Service, Review — so Google understands your content and can display rich results that get more clicks." },
+  { icon: Globe, title: "Schema Markup & Structured Data", desc: "We add JSON-LD structured data, LocalBusiness, FAQ, Service, Review, so Google understands your content and can display rich results that get more clicks." },
   { icon: Link2, title: "Internal Linking Architecture", desc: "A strong internal linking structure helps Google discover your pages, understand their hierarchy, and distribute authority throughout your site." },
 ];
 
@@ -95,16 +96,16 @@ const comparison = [
   { topic: "Strategy", them: "Generic playbook for every client", us: "Custom strategy built for your market and competition" },
   { topic: "Communication", them: "Talk to a sales rep or account manager", us: "Talk directly to the person doing the work" },
   { topic: "Reporting", them: "Vanity metrics in a confusing PDF", us: "Clear monthly reports tied to real business results" },
-  { topic: "Focus", them: "National or e-commerce SEO", us: "Local SEO for service businesses — it's all we do" },
-  { topic: "AI Search", them: "Ignoring it or 'planning to address it'", us: "AEO-ready from day one — optimizing for AI overviews now" },
-  { topic: "Contracts", them: "12-month lock-in contracts", us: "Month-to-month — we earn your business every month" },
+  { topic: "Focus", them: "National or e-commerce SEO", us: "Local SEO for service businesses, it's all we do" },
+  { topic: "AI Search", them: "Ignoring it or 'planning to address it'", us: "AI search ready from day one, optimizing for AI overviews now" },
+  { topic: "Contracts", them: "12-month lock-in contracts", us: "Month-to-month, we earn your business every month" },
 ];
 
 const process = [
   {
     step: "01",
     title: "Audit & Research",
-    desc: "We dig into your current online presence, your competitors, and your market. We find the gaps and the opportunities — then build a plan around them.",
+    desc: "We dig into your current online presence, your competitors, and your market. We find the gaps and the opportunities, then build a plan around them.",
   },
   {
     step: "02",
@@ -126,15 +127,15 @@ const process = [
 const faqs = [
   {
     q: "How long does SEO take to see results?",
-    a: "Honest answer: plan for 6–9 months before you see real traction. You may notice early movement before that, but meaningful results take time to build. SEO compounds — the longer you're in, the stronger your position gets. We always recommend a full year commitment to see the full return.",
+    a: "Honest answer: plan for 6–9 months before you see real traction. You may notice early movement before that, but meaningful results take time to build. SEO compounds, the longer you're in, the stronger your position gets. We always recommend a full year commitment to see the full return.",
   },
   {
     q: "What's the difference between SEO and Google Ads?",
-    a: "Google Ads puts you at the top of the page instantly — but you pay for every click. SEO earns you organic visibility that doesn't cost per click. The best strategy usually combines both.",
+    a: "Google Ads puts you at the top of the page instantly, but you pay for every click. SEO earns you organic visibility that doesn't cost per click. The best strategy usually combines both.",
   },
   {
-    q: "What is AEO and why does it matter?",
-    a: "AEO stands for Answer Engine Optimization. With AI tools like ChatGPT and Google's AI Overviews changing how people search, your content needs to be structured to show up in those results — not just traditional search listings.",
+    q: "What is AI Search and why does it matter?",
+    a: "AI Search Optimization, sometimes called AEO or GEO, is the work of making your content easier for AI tools to understand and cite. With AI tools like ChatGPT and Google's AI Overviews changing how people search, your content needs to be structured to show up in those results, not just traditional search listings.",
   },
   {
     q: "Do I need a new website to do SEO?",
@@ -150,7 +151,7 @@ const faqs = [
   },
   {
     q: "Do you lock clients into long-term contracts?",
-    a: "No. We work on a month-to-month basis. We keep clients because we deliver results — not because of a contract.",
+    a: "No. We work on a month-to-month basis. We keep clients because we deliver results, not because of a contract.",
   },
   {
     q: "Can you guarantee first page rankings?",
@@ -210,7 +211,7 @@ export default function SEO() {
             Get Found by the Customers Already Looking for You
           </h1>
           <p className="text-white/70 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
-            Your competitors are showing up on Google. You should be too. We build SEO strategies for local businesses that drive real visibility, real traffic, and real leads — not just rankings on a report.
+            Your competitors are showing up on Google. You should be too. We build SEO strategies for local businesses that drive real visibility, real traffic, and real leads, not just rankings on a report.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="/contact" className="btn-primary text-lg">
@@ -253,7 +254,7 @@ export default function SEO() {
             If You're Not on Page One, You Don't Exist
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-            Here's the reality: 75% of users never scroll past the first page of Google. If your business isn't ranking for the services you offer in your area, you're handing customers to your competitors — every single day.
+            Here's the reality: 75% of users never scroll past the first page of Google. If your business isn't ranking for the services you offer in your area, you're handing customers to your competitors, every single day.
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
             And it's getting harder. Google's algorithm changes constantly. AI-powered search is reshaping how people find answers. The businesses that adapt now will dominate for years. The ones that wait will spend twice as much trying to catch up.
@@ -294,7 +295,7 @@ export default function SEO() {
           What's Under the Hood
         </h2>
         <p className="text-white/60 text-lg text-center max-w-2xl mx-auto mb-14">
-          Great SEO isn't just content and keywords — it's the technical foundation that makes everything work.
+          Great SEO isn't just content and keywords, it's the technical foundation that makes everything work.
         </p>
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {technicalItems.map((item) => (
@@ -370,11 +371,11 @@ export default function SEO() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              "We specialize in local SEO — not national or e-commerce",
+              "We specialize in local SEO, not national or e-commerce",
               "Strategies built around your market, not a cookie-cutter playbook",
-              "AEO-ready — we optimize for AI search and traditional rankings",
+              "AI search ready, we optimize for AI search and traditional rankings",
               "Transparent reporting with no vanity metrics",
-              "Month-to-month — no long-term contracts",
+              "Month-to-month, no long-term contracts",
               "You talk to the person doing the work, not a sales rep",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 bg-background rounded-lg p-4 border border-border">
@@ -407,9 +408,20 @@ export default function SEO() {
         heading="Explore Related Services &amp; Industries"
         links={relatedLinks}
       />
+      <ServiceOfferAlignment
+        serviceName="SEO"
+        headline="SEO Is Included in Every Growth Plan"
+        intro="SEO is not sold as a disconnected task list. It works because the website, Google Business Profile, content, citations, tracking, and monthly improvement are moving in the same direction."
+        recommendedPlan="Local Growth, Local Authority, and Market Leader"
+        points={[
+          "Local Growth includes the one-market SEO foundation.",
+          "Local Authority adds more content and citation velocity.",
+          "Market Leader adds the highest SEO output before paid ads are layered in.",
+        ]}
+      />
       <WhereWeServe serviceName="SEO" />
       <ServicesSocialProof />
-      <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work — let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />
+      <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work, let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />
     </Layout>
   );
 }

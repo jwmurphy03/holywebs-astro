@@ -11,6 +11,7 @@ import WhereWeServe from "@/components/WhereWeServe";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import RelatedLinks from "@/components/RelatedLinks";
+import ServiceOfferAlignment from "@/components/ServiceOfferAlignment";
 
 const relatedLinks = [
   { title: "SEO", description: "Pair paid search with organic SEO to dominate page one and reduce your cost per lead over time.", href: "/services/seo" },
@@ -381,6 +382,17 @@ export default function GoogleAds() {
       </SectionWrapper>
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
+      <ServiceOfferAlignment
+        serviceName="Google Ads"
+        headline="Paid Ads Are Only Offered Inside Market Leader"
+        intro="We do not sell Google Ads as a standalone service. Paid traffic works best when the website, SEO, Google Business Profile, landing pages, tracking, and follow-up path are already being managed together."
+        recommendedPlan="Market Leader"
+        points={[
+          "Market Leader includes high-output SEO before ads are added.",
+          "Ad management covers campaign setup, landing pages, tracking, and optimization.",
+          "Ad spend is separate, with a recommended minimum of $1,500 per month.",
+        ]}
+      />
       <WhereWeServe serviceName="Google Ads" />
       <ServicesSocialProof />
       <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work — let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />

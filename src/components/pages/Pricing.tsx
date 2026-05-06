@@ -12,6 +12,7 @@ import {
 
 import SectionWrapper from "@/components/SectionWrapper";
 import FinalCTASection from "@/components/home/FinalCTASection";
+import RelatedLinks from "@/components/RelatedLinks";
 
 const plans = [
   {
@@ -312,6 +313,19 @@ export default function Pricing() {
           ))}
         </div>
       </SectionWrapper>
+
+      <RelatedLinks
+        heading="What Each Plan Connects"
+        subheading="The plans are not a menu of disconnected services. These pages explain the core pieces that work together inside the monthly growth system."
+        links={[
+          { title: "Local SEO", description: "The ongoing search work behind Local Growth, Local Authority, and Market Leader.", href: "/services/seo" },
+          { title: "Google Business Profile", description: "The map pack and profile work included in every public plan.", href: "/services/google-business-profile" },
+          { title: "Web Design", description: "The website foundation that supports SEO, tracking, trust, and conversion.", href: "/services/web-design" },
+          { title: "AI Search Optimization", description: "How we structure content for AI Overviews, ChatGPT, Perplexity, and voice search.", href: "/services/aeo" },
+          { title: "Google Ads", description: "Paid search management available only inside Market Leader.", href: "/services/google-ads" },
+          { title: "Meta Ads", description: "Facebook and Instagram ad management available only inside Market Leader.", href: "/services/meta-ads" },
+        ]}
+      />
 
       <SectionWrapper variant="dark" className="border-b border-white/10">
         <div className="max-w-5xl mx-auto">

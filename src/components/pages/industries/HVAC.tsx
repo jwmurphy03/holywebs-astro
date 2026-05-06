@@ -7,6 +7,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import IndustryFAQ from "@/components/IndustryFAQ";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedLinks from "@/components/RelatedLinks";
+import IndustrySeoMarketLinks from "@/components/IndustrySeoMarketLinks";
 
 const relatedLinks = [
   { title: "HVAC Marketing in Charleston, SC", description: "How we grow HVAC companies in one of the Southeast's most competitive cooling markets.", href: "/locations/south-carolina/charleston/hvac" },
@@ -71,7 +72,7 @@ const services = [
   },
   {
     icon: BrainCircuit,
-    title: "Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "When homeowners ask ChatGPT or Google AI 'best HVAC company near me,' your business needs to be the answer. We optimize your content for AI-powered search results.",
     link: "/services/aeo",
   },
@@ -254,6 +255,8 @@ export default function HVAC() {
       </SectionWrapper>
 
       <IndustryFAQ faqs={hvacFaqs} canonicalUrl="https://holywebs.com/industries/hvac" />
+
+      <IndustrySeoMarketLinks industry="hvac" label="HVAC" />
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
       <FinalCTASection headline="Most HVAC Companies Are Losing Leads They Don't Even Know About" subtitle="Your customers are searching right now — let's make sure they find you first. Fill out the form and we'll show you what you're missing." />

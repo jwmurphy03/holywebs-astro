@@ -9,7 +9,7 @@ const servicesMegaLinks = [
   { label: "SEO", to: "/services/seo", desc: "Get found on Google Maps and organic search" },
   { label: "Google Ads", to: "/services/google-ads", desc: "Targeted campaigns that generate real leads" },
   { label: "Meta Ads", to: "/services/meta-ads", desc: "Reach ideal customers on Facebook and Instagram" },
-  { label: "AEO", to: "/services/aeo", desc: "Show up in AI-powered search results" },
+  { label: "AI Search", to: "/services/aeo", desc: "Show up in AI-powered search results" },
   { label: "Google Business Profile", to: "/services/google-business-profile", desc: "Dominate the local map pack" },
 ];
 

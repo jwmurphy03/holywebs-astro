@@ -9,6 +9,7 @@ import WhereWeServe from "@/components/WhereWeServe";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import RelatedLinks from "@/components/RelatedLinks";
+import ServiceOfferAlignment from "@/components/ServiceOfferAlignment";
 
 const relatedLinks = [
   { title: "Google Ads", description: "Capture high-intent search traffic alongside your Meta campaigns for full-funnel coverage.", href: "/services/google-ads" },
@@ -314,6 +315,17 @@ export default function MetaAds() {
       </SectionWrapper>
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
+      <ServiceOfferAlignment
+        serviceName="Meta Ads"
+        headline="Meta Ads Are Only Offered Inside Market Leader"
+        intro="We do not sell Facebook and Instagram ads as a standalone service. Paid social works best when it connects to a clear offer, a strong website, tracking, SEO, and a broader local visibility plan."
+        recommendedPlan="Market Leader"
+        points={[
+          "Market Leader includes the website, SEO, GBP, and tracking foundation first.",
+          "Meta campaigns can support retargeting, local awareness, and lead generation.",
+          "Ad spend is separate from management and is planned around your market.",
+        ]}
+      />
       <WhereWeServe serviceName="Meta Ads" />
       <ServicesSocialProof />
       <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work — let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />

@@ -7,6 +7,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import IndustryFAQ from "@/components/IndustryFAQ";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedLinks from "@/components/RelatedLinks";
+import IndustrySeoMarketLinks from "@/components/IndustrySeoMarketLinks";
 
 const relatedLinks = [
   { title: "Plumbing Marketing in Charleston, SC", description: "How we grow plumbing companies in a market defined by historic pipes, coastal humidity, and rapid suburban expansion.", href: "/locations/south-carolina/charleston/plumbing" },
@@ -71,7 +72,7 @@ const services = [
   },
   {
     icon: BrainCircuit,
-    title: "Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "When homeowners ask AI assistants 'who's the best plumber near me,' your business needs to be the answer. We optimize your content for ChatGPT, Google AI, and voice search.",
     link: "/services/aeo",
   },
@@ -254,6 +255,8 @@ export default function Plumbers() {
       </SectionWrapper>
 
       <IndustryFAQ faqs={plumberFaqs} canonicalUrl="https://holywebs.com/industries/plumbing" />
+
+      <IndustrySeoMarketLinks industry="plumbing" label="Plumbing" />
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
       <FinalCTASection headline="Most Plumbing Companies Are Losing Leads They Don't Even Know About" subtitle="Your customers are searching right now — let's make sure they find you first. Fill out the form and we'll show you what you're missing." />

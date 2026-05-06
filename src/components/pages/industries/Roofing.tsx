@@ -7,6 +7,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import IndustryFAQ from "@/components/IndustryFAQ";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedLinks from "@/components/RelatedLinks";
+import IndustrySeoMarketLinks from "@/components/IndustrySeoMarketLinks";
 
 const relatedLinks = [
   { title: "Roofing Marketing in Charleston, SC", description: "How we grow roofing companies in a market shaped by hurricane season, salt air, and Peninsula aging homes.", href: "/locations/south-carolina/charleston/roofing" },
@@ -81,7 +82,7 @@ const services = [
   },
   {
     icon: BrainCircuit,
-    title: "Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "When homeowners ask AI assistants about roof repair costs, insurance claims, or finding a roofer, your company needs to be the recommended answer. We optimize your content for AI-powered search.",
     link: "/services/aeo",
   },
@@ -266,6 +267,8 @@ export default function Roofing() {
       </SectionWrapper>
 
       <IndustryFAQ faqs={roofingFaqs} canonicalUrl="https://holywebs.com/industries/roofing" />
+
+      <IndustrySeoMarketLinks industry="roofing" label="Roofing" />
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
       <FinalCTASection headline="Most Roofing Companies Are Losing Leads They Don't Even Know About" subtitle="Your customers are searching right now — let's make sure they find you first. Fill out the form and we'll show you what you're missing." />

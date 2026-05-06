@@ -8,6 +8,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
 import CityQuickAnswers from "@/components/CityQuickAnswers";
+import CityTradeSeoLinks from "@/components/CityTradeSeoLinks";
 const austinSkyline = "/assets/austin-skyline.png";
 
 const services = [
@@ -31,7 +32,7 @@ const services = [
   },
   {
     icon: Share2,
-    title: "AEO — Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "Austin is a tech-forward city where AI search adoption is ahead of the curve. We position your business to show up when ChatGPT, Google AI Overviews, and voice assistants answer questions about local services.",
     link: "/services/aeo",
   },
@@ -186,6 +187,8 @@ export default function Austin() {
           ))}
         </div>
       </SectionWrapper>
+
+      <CityTradeSeoLinks city="Austin" basePath="/locations/texas/austin" />
 
       {/* Areas */}
       <SectionWrapper variant="muted">

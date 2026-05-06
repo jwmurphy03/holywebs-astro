@@ -73,7 +73,7 @@ const services = [
   },
   {
     icon: BrainCircuit,
-    title: "Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "When business owners ask AI assistants 'best CPA for small business near me,' your firm needs to be the answer. We optimize your content for AI-powered search and voice queries.",
     link: "/services/aeo",
   },

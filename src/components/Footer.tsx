@@ -6,7 +6,7 @@ const serviceLinks = [
   { label: "SEO", to: "/services/seo" },
   { label: "Google Ads", to: "/services/google-ads" },
   { label: "Meta Ads", to: "/services/meta-ads" },
-  { label: "AEO", to: "/services/aeo" },
+  { label: "AI Search", to: "/services/aeo" },
   { label: "Google Business Profile", to: "/services/google-business-profile" },
   { label: "Social Media", to: "/services/social-media" },
 ];

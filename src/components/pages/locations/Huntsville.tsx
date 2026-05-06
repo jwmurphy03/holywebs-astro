@@ -30,7 +30,7 @@ const services = [
   },
   {
     icon: Share2,
-    title: "AEO — Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "AI search is changing how people find local businesses — even in smaller markets. We position your business to show up when someone asks ChatGPT or voice assistants for a recommendation in Huntsville.",
     link: "/services/aeo",
   },

@@ -11,7 +11,7 @@ import RelatedLinks from "@/components/RelatedLinks";
 
 const relatedLinks = [
   { title: "SEO", description: "Every location needs its own local SEO strategy. We build scalable systems that work across markets.", href: "/services/seo" },
-  { title: "AEO", description: "AI search visibility across multiple markets requires structured, location-specific content.", href: "/services/aeo" },
+  { title: "AI Search", description: "AI search visibility across multiple markets requires structured, location-specific content.", href: "/services/aeo" },
   { title: "Social Media Management", description: "Managing social across multiple locations requires consistency and local relevance.", href: "/services/social-media" },
   { title: "HVAC", description: "Multi-location HVAC companies need market-specific visibility. See our HVAC approach.", href: "/industries/hvac" },
   { title: "Plumbing", description: "Plumbing franchises and multi-location operations need scalable marketing.", href: "/industries/plumbing" },

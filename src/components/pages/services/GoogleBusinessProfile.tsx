@@ -10,11 +10,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import RelatedLinks from "@/components/RelatedLinks";
 import AnswerSummary from "@/components/AnswerSummary";
+import ServiceOfferAlignment from "@/components/ServiceOfferAlignment";
 
 const relatedLinks = [
   { title: "SEO", description: "Your GBP and website SEO work hand in hand. We optimize both for maximum local visibility.", href: "/services/seo" },
   { title: "Web Design", description: "A strong GBP needs a strong website behind it. See how we build sites that back up your profile.", href: "/services/web-design" },
-  { title: "AEO", description: "AI search pulls from your GBP data. We structure it so you show up in AI-powered results too.", href: "/services/aeo" },
+  { title: "AI Search", description: "AI search pulls from your GBP data. We structure it so you show up in AI-powered results too.", href: "/services/aeo" },
   { title: "Plumbing", description: "Plumbers live and die by their Google Business Profile. See how we optimize theirs.", href: "/industries/plumbing" },
   { title: "CPA & Bookkeeping", description: "Professional service firms need a polished GBP presence. Here is our approach.", href: "/industries/cpa-bookkeeping" },
   { title: "Electrical", description: "Electricians depend on map pack visibility. See how GBP optimization helps them rank.", href: "/industries/electrical" },
@@ -343,6 +344,17 @@ export default function GoogleBusinessProfile() {
       </SectionWrapper>
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
+      <ServiceOfferAlignment
+        serviceName="Google Business Profile"
+        headline="GBP Management Is Built Into the Local Visibility Plan"
+        intro="Your Google Business Profile is too important to treat as a one-time setup. It supports map rankings, trust, reviews, calls, and AI search visibility."
+        recommendedPlan="Local Growth and above"
+        points={[
+          "Profile optimization, categories, services, posts, and review guidance are part of the system.",
+          "GBP work is paired with website and SEO improvements.",
+          "Monthly reporting connects profile activity to calls, forms, and visibility.",
+        ]}
+      />
       <WhereWeServe serviceName="Google Business Profile" />
       <ServicesSocialProof />
       <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work — let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />

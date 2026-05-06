@@ -8,6 +8,7 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import NearbyMarkets from "@/components/NearbyMarkets";
 import CityQuickAnswers from "@/components/CityQuickAnswers";
+import CityTradeSeoLinks from "@/components/CityTradeSeoLinks";
 const greenvilleSkyline = "/assets/greenville-skyline.png";
 
 const services = [
@@ -31,7 +32,7 @@ const services = [
   },
   {
     icon: Share2,
-    title: "AEO — Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "AI search is changing how Upstate residents find local businesses. We position your business to show up when ChatGPT, Google AI Overviews, and voice assistants answer questions about services in the Greenville area.",
     link: "/services/aeo",
   },
@@ -123,6 +124,8 @@ export default function Greenville() {
           </div>
         </div>
       </SectionWrapper>
+
+      <CityTradeSeoLinks city="Greenville" basePath="/locations/south-carolina/greenville" />
 
       <SectionWrapper variant="muted">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">

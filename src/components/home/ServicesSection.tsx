@@ -6,7 +6,7 @@ const services = [
   {
     icon: Globe,
     title: "Web Design",
-    desc: "Your website is your hardest-working employee. We build sites that look sharp, load fast, and turn visitors into calls — not just clicks.",
+    desc: "Your website is your hardest-working employee. We build sites that look sharp, load fast, and turn visitors into calls, not just clicks.",
     link: "/services/web-design",
     cta: "Learn About Web Design",
   },
@@ -33,10 +33,10 @@ const services = [
   },
   {
     icon: Bot,
-    title: "AEO",
+    title: "AI Search",
     desc: "AI search is changing how customers find businesses. We make sure you show up when ChatGPT and Google AI answer questions in your market.",
     link: "/services/aeo",
-    cta: "Learn About AEO",
+    cta: "Learn About AI Search",
   },
   {
     icon: MapPin,

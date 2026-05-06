@@ -79,7 +79,7 @@ const services = [
   },
   {
     icon: BrainCircuit,
-    title: "Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "When homeowners ask AI assistants 'best power washing company near me,' your business needs to be the answer. We optimize your content for the next generation of search.",
     link: "/services/aeo",
   },

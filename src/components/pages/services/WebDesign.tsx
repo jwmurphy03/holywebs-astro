@@ -9,6 +9,7 @@ import WhereWeServe from "@/components/WhereWeServe";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import RelatedLinks from "@/components/RelatedLinks";
+import ServiceOfferAlignment from "@/components/ServiceOfferAlignment";
 
 const relatedLinks = [
   { title: "SEO", description: "A beautiful website needs traffic. Our local SEO strategies make sure your new site gets found by the right customers.", href: "/services/seo" },
@@ -265,6 +266,17 @@ export default function WebDesign() {
       </SectionWrapper>
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
+      <ServiceOfferAlignment
+        serviceName="Web Design"
+        headline="The Website Is the Foundation, Not a One-Time Handoff"
+        intro="Most clients come to us because the site needs to do more than exist. It needs to support local SEO, GBP visibility, tracking, conversion, and monthly improvement."
+        recommendedPlan="Local Growth and above"
+        points={[
+          "Every public plan includes a custom website build or strategic rebuild.",
+          "Hosting, maintenance, and reasonable edits are included.",
+          "The site is planned around the services and locations that need to rank.",
+        ]}
+      />
       <WhereWeServe serviceName="Web Design" />
       <ServicesSocialProof />
       <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work — let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />

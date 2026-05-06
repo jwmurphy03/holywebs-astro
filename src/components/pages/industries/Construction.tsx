@@ -85,7 +85,7 @@ const services = [
   },
   {
     icon: BrainCircuit,
-    title: "Answer Engine Optimization",
+    title: "AI Search Optimization",
     desc: "When homeowners ask AI assistants 'best home builder in [your city],' your company needs to be the recommendation. We structure your content to win in AI-powered search.",
     link: "/services/aeo",
   },

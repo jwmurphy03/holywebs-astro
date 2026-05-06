@@ -8,7 +8,7 @@ const serviceOptions = [
   "Google Ads",
   "Meta Ads (Facebook & Instagram)",
   "Social Media Management",
-  "AEO (Answer Engine Optimization)",
+  "AI Search (AI Search Optimization)",
   "Multiple Services",
   "Not sure yet — help me figure it out",
 ];

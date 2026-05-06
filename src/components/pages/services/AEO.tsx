@@ -11,11 +11,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import RelatedLinks from "@/components/RelatedLinks";
 import AnswerSummary from "@/components/AnswerSummary";
+import ServiceOfferAlignment from "@/components/ServiceOfferAlignment";
 
 const relatedLinks = [
-  { title: "SEO", description: "AEO builds on a strong SEO foundation. See how our full local SEO strategy drives organic visibility.", href: "/services/seo" },
+  { title: "SEO", description: "AI Search builds on a strong SEO foundation. See how our full local SEO strategy drives organic visibility.", href: "/services/seo" },
   { title: "Google Business Profile", description: "AI tools pull data from your GBP. We make sure it is structured for both traditional and AI search.", href: "/services/google-business-profile" },
-  { title: "Web Design", description: "AI search rewards well-structured, fast websites. See how we build sites that are AEO-ready from day one.", href: "/services/web-design" },
+  { title: "Web Design", description: "AI search rewards well-structured, fast websites. See how we build sites that are AI search ready from day one.", href: "/services/web-design" },
   { title: "Multi-Location", description: "Multi-location businesses need consistent AI visibility across every market they serve.", href: "/industries/multi-location" },
   { title: "HVAC", description: "Homeowners ask AI assistants for HVAC recommendations. We make sure your business is the answer.", href: "/industries/hvac" },
   { title: "CPA & Bookkeeping", description: "Professional service searches are shifting to AI. See how we position CPA firms for that shift.", href: "/industries/cpa-bookkeeping" },
@@ -25,12 +26,12 @@ const features = [
   {
     icon: Bot,
     title: "AI Overview Optimization",
-    desc: "We structure your content so Google's AI Overviews pull from your site — not your competitors'. When someone asks a question your business can answer, you should be the source.",
+    desc: "We structure your content so Google's AI Overviews can pull from your site instead of a competitor's. When someone asks a question your business can answer, you should be the source.",
   },
   {
     icon: MessageSquare,
     title: "Conversational Query Targeting",
-    desc: "People search differently when they're talking to AI. We optimize for the natural-language questions your customers are actually asking — not just traditional keywords.",
+    desc: "People search differently when they are talking to AI. We optimize for the natural-language questions your customers are actually asking, not just traditional keywords.",
   },
   {
     icon: Layers,
@@ -45,7 +46,7 @@ const features = [
   {
     icon: Sparkles,
     title: "Featured Snippet & Zero-Click Strategy",
-    desc: "Featured snippets are the gateway to AI answers. We optimize your content to win those positions — giving you visibility even when users don't click through.",
+    desc: "Featured snippets are the gateway to AI answers. We optimize your content to win those positions, giving you visibility even when users do not click through.",
   },
   {
     icon: BarChart3,
@@ -58,7 +59,7 @@ const aeoExamples = [
   {
     icon: MessageCircleQuestion,
     title: "AI Chat Recommendations",
-    desc: "When someone asks ChatGPT \"who's the best HVAC company in Houston,\" the answer comes from structured, authoritative content. We build FAQ pages and service content specifically designed so AI tools reference your business by name — not a generic list of competitors.",
+    desc: "When someone asks ChatGPT \"who's the best HVAC company in Houston,\" the answer comes from structured, authoritative content. We build FAQ pages and service content specifically designed so AI tools reference your business by name, not a generic list of competitors.",
   },
   {
     icon: Mic,
@@ -74,20 +75,20 @@ const aeoExamples = [
 
 const faqs = [
   {
-    q: "What is AEO?",
-    a: "AEO — Answer Engine Optimization — is the practice of optimizing your online presence so AI-powered tools like ChatGPT, Google AI Overviews, and voice assistants reference and recommend your business. It's about making sure your content is structured in a way that machines can understand, trust, and cite.",
+    q: "What is AI Search Optimization?",
+    a: "AI Search Optimization is the practice of improving your online presence so AI-powered tools like ChatGPT, Perplexity, Google AI Overviews, and voice assistants can understand, reference, and recommend your business. Some marketers call this AEO or GEO. We use AI Search Optimization because it is clearer for business owners.",
   },
   {
-    q: "How is AEO different from SEO?",
-    a: "SEO focuses on ranking your website in traditional search engine results. AEO goes a step further — it optimizes your content so AI tools actively pull from it when generating answers. Think of SEO as getting on the list, and AEO as getting recommended. They work best together.",
+    q: "How is AI Search different from SEO?",
+    a: "SEO focuses on ranking your website in traditional search results. AI Search Optimization goes a step further by making your content easier for AI tools to understand, cite, and recommend. Think of SEO as getting on the list, and AI search as getting recommended. They work best together.",
   },
   {
-    q: "How long does AEO take to show results?",
-    a: "AEO results typically start appearing within 60–90 days, though the timeline depends on your existing SEO foundation and how competitive your market is. AI tools prioritize established, well-structured content — so businesses with strong SEO foundations often see faster AEO results.",
+    q: "How long does AI Search take to show results?",
+    a: "AI search results can start appearing within 60 to 90 days, though the timeline depends on your existing SEO foundation and how competitive your market is. AI tools prioritize established, well-structured content, so businesses with strong SEO foundations often see faster movement.",
   },
   {
-    q: "Can I do AEO without doing SEO?",
-    a: "Not effectively. AEO builds directly on your SEO foundation. AI search tools pull answers from content that's already well-optimized, authoritative, and properly structured. Without SEO, there's nothing for AEO to amplify. We always recommend establishing strong SEO fundamentals first.",
+    q: "Can I do AI Search without doing SEO?",
+    a: "Not effectively. AI Search builds directly on your SEO foundation. AI search tools pull answers from content that's already well-optimized, authoritative, and properly structured. Without SEO, there's nothing for AI Search to amplify. We always recommend establishing strong SEO fundamentals first.",
   },
   {
     q: "How do I know if AI search is sending me traffic?",
@@ -98,15 +99,15 @@ const faqs = [
 const answerSummary = [
   {
     question: "What is answer engine optimization?",
-    answer: "Answer Engine Optimization is the process of making your business easier for AI-powered search tools to understand, trust, cite, and recommend. It combines strong SEO, structured data, clear answers, entity consistency, reviews, and authoritative service-area content.",
+    answer: "AI Search Optimization is the process of making your business easier for AI-powered search tools to understand, trust, cite, and recommend. It combines strong SEO, structured data, clear answers, entity consistency, reviews, and authoritative service-area content.",
   },
   {
     question: "Which AI search surfaces matter for local businesses?",
     answer: "The most important surfaces are Google AI Overviews, ChatGPT search, Perplexity, Bing/Copilot, and voice assistants. For service businesses, the same underlying signals matter across them: crawlable pages, local relevance, review trust, structured data, and specific answers.",
   },
   {
-    question: "Can AEO replace SEO?",
-    answer: "No. AEO builds on SEO. If your website is slow, thin, inconsistent, or hard to crawl, AI systems have less reason to use it as a source. SEO creates the foundation; AEO makes the content easier to extract and recommend.",
+    question: "Can AI Search replace SEO?",
+    answer: "No. AI Search builds on SEO. If your website is slow, thin, inconsistent, or hard to crawl, AI systems have less reason to use it as a source. SEO creates the foundation; AI Search makes the content easier to extract and recommend.",
   },
   {
     question: "What makes a local business more likely to be recommended by AI?",
@@ -118,9 +119,9 @@ export default function AEO() {
   return (
     <Layout>
       <Helmet>
-        <title>Answer Engine Optimization (AEO) for Local Service Businesses | Holy Webs</title>
+        <title>AI Search Optimization for Local Service Businesses | Holy Webs</title>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Get your service business featured in AI-powered search results. AEO strategies for ChatGPT, Google AI Overviews, and voice search that drive qualified leads." />
+        <meta name="description" content="Get your service business featured in AI-powered search results. AI Search strategies for ChatGPT, Google AI Overviews, and voice search that drive qualified leads." />
         <link rel="canonical" href="https://holywebs.com/services/aeo/" />
         <meta property="og:image" content="https://holywebs.com/og/og-aeo.jpg" />
         <meta property="og:type" content="website" />
@@ -128,8 +129,8 @@ export default function AEO() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Answer Engine Optimization (AEO)",
-            description: "Get your service business featured in AI-powered search results. AEO strategies for ChatGPT, Google AI Overviews, and voice search that drive qualified leads.",
+            name: "AI Search Optimization",
+            description: "Get your service business featured in AI-powered search results. AI Search strategies for ChatGPT, Google AI Overviews, and voice search that drive qualified leads.",
             provider: { "@type": "LocalBusiness", name: "Holy Webs", url: "https://holywebs.com" },
             areaServed: [{ "@type": "State", name: "Texas" }, { "@type": "State", name: "South Carolina" }]
           })}
@@ -142,17 +143,17 @@ export default function AEO() {
           <div className="absolute bottom-0 left-20 w-96 h-96 rounded-full bg-primary/50 blur-[150px]" />
         </div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
-          <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "AEO" }]} />
-          <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">AEO — Answer Engine Optimization</p>
+          <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "AI Search" }]} />
+          <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">AI Search Optimization</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-6 leading-tight">
             Show Up Where AI Is Sending Your Customers
           </h1>
           <p className="text-white/70 text-lg md:text-xl max-w-3xl mb-8 leading-relaxed">
-            Google's AI Overviews. ChatGPT. Voice search. The way people find businesses is changing — and most local companies aren't ready for it. AEO is our add-on to <a href="/services/seo" className="text-primary hover:underline">SEO</a> that makes sure your business shows up when AI answers the questions your customers are&nbsp;asking.
+            Google's AI Overviews. ChatGPT. Voice search. The way people find businesses is changing, and most local companies are not ready for it. AI Search Optimization is the layer we add to <a href="/services/seo" className="text-primary hover:underline">SEO</a> so your business can show up when AI answers the questions your customers are&nbsp;asking.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="/contact" className="btn-primary text-lg">
-              Let's Talk About AEO
+              Let's Talk About AI Search
             </a>
             <a
               href="/services/seo"
@@ -173,10 +174,10 @@ export default function AEO() {
               Search Is Changing.{" "}<br className="hidden md:inline" />Your Strategy Should&nbsp;Too.
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              AI-powered search isn't coming — it's here. Google is already showing AI-generated answers above traditional results. ChatGPT is recommending businesses. Voice assistants are answering local queries without a single click.
+              AI-powered search is already here. Google is showing AI-generated answers above traditional results. ChatGPT is recommending businesses. Voice assistants are answering local queries without a single click.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              If your content isn't structured for these tools, you're not just missing out on new traffic — you're losing ground to competitors who are already adapting. AEO bridges that gap.
+              If your content is not structured for these tools, you are not just missing out on new traffic. You are losing ground to competitors who are already adapting. AI Search Optimization bridges that gap.
             </p>
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg">
@@ -193,19 +194,19 @@ export default function AEO() {
       </SectionWrapper>
 
       <AnswerSummary
-        heading="AEO Answers Buyers and AI Tools Can Actually Use"
+        heading="AI Search Answers Buyers and AI Tools Can Actually Use"
         intro="AI search rewards clear, specific, verifiable answers. This is the practical layer we add on top of traditional SEO."
         items={answerSummary}
         variant="muted"
       />
 
-      {/* What AEO Looks Like */}
+      {/* What AI Search Looks Like */}
       <SectionWrapper variant="muted">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
-          What AEO Looks Like for a Local Service&nbsp;Business
+          What AI Search Looks Like for a Local Service&nbsp;Business
         </h2>
         <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-14">
-          AEO isn't abstract — here's exactly how it works for contractors and service companies.
+          AI Search Optimization is not abstract. Here is how it works for contractors and service companies.
         </p>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {aeoExamples.map((ex) => (
@@ -220,24 +221,24 @@ export default function AEO() {
         </div>
       </SectionWrapper>
 
-      {/* Who Needs AEO */}
+      {/* Who Needs AI Search */}
       <SectionWrapper variant="light">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">
-            Who Needs AEO Right&nbsp;Now
+            Who Needs AI Search Right&nbsp;Now
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-            If you're a local service business in a competitive market — HVAC, plumbing, roofing, electrical, or any trade where multiple companies are fighting for the same customers — you should be implementing AEO alongside traditional SEO right&nbsp;now.
+            If you are a local service business in a competitive market like HVAC, plumbing, roofing, electrical, or any trade where multiple companies are fighting for the same customers, you should be implementing AI Search Optimization alongside traditional SEO right&nbsp;now.
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
             AI-powered search isn't a future trend. It's already changing how homeowners find and choose service providers. Google AI Overviews are appearing on more local searches every month. ChatGPT is being used to research and compare businesses. Voice search is the default for an entire generation of&nbsp;consumers.
           </p>
           <p className="text-foreground text-lg leading-relaxed font-medium">
-            The businesses investing in AEO now will have a significant head start over competitors who wait. Once AI tools learn to trust and reference your content, that advantage compounds — and it's much harder for latecomers to&nbsp;catch&nbsp;up.
+            The businesses investing in AI search now will have a significant head start over competitors who wait. Once AI tools learn to trust and reference your content, that advantage compounds and becomes harder for latecomers to&nbsp;catch&nbsp;up.
           </p>
           <div className="mt-10">
             <a href="/contact" className="btn-primary text-lg">
-              Talk to Us About AEO
+              Talk to Us About AI Search
             </a>
           </div>
         </div>
@@ -246,10 +247,10 @@ export default function AEO() {
       {/* What You Get */}
       <SectionWrapper variant="muted">
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-4">
-          What AEO Adds to Your SEO Strategy
+          What AI Search Adds to Your SEO Strategy
         </h2>
         <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-14">
-          Everything we do in AEO builds on your existing SEO foundation — it's not a separate strategy, it's the next layer.
+          Everything we do in AI Search Optimization builds on your existing SEO foundation. It is not a separate strategy. It is the next layer.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {features.map((f) => (
@@ -268,14 +269,14 @@ export default function AEO() {
       <SectionWrapper variant="light">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-10">
-            How AEO Works With Your SEO
+            How AI Search Works With Your SEO
           </h2>
           <div className="space-y-8">
             {[
               {
                 step: "01",
                 title: "We Audit Your AI Visibility",
-                desc: "We check how your business currently shows up (or doesn't) across AI-powered search tools — Google AI Overviews, ChatGPT, voice search, and more.",
+                desc: "We check how your business currently shows up, or does not show up, across AI-powered search tools like Google AI Overviews, ChatGPT, voice search, and more.",
               },
               {
                 step: "02",
@@ -302,11 +303,11 @@ export default function AEO() {
         </div>
       </SectionWrapper>
 
-      {/* Why Add AEO */}
+      {/* Why Add AI Search */}
       <SectionWrapper variant="muted">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center mb-10">
-            Why Add AEO to Your SEO
+            Why Add AI Search to Your SEO
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
@@ -314,7 +315,7 @@ export default function AEO() {
               "Show up when people ask ChatGPT for recommendations in your area",
               "Win featured snippets that feed AI-generated answers",
               "Future-proof your online visibility as search evolves",
-              "Build on your existing SEO investment — not a separate budget",
+              "Build on your existing SEO investment instead of creating a separate strategy",
               "Stay ahead of competitors who are still ignoring AI search",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 bg-background rounded-lg p-4 border border-border">
@@ -344,9 +345,20 @@ export default function AEO() {
       </SectionWrapper>
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
-      <WhereWeServe serviceName="AEO" />
+      <ServiceOfferAlignment
+        serviceName="AI Search Optimization"
+        headline="AI Search Optimization Builds on SEO"
+        intro="We do not treat AI search as a separate shortcut. It works best when your website, SEO, Google Business Profile, content, reviews, and schema are already moving together."
+        recommendedPlan="Local Authority and Market Leader"
+        points={[
+          "Local Authority includes AI search optimization as part of the stronger SEO push.",
+          "Market Leader includes the highest SEO output before paid ads are layered in.",
+          "The work supports Google AI Overviews, ChatGPT, Perplexity, and voice search.",
+        ]}
+      />
+      <WhereWeServe serviceName="AI Search" />
       <ServicesSocialProof />
-      <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work — let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />
+      <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work, let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />
     </Layout>
   );
 }

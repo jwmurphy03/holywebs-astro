@@ -108,7 +108,7 @@ export default function About() {
             Holy Webs exists because we believe local service businesses deserve better than cookie-cutter marketing and agency runarounds. You built something real — your digital presence should reflect that.
           </p>
           <p>
-            We're a small team serving local service businesses across Texas and South Carolina. We specialize in web design, SEO, Google Ads, Facebook Ads, Google Business Profile optimization, and Answer Engine Optimization — specifically for contractors, trades, home services, and professional service firms.
+            We're a small team serving local service businesses across Texas and South Carolina. We specialize in web design, SEO, Google Ads, Facebook Ads, Google Business Profile optimization, and AI Search Optimization — specifically for contractors, trades, home services, and professional service firms.
           </p>
           <p>
             We're unapologetically Christian. Our faith shapes how we work — with integrity, transparency, and a genuine care for the businesses we partner with. It doesn't determine who we work with. We serve any local business that's ready to grow.
