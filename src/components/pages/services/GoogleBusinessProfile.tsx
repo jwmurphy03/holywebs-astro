@@ -184,19 +184,17 @@ export default function GoogleBusinessProfile() {
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <section className="bg-primary py-6">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {stats.map((stat) => (
-              <div key={stat.label}>
-                <p className="text-4xl md:text-5xl font-extrabold text-primary-foreground">{stat.value}</p>
-                <p className="text-primary-foreground/70 text-sm font-medium mt-1">{stat.label}</p>
-              </div>
-            ))}
-          </div>
+      {/* Stats */}
+      <SectionWrapper variant="muted">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          {stats.map((stat) => (
+            <div key={stat.label} className="text-center p-6 bg-background rounded-xl border border-border">
+              <p className="text-4xl md:text-5xl font-extrabold text-primary mb-2">{stat.value}</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">{stat.label}</p>
+            </div>
+          ))}
         </div>
-      </section>
+      </SectionWrapper>
 
       {/* Problem Section */}
       <SectionWrapper variant="light">
