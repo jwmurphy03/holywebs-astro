@@ -80,8 +80,10 @@ export default function Industries() {
         <meta name="description" content="Specialized digital marketing for HVAC, plumbing, roofing, electrical, construction, power washing, landscaping, and CPA firms. Built for contractors." />
         <link rel="canonical" href="https://holywebs.com/industries/" />
       </Helmet>
-      <section className="section-dark py-24 lg:py-32">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 hero-bg-field" />
+        <div className="absolute inset-0 hero-bg-grain" />
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-6">Industries We Serve</h1>
           <p className="text-white/70 text-lg max-w-2xl">
             We specialize in local service businesses — trades and professional services that depend on being found online to fill their schedule and grow.

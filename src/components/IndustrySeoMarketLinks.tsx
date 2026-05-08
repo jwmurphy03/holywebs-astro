@@ -8,9 +8,11 @@ interface IndustrySeoMarketLinksProps {
 }
 
 const markets = [
+  { city: "Houston", state: "TX", path: "/locations/texas/houston" },
   { city: "Dallas", path: "/locations/texas/dallas" },
   { city: "Austin", path: "/locations/texas/austin" },
   { city: "San Antonio", path: "/locations/texas/san-antonio" },
+  { city: "Charleston", state: "SC", path: "/locations/south-carolina/charleston" },
   { city: "Greenville", path: "/locations/south-carolina/greenville" },
   { city: "Columbia", path: "/locations/south-carolina/columbia" },
 ];
@@ -37,7 +39,9 @@ export default function IndustrySeoMarketLinks({ industry, label }: IndustrySeoM
             >
               <div className="mb-3 flex items-center gap-2 text-primary">
                 <MapPin className="h-4 w-4" />
-                <span className="text-sm font-semibold uppercase tracking-wide">{market.city}</span>
+                <span className="text-sm font-semibold uppercase tracking-wide">
+                  {market.city}{market.state ? `, ${market.state}` : ""}
+                </span>
               </div>
               <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary">
                 {label} SEO in {market.city}

@@ -107,10 +107,8 @@ export default function Resources() {
       </Helmet>
       {/* Hero */}
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary blur-[120px]" />
-          <div className="absolute bottom-10 left-20 w-96 h-96 rounded-full bg-primary/50 blur-[150px]" />
-        </div>
+        <div className="absolute inset-0 hero-bg-field" />
+        <div className="absolute inset-0 hero-bg-grain" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Resources</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-6 leading-tight">

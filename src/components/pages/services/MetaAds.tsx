@@ -126,9 +126,8 @@ export default function MetaAds() {
       <FAQSchema faqs={faqs} />
       {/* Hero */}
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute bottom-0 left-20 w-96 h-96 rounded-full bg-primary/50 blur-[150px]" />
-        </div>
+        <div className="absolute inset-0 hero-bg-signal" />
+        <div className="absolute inset-0 hero-bg-grain" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
           <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "Meta Ads" }]} />
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Meta Ads — Facebook & Instagram</p>
@@ -143,10 +142,10 @@ export default function MetaAds() {
               Get a Free Ads Consultation
             </a>
             <a
-              href="/resources/free-visibility-audit"
+              href="/pricing"
               className="inline-flex items-center gap-2 text-white/70 hover:text-primary transition-colors font-medium"
             >
-              Or start with a free visibility audit
+              See packages with paid ads
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>

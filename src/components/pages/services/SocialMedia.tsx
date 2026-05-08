@@ -9,6 +9,7 @@ import WhereWeServe from "@/components/WhereWeServe";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import RelatedLinks from "@/components/RelatedLinks";
+import ServiceOfferAlignment from "@/components/ServiceOfferAlignment";
 
 const relatedLinks = [
   { title: "Meta Ads", description: "Amplify your organic social content with targeted paid campaigns on Facebook and Instagram.", href: "/services/meta-ads" },
@@ -157,8 +158,8 @@ export default function SocialMedia() {
       <FAQSchema faqs={faqs} />
       {/* Hero */}
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#0F1729]" />
-        <div className="absolute inset-0 bg-[url('/grain.svg')] opacity-[0.12] mix-blend-overlay" />
+        <div className="absolute inset-0 hero-bg-signal" />
+        <div className="absolute inset-0 hero-bg-grain" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
           <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "Social Media" }]} />
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Social Media Management</p>
@@ -173,29 +174,27 @@ export default function SocialMedia() {
               Get Started
             </a>
             <a
-              href="/resources/free-visibility-audit"
+              href="/pricing"
               className="inline-flex items-center gap-2 text-white/70 hover:text-primary transition-colors font-medium"
             >
-              Or start with a free visibility audit
+              View monthly plans
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <section className="bg-primary py-6">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {stats.map((stat) => (
-              <div key={stat.label}>
-                <p className="text-4xl md:text-5xl font-extrabold text-primary-foreground">{stat.value}</p>
-                <p className="text-primary-foreground/70 text-sm font-medium mt-1">{stat.label}</p>
-              </div>
-            ))}
-          </div>
+      {/* Stats */}
+      <SectionWrapper variant="muted">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          {stats.map((stat) => (
+            <div key={stat.label} className="text-center p-6 bg-background rounded-xl border border-border">
+              <p className="text-4xl md:text-5xl font-extrabold text-primary mb-2">{stat.value}</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">{stat.label}</p>
+            </div>
+          ))}
         </div>
-      </section>
+      </SectionWrapper>
 
       {/* Problem Section */}
       <SectionWrapper variant="light">
@@ -352,9 +351,23 @@ export default function SocialMedia() {
       </SectionWrapper>
 
       <RelatedLinks heading="Explore Related Services & Industries" links={relatedLinks} />
+      <ServiceOfferAlignment
+        serviceName="Social Media"
+        headline="Social Media Supports the Visibility System"
+        intro="Social content works best when it reinforces your website, Google Business Profile, reviews, local SEO, and offers. We do not want it floating off by itself as busywork."
+        recommendedPlan="Custom fit after the core growth plan"
+        points={[
+          "Best used to support trust, recruiting, seasonal campaigns, and retargeting.",
+          "Can reinforce GBP posts, project proof, and service-area visibility.",
+          "Usually discussed after the website, SEO, and GBP foundation is clear.",
+        ]}
+      />
       <WhereWeServe serviceName="Social Media Management" />
       <ServicesSocialProof />
-      <FinalCTASection headline="Stop Losing Jobs to Competitors With Worse Service" subtitle="You do better work — let's make sure your online presence reflects that. Fill out the form and we'll show you exactly where you're losing leads." />
+      <FinalCTASection
+        headline="Want Social Media That Actually Supports the Business?"
+        subtitle="We will look at your current presence, your offers, and the rest of your marketing system, then help you decide whether social media should be part of the next growth move."
+      />
     </Layout>
   );
 }

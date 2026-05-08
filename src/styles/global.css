@@ -101,6 +101,75 @@
       radial-gradient(ellipse at 100% 50%, hsl(var(--primary) / 0.08) 0%, transparent 40%);
   }
 
+  .home-hero-texture {
+    background:
+      radial-gradient(ellipse 64% 54% at 28% 12%, hsl(var(--primary) / 0.14), transparent 58%),
+      radial-gradient(ellipse 56% 62% at 82% 92%, rgb(30 58 138 / 0.24), transparent 66%),
+      linear-gradient(135deg, rgb(255 255 255 / 0.035), transparent 34%, rgb(255 255 255 / 0.02) 68%, transparent),
+      #08101f;
+  }
+
+  .home-hero-noise {
+    opacity: 0.16;
+    background-size: 150px 150px;
+    mix-blend-mode: soft-light;
+    mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.95) 58%, rgb(0 0 0 / 0.45) 100%);
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.95) 58%, rgb(0 0 0 / 0.45) 100%);
+  }
+
+  .hero-bg-noise {
+    background:
+      radial-gradient(ellipse 58% 48% at 24% 12%, hsl(var(--primary) / 0.13), transparent 62%),
+      radial-gradient(ellipse 46% 55% at 86% 86%, rgb(30 58 138 / 0.22), transparent 68%),
+      linear-gradient(135deg, rgb(255 255 255 / 0.025), transparent 38%, rgb(255 255 255 / 0.015) 74%, transparent),
+      #0f1729;
+  }
+
+  .hero-bg-spotlight {
+    background:
+      radial-gradient(ellipse 62% 54% at 18% 20%, hsl(var(--primary) / 0.13), transparent 64%),
+      radial-gradient(ellipse 52% 62% at 82% 82%, rgb(30 58 138 / 0.24), transparent 70%),
+      linear-gradient(160deg, #0f1729 0%, #08101f 58%, #101827 100%);
+  }
+
+  .hero-bg-rings {
+    background:
+      radial-gradient(ellipse 52% 48% at 30% 18%, hsl(var(--primary) / 0.12), transparent 64%),
+      radial-gradient(ellipse 58% 58% at 78% 86%, rgb(30 58 138 / 0.22), transparent 70%),
+      linear-gradient(145deg, rgb(255 255 255 / 0.02), transparent 42%),
+      #0f1729;
+  }
+
+  .hero-bg-signal {
+    background:
+      radial-gradient(ellipse 58% 48% at 72% 14%, hsl(var(--primary) / 0.115), transparent 64%),
+      radial-gradient(ellipse 56% 60% at 18% 88%, rgb(30 58 138 / 0.22), transparent 70%),
+      linear-gradient(125deg, rgb(255 255 255 / 0.018), transparent 46%, rgb(255 255 255 / 0.014)),
+      #0f1729;
+  }
+
+  .hero-bg-field {
+    background:
+      radial-gradient(ellipse 62% 50% at 72% 26%, hsl(var(--primary) / 0.12), transparent 64%),
+      radial-gradient(ellipse 50% 62% at 18% 86%, rgb(30 58 138 / 0.22), transparent 70%),
+      linear-gradient(180deg, rgb(255 255 255 / 0.018), transparent 42%),
+      #0f1729;
+  }
+
+  .hero-bg-proof {
+    background:
+      radial-gradient(ellipse 60% 50% at 24% 16%, hsl(var(--primary) / 0.12), transparent 62%),
+      radial-gradient(ellipse 45% 55% at 82% 84%, rgb(30 58 138 / 0.24), transparent 68%),
+      linear-gradient(180deg, rgb(255 255 255 / 0.02), transparent 40%),
+      #0f1729;
+  }
+
+  .hero-bg-grain {
+    opacity: 0.14;
+    background-image: url("/grain.svg");
+    mix-blend-mode: overlay;
+  }
+
   .btn-primary {
     @apply bg-primary text-primary-foreground font-bold px-8 py-4 rounded-lg hover:brightness-110 transition-all duration-200 inline-flex items-center gap-2;
   }

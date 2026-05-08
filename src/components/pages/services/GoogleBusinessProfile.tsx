@@ -158,8 +158,8 @@ export default function GoogleBusinessProfile() {
       <FAQSchema faqs={faqs} />
       {/* Hero */}
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#0F1729]" />
-        <div className="absolute inset-0 bg-[url('/grain.svg')] opacity-[0.12] mix-blend-overlay" />
+        <div className="absolute inset-0 hero-bg-rings" />
+        <div className="absolute inset-0 hero-bg-grain" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
           <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "Google Business Profile" }]} />
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Google Business Profile Management</p>
@@ -174,10 +174,10 @@ export default function GoogleBusinessProfile() {
               Get a Free Profile Audit
             </a>
             <a
-              href="/resources/free-visibility-audit"
+              href="/pricing"
               className="inline-flex items-center gap-2 text-white/70 hover:text-primary transition-colors font-medium"
             >
-              Or start with a visibility audit
+              View monthly plans
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>

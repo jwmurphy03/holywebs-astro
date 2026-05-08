@@ -11,6 +11,7 @@ const servicesMegaLinks = [
   { label: "Meta Ads", to: "/services/meta-ads", desc: "Reach ideal customers on Facebook and Instagram" },
   { label: "AI Search", to: "/services/aeo", desc: "Show up in AI-powered search results" },
   { label: "Google Business Profile", to: "/services/google-business-profile", desc: "Dominate the local map pack" },
+  { label: "Social Media", to: "/services/social-media", desc: "Consistent content that supports trust and visibility" },
 ];
 
 const serviceSubLinks = servicesMegaLinks.map(({ label, to }) => ({ label, to }));
@@ -155,7 +156,7 @@ export default function Navbar() {
           </a>
           <div className="grid grid-cols-2 gap-x-6 gap-y-1">
             <div className="space-y-1">
-              {servicesMegaLinks.slice(0, 3).map((s) => (
+              {servicesMegaLinks.slice(0, 4).map((s) => (
                 <a
                   key={s.to}
                   href={s.to}
@@ -172,7 +173,7 @@ export default function Navbar() {
               ))}
             </div>
             <div className="space-y-1">
-              {servicesMegaLinks.slice(3, 6).map((s) => (
+              {servicesMegaLinks.slice(4).map((s) => (
                 <a
                   key={s.to}
                   href={s.to}

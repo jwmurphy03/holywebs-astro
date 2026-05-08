@@ -139,9 +139,8 @@ export default function AEO() {
       <FAQSchema faqs={faqs} />
       {/* Hero */}
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute bottom-0 left-20 w-96 h-96 rounded-full bg-primary/50 blur-[150px]" />
-        </div>
+        <div className="absolute inset-0 hero-bg-rings" />
+        <div className="absolute inset-0 hero-bg-grain" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
           <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "AI Search" }]} />
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">AI Search Optimization</p>
@@ -156,10 +155,10 @@ export default function AEO() {
               Let's Talk About AI Search
             </a>
             <a
-              href="/services/seo"
+              href="/pricing"
               className="inline-flex items-center gap-2 text-white/70 hover:text-primary transition-colors font-medium"
             >
-              Learn about our SEO services
+              View monthly plans
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>

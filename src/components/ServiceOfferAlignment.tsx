@@ -28,10 +28,15 @@ export default function ServiceOfferAlignment({
             {headline ?? `${serviceName} Is Part of the Growth System`}
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">{intro}</p>
-          <a href="/pricing" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary/80 transition-colors">
-            See the monthly plans
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          <div className="flex flex-wrap gap-3">
+            <a href="/pricing" className="btn-primary">
+              View Pricing & Packages
+            </a>
+            <a href="/contact" className="inline-flex items-center gap-2 px-6 py-4 text-primary font-semibold hover:text-primary/80 transition-colors">
+              Talk through fit
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
         <div className="rounded-xl border border-border bg-background p-6 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-4">
@@ -44,6 +49,11 @@ export default function ServiceOfferAlignment({
                 <p className="text-foreground/80 leading-relaxed">{point}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-6 rounded-lg bg-muted/60 p-4">
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              The goal is not to buy another isolated service. It is to build a system that keeps improving your visibility, trust, tracking, and booked opportunities month after month.
+            </p>
           </div>
         </div>
       </div>

@@ -43,6 +43,12 @@ const services = [
     to: "/services/google-business-profile",
     desc: "Your GBP listing is often the first thing potential customers see. We optimize every detail, categories, photos, posts, reviews, and Q&A, to help you rank in the Map Pack and convert searchers into callers.",
   },
+  {
+    icon: Share2,
+    title: "Social Media",
+    to: "/services/social-media",
+    desc: "Consistent social content keeps your business visible, reinforces trust, and gives prospects more reasons to recognize you before they call.",
+  },
 ];
 
 export default function Services() {
@@ -54,14 +60,43 @@ export default function Services() {
         <meta name="description" content="Web design, local SEO, Google Ads, Meta Ads, AI Search, and Google Business Profile optimization, all built for contractors and service businesses." />
         <link rel="canonical" href="https://holywebs.com/services/" />
       </Helmet>
-      <section className="section-dark py-24 lg:py-32">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 hero-bg-noise" />
+        <div className="absolute inset-0 hero-bg-grain" />
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-6">Our Services</h1>
           <p className="text-white/70 text-lg max-w-2xl">
             Everything a local service business needs to get found, build trust, and get&nbsp;the&nbsp;call.
           </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a href="/pricing" className="btn-primary">
+              View Pricing & Packages
+            </a>
+            <a href="/contact" className="inline-flex items-center gap-2 text-white/70 hover:text-primary transition-colors font-medium">
+              Talk through the right fit
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </section>
+
+      <SectionWrapper variant="muted">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">
+            Packaged for Monthly Growth
+          </p>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-5">
+            These Services Are Built to Work Together
+          </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            We explain each service separately so you can understand the work, but our public offers package the website, SEO, Google Business Profile, tracking, content, and monthly improvement into one growth system.
+          </p>
+          <a href="/pricing" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary/80 transition-colors">
+            Compare Local Growth, Local Authority, and Market Leader
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </SectionWrapper>
 
       <SectionWrapper variant="light">
         <div className="grid md:grid-cols-2 gap-8">

@@ -113,9 +113,8 @@ export default function PowerWashing() {
       </Helmet>
       {/* Hero */}
       <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary blur-[120px]" />
-        </div>
+        <div className="absolute inset-0 hero-bg-spotlight" />
+        <div className="absolute inset-0 hero-bg-grain" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
           <Breadcrumbs items={[{ label: "Industries", href: "/industries" }, { label: "Power Washing" }]} />
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Power Washing Industry</p>
