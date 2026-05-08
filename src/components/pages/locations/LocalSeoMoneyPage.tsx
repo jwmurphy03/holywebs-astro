@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { ArrowRight, BarChart3, Check, FileText, MapPin, Search, Star, Target } from "lucide-react";
 
 import Layout from "@/components/Layout";
@@ -50,6 +51,92 @@ const industryConfig = {
   },
 };
 
+const cityConfig: Record<string, {
+  metro: string;
+  marketAngle: string;
+  searchContext: string;
+  urgency: string;
+  localSignals: string[];
+}> = {
+  dallas: {
+    metro: "the DFW metroplex",
+    marketAngle: "Dallas is not one simple market. A contractor can be visible in central Dallas and still be nearly invisible in Plano, Frisco, Irving, Garland, McKinney, or Richardson.",
+    searchContext: "A search in Frisco behaves differently than a search near downtown Dallas. The content, GBP signals, reviews, and service-area structure need to reflect that spread.",
+    urgency: "DFW keeps adding homes, suburbs, and competitors. The companies that win search are usually the ones with the clearest market coverage and the strongest local proof.",
+    localSignals: [
+      "Service-area pages for the Dallas neighborhoods and suburbs you actually want to win",
+      "Google Business Profile signals that support both Dallas and nearby suburb searches",
+      "Content that treats DFW like a spread-out metro instead of one small city",
+    ],
+  },
+  austin: {
+    metro: "the Austin metro",
+    marketAngle: "Austin search is shaped by fast growth, high customer expectations, and surrounding markets like Round Rock, Georgetown, Cedar Park, Pflugerville, and San Marcos.",
+    searchContext: "Someone searching in South Austin does not always see the same businesses as someone searching in Round Rock. Local relevance has to be built city by city.",
+    urgency: "The Austin market rewards businesses that look current, trusted, and easy to contact. A thin website or neglected GBP can make a strong company look smaller than it is.",
+    localSignals: [
+      "Local pages that match how Austin customers search across the metro",
+      "Clear service and review signals for Round Rock, Georgetown, Cedar Park, Pflugerville, and San Marcos",
+      "A website experience that feels credible for a high-expectation, mobile-first market",
+    ],
+  },
+  "san-antonio": {
+    metro: "the San Antonio metro",
+    marketAngle: "San Antonio has a wide service footprint, from the urban core to fast-growing nearby markets like New Braunfels, Boerne, Schertz, Cibolo, and Converse.",
+    searchContext: "A contractor who only talks about San Antonio can miss valuable searches in the surrounding communities where homeowners still want a local-feeling provider.",
+    urgency: "Competition is strong, but the market still rewards practical, trust-building SEO. Clear service pages, real local signals, and a well-managed GBP matter here.",
+    localSignals: [
+      "Service-area content for San Antonio and the nearby communities that drive profitable jobs",
+      "GBP optimization that supports local trust, review depth, and service clarity",
+      "Conversion paths built for homeowners who want fast answers before they call",
+    ],
+  },
+  greenville: {
+    metro: "the Greenville area",
+    marketAngle: "Greenville search is shaped by a growing Upstate market that stretches into Simpsonville, Greer, Mauldin, Travelers Rest, and Spartanburg.",
+    searchContext: "Local relevance matters because customers often search by suburb, nearby city, or service area, not only by Greenville.",
+    urgency: "The Upstate is growing quickly, and more local service companies are investing in SEO. A clear market structure helps your business keep pace.",
+    localSignals: [
+      "Pages that explain where you work across Greenville and the surrounding Upstate markets",
+      "Google Business Profile work that supports local trust and service clarity",
+      "Content that feels specific to the Upstate instead of copied from a generic city template",
+    ],
+  },
+  columbia: {
+    metro: "the Columbia area",
+    marketAngle: "Columbia search reaches beyond the city into Lexington, Irmo, Forest Acres, West Columbia, and Blythewood.",
+    searchContext: "Homeowners often search for help close to their neighborhood, so the website and GBP need to make the full service area easy to understand.",
+    urgency: "A practical local SEO system can help Columbia service businesses win more steady calls without depending only on referrals or one-off ads.",
+    localSignals: [
+      "Service-area content for Columbia, Lexington, Irmo, Forest Acres, West Columbia, and Blythewood",
+      "Clear local proof, reviews, and calls to action for homeowners comparing providers",
+      "A local SEO structure that supports the city and the nearby communities around it",
+    ],
+  },
+};
+
+const industryLocalAngles: Record<Industry, {
+  whyItMatters: string;
+  conversionFocus: string;
+  proofFocus: string;
+}> = {
+  hvac: {
+    whyItMatters: "HVAC searches are often urgent and seasonal. When the system fails, customers want a company that looks available, trustworthy, and close enough to help.",
+    conversionFocus: "The website needs fast paths to AC repair, replacement, maintenance, financing, and emergency service, especially on mobile.",
+    proofFocus: "Strong reviews, service photos, financing language, and clear emergency contact options help turn search visibility into calls.",
+  },
+  plumbing: {
+    whyItMatters: "Plumbing searches can move fast because leaks, clogs, water heaters, and sewer issues feel urgent. The first credible option often gets the call.",
+    conversionFocus: "The website needs clear pages for emergency plumbing, drain cleaning, water heaters, leak repair, sewer lines, and the areas you serve.",
+    proofFocus: "Trust signals matter. Reviews, license language, service details, and simple contact options reduce hesitation before a customer calls.",
+  },
+  roofing: {
+    whyItMatters: "Roofing searches usually involve a bigger decision. Storm damage, leaks, replacements, and insurance questions all require trust before the call happens.",
+    conversionFocus: "The website needs strong pages for roof replacement, inspections, storm damage, leaks, and financing or insurance-related questions.",
+    proofFocus: "Project photos, reviews, local service areas, inspection offers, and practical guidance help homeowners feel safe taking the next step.",
+  },
+};
+
 const stateLabels: Record<StateSlug, string> = {
   texas: "Texas",
   "south-carolina": "South Carolina",
@@ -57,8 +144,11 @@ const stateLabels: Record<StateSlug, string> = {
 
 export default function LocalSeoMoneyPage({ city, state, stateSlug, citySlug, industry, nearby }: MoneyPageProps) {
   const config = industryConfig[industry];
+  const local = cityConfig[citySlug];
+  const industryAngle = industryLocalAngles[industry];
   const statePath = `/locations/${stateSlug}`;
   const cityPath = `${statePath}/${citySlug}`;
+  const hubPath = `${cityPath}/${industry}`;
   const industryPath = `/industries/${industry === "plumbing" ? "plumbing" : industry}`;
   const canonical = `https://holywebs.com${cityPath}/${industry}/seo/`;
   const title = `Local SEO for ${config.label} Companies in ${city}, ${state} | Holy Webs`;
@@ -71,7 +161,11 @@ export default function LocalSeoMoneyPage({ city, state, stateSlug, citySlug, in
     },
     {
       q: `Do ${city} ${config.plural} need separate service-area pages?`,
-      a: `Usually, yes. If you serve nearby markets like ${nearby.slice(0, 3).join(", ")}, your site should explain that clearly with useful local context instead of thin city-name swaps.`,
+      a: `Usually, yes. If you serve nearby markets like ${nearby.slice(0, 3).join(", ")}, your site should explain that clearly with useful local context instead of thin city-name swaps. That helps customers understand whether you serve them and gives Google cleaner local signals.`,
+    },
+    {
+      q: `What should a ${city} ${config.singular} improve first?`,
+      a: `Start with the pieces closest to revenue: Google Business Profile accuracy, service pages for your highest-value jobs, local reviews, mobile conversion paths, tracking, and content for the markets you actually want to win.`,
     },
     {
       q: "Is this available as a one-time SEO project?",
@@ -81,6 +175,40 @@ export default function LocalSeoMoneyPage({ city, state, stateSlug, citySlug, in
 
   return (
     <Layout>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonical} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": `${canonical}#service`,
+            name: `${config.label} Local SEO in ${city}, ${state}`,
+            description,
+            url: canonical,
+            serviceType: "Local SEO",
+            category: `${config.label} SEO`,
+            provider: {
+              "@type": "Organization",
+              name: "Holy Webs",
+              url: "https://holywebs.com",
+            },
+            areaServed: [city, ...nearby.slice(0, 6)].map((name) => ({
+              "@type": "City",
+              name,
+              addressRegion: state,
+              addressCountry: "US",
+            })),
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock",
+              url: "https://holywebs.com/pricing/",
+            },
+          })}
+        </script>
+      </Helmet>
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema
         city={city}
@@ -109,7 +237,10 @@ export default function LocalSeoMoneyPage({ city, state, stateSlug, citySlug, in
               Local SEO for {config.label} Companies in {city}
             </h1>
             <p className="text-white/70 text-lg md:text-xl max-w-3xl mb-8 leading-relaxed">
-              When {config.customer} in {city} search for {config.jobs}, the companies that show up first get the chance to win the job. Holy Webs builds the website, Google Business Profile, content, citation, and tracking system that helps your {config.singular} get found.
+              When {config.customer} in {city} search for {config.jobs}, the companies that show up first get the chance to win the job. Holy Webs builds the local SEO, Google Business Profile, content, citation, website, and tracking system that helps your {config.singular} get found.
+            </p>
+            <p className="text-white/60 text-base md:text-lg max-w-3xl mb-8 leading-relaxed">
+              {local.marketAngle}
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="/pricing" className="btn-primary text-lg">
@@ -140,10 +271,10 @@ export default function LocalSeoMoneyPage({ city, state, stateSlug, citySlug, in
                   Ranking for {config.label.toLowerCase()} searches in {city} is not just about adding keywords to a homepage. Google needs to understand what you do, where you work, which services matter most, and why customers should trust your business.
                 </p>
                 <p>
-                  We build that foundation inside our monthly plans. The website, local SEO, Google Business Profile, tracking, and monthly improvements are packaged together because they support the same outcome: more qualified local opportunities.
+                  {local.searchContext}
                 </p>
                 <p>
-                  For {city} {config.plural}, the highest-value SEO work usually connects {config.proof}. When those pieces line up, your business is easier for customers and search engines to choose.
+                  {industryAngle.whyItMatters} For {city} {config.plural}, the highest-value SEO work usually connects {config.proof}. When those pieces line up, your business is easier for customers and search engines to choose.
                 </p>
               </div>
             </div>
@@ -157,6 +288,34 @@ export default function LocalSeoMoneyPage({ city, state, stateSlug, citySlug, in
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </SectionWrapper>
+
+      <SectionWrapper variant="light">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-[0.85fr_1fr] gap-10 items-start">
+            <div>
+              <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Local Market Fit</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-5">
+                What Matters in {city}
+              </h2>
+              <div className="space-y-5 text-muted-foreground text-lg leading-relaxed">
+                <p>{local.urgency}</p>
+                <p>{industryAngle.conversionFocus}</p>
+                <p>{industryAngle.proofFocus}</p>
+              </div>
+            </div>
+            <div className="grid gap-4">
+              {local.localSignals.map((signal) => (
+                <div key={signal} className="flex gap-4 rounded-lg border border-border bg-background p-5">
+                  <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <Check className="h-4 w-4 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">{signal}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -198,7 +357,7 @@ export default function LocalSeoMoneyPage({ city, state, stateSlug, citySlug, in
             This Fits Inside Local Growth or Local Authority
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed text-center max-w-3xl mx-auto mb-10">
-            We do not sell disconnected SEO tasks. For most {city} {config.plural}, the decision is whether you need the one-market Local Growth plan or the stronger Local Authority plan for nearby-city expansion.
+            We do not sell disconnected SEO tasks. For most {city} {config.plural}, the decision is whether you need the one-market Local Growth plan or the stronger Local Authority plan for nearby-market expansion across {local.metro}.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="/pricing" className="group rounded-xl border border-border bg-background p-6 transition-all hover:border-primary/40 hover:shadow-lg">
@@ -247,6 +406,7 @@ export default function LocalSeoMoneyPage({ city, state, stateSlug, citySlug, in
           { title: "Local SEO", description: "Learn how Holy Webs approaches SEO for local service businesses.", href: "/services/seo" },
           { title: "Google Business Profile", description: "See how GBP work supports local rankings and calls.", href: "/services/google-business-profile" },
           { title: "Website Design", description: "A stronger website makes SEO traffic easier to convert.", href: "/services/web-design" },
+          { title: `${city} ${config.label} Marketing`, description: `See the broader local marketing hub for ${config.plural} in ${city}.`, href: hubPath },
           { title: config.label, description: `Explore how we market ${config.plural} across web, SEO, GBP, and ads.`, href: industryPath },
           { title: `${city} Digital Marketing`, description: `See the broader local marketing strategy for service businesses in ${city}.`, href: cityPath },
         ]}

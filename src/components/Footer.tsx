@@ -24,6 +24,7 @@ const industryLinks = [
 
 const companyLinks = [
   { label: "About", to: "/about" },
+  { label: "Results", to: "/results" },
   { label: "Contact", to: "/contact" },
   { label: "FAQ", to: "/faq" },
   { label: "Free Tools", to: "/resources" },
