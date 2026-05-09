@@ -99,17 +99,17 @@ export default function GBPGuide() {
       </Helmet>
 
       {/* Hero */}
-      <section className="py-20 lg:py-28 relative overflow-hidden">
+      <section className="py-28 lg:py-40 relative overflow-hidden">
         <img src={heroImg} alt="" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/90 to-dark/75" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-3xl">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <Breadcrumbs items={[{ label: "Resources", href: "/resources" }, { label: "Google Business Profile Guide" }]} />
           <div className="flex items-center gap-3 mb-4">
             <span className="text-xs font-bold tracking-widest uppercase text-primary">Pillar Guide</span>
             <span className="text-white/30">•</span>
             <span className="text-white/50 text-xs flex items-center gap-1"><Clock className="w-3 h-3" /> 25 min read</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-dark-foreground leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-dark-foreground leading-tight mb-6 max-w-4xl">
             The Complete Google Business Profile Guide for Local Service Businesses (2026)
           </h1>
           <p className="text-white/70 text-lg md:text-xl max-w-3xl leading-relaxed">

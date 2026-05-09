@@ -34,7 +34,7 @@ export default function WorkshopReplay() {
 
       {/* Video Embed */}
       <section className="bg-black pb-6">
-        <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+        <div className="container mx-auto px-4 lg:px-8">
           {/* Replace the div below with an iframe when the embed URL is ready:
               <iframe src="YOUR_YOUTUBE_OR_VIMEO_URL" ... /> */}
           <div className="relative w-full aspect-video rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group cursor-pointer">

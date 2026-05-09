@@ -11,7 +11,7 @@ export default function Terms() {
         <meta name="description" content="Holy Webs terms of service. Read our terms and conditions for using our website and services." />
         <link rel="canonical" href="https://holywebs.com/terms/" />
       </Helmet>
-      <section className="section-dark py-24 lg:py-32">
+      <section className="section-dark py-28 lg:py-40">
         <div className="container mx-auto px-4 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-4">Terms of Service</h1>
           <p className="text-white/60">Last updated: April 3, 2026</p>

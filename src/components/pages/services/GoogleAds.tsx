@@ -150,13 +150,13 @@ export default function GoogleAds() {
       </Helmet>
       <FAQSchema faqs={faqs} />
       {/* Hero */}
-      <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
+      <section className="section-dark py-28 lg:py-40 relative overflow-hidden">
         <div className="absolute inset-0 hero-bg-spotlight" />
         <div className="absolute inset-0 hero-bg-grain" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "Google Ads" }]} />
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Google Ads Management</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-6 leading-tight max-w-5xl">
             Capture Demand the Moment Someone Searches for&nbsp;You
           </h1>
           <p className="text-white/70 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">

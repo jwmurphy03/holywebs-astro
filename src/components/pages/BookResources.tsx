@@ -121,7 +121,7 @@ export default function BookResources() {
           }}
         />
 
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10 py-28 lg:py-40">
           <div className="hero-fade-in text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8">
               <Star className="w-4 h-4 text-primary fill-primary" />
@@ -197,7 +197,7 @@ export default function BookResources() {
 
       {/* ─── FREE VISIBILITY AUDIT (light) ─── */}
       <section className="section-light py-14 lg:py-20">
-        <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
+        <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">
               Get Your Free Visibility&nbsp;Audit

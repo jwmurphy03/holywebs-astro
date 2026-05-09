@@ -37,7 +37,7 @@ const NotFound = () => {
       </Helmet>
 
       <section className="py-24 lg:py-32">
-        <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+        <div className="container mx-auto px-4 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
             <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">404 Error</p>

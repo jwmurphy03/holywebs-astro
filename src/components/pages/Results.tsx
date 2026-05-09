@@ -63,8 +63,8 @@ export default function Results() {
       <section className="relative overflow-hidden bg-dark">
         <div className="absolute inset-0 hero-bg-proof" />
         <div className="absolute inset-0 hero-bg-grain" />
-        <div className="relative z-10 py-24 lg:py-36">
-          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+        <div className="relative z-10 py-28 lg:py-40">
+          <div className="container mx-auto px-4 lg:px-8">
             <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Results and Proof</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
               We Are Building Public Case Studies the Right Way

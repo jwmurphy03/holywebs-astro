@@ -116,7 +116,7 @@ export default function BookSalesPage() {
           }}
         />
 
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 py-20 lg:py-28">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10 py-28 lg:py-40">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="hero-fade-in">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-6">
@@ -264,7 +264,7 @@ export default function BookSalesPage() {
 
       {/* ═══════════════ WHO THIS IS FOR ═══════════════ */}
       <section className="section-light py-16 lg:py-24">
-        <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+        <div className="container mx-auto px-4 lg:px-8">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-10 text-center">
               This Book Is For&nbsp;You&nbsp;If…

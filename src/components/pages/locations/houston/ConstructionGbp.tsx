@@ -111,8 +111,8 @@ export default function HoustonConstructionGbp() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-dark">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-dark to-dark" />
-        <div className="relative z-10 py-24 lg:py-36">
-          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+        <div className="relative z-10 py-28 lg:py-40">
+          <div className="container mx-auto px-4 lg:px-8">
             <Breadcrumbs
               items={[
                 { label: "Locations", href: "/locations" },

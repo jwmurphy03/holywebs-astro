@@ -1,7 +1,7 @@
 export default function GuaranteeSection() {
   return (
     <section className="section-dark relative overflow-hidden py-20 lg:py-32">
-      <div className="container mx-auto px-4 lg:px-8 max-w-5xl text-center">
+      <div className="container mx-auto px-4 lg:px-8 text-center">
 
         {/* Statement headline */}
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground leading-tight mb-8">

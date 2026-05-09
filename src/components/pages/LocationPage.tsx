@@ -28,12 +28,12 @@ export default function LocationPage() {
         <meta name="robots" content="index, follow" />
         <meta name="description" content={`Local digital marketing services for service businesses in ${data.city}, ${data.state}. Web design, SEO, Google Ads, and more.`} />
       </Helmet>
-      <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
+      <section className="section-dark py-28 lg:py-40 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary blur-[120px]" />
         </div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-6 max-w-5xl">
             Digital Marketing for {data.city}, {data.state} Local Service Businesses
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mb-8">

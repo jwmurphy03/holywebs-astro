@@ -17,11 +17,11 @@ export default function HowFastShouldWebsiteLoad() {
         <link rel="canonical" href="https://holywebs.com/resources/blog/how-fast-should-website-load/" />
       </Helmet>
 
-      <section className="section-dark py-20 lg:py-28 relative overflow-hidden">
+      <section className="section-dark py-28 lg:py-40 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary blur-[120px]" />
         </div>
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <Breadcrumbs items={[{ label: "Blog", href: "/resources/blog" }, { label: "How Fast Should Your Website Load?" }]} />
           <div className="flex items-center gap-3 mb-6">
             <span className="text-xs font-bold tracking-widest uppercase text-primary">Web&nbsp;Design</span>

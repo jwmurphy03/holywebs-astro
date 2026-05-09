@@ -167,8 +167,8 @@ export default function CharlestonPlumbingSeo() {
           <img src={charlestonWaterfront} alt="Charleston South Carolina waterfront" className="w-full h-full object-cover" width={1920} height={1080} />
           <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/85 to-dark/70" />
         </div>
-        <div className="relative z-10 py-24 lg:py-36">
-          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+        <div className="relative z-10 py-28 lg:py-40">
+          <div className="container mx-auto px-4 lg:px-8">
             <Breadcrumbs items={[
               { label: "Locations", href: "/locations" },
               { label: "South Carolina", href: "/locations/south-carolina" },

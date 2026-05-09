@@ -23,7 +23,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 py-24 lg:py-36">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 py-28 lg:py-40">
         <div className="hero-fade-in max-w-3xl">
           {/* Social proof badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8">

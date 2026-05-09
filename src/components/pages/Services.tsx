@@ -60,11 +60,11 @@ export default function Services() {
         <meta name="description" content="Web design, local SEO, Google Ads, Meta Ads, AI Search, and Google Business Profile optimization, all built for contractors and service businesses." />
         <link rel="canonical" href="https://holywebs.com/services/" />
       </Helmet>
-      <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
+      <section className="section-dark py-28 lg:py-40 relative overflow-hidden">
         <div className="absolute inset-0 hero-bg-noise" />
         <div className="absolute inset-0 hero-bg-grain" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-6">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-6 max-w-5xl">Our Services</h1>
           <p className="text-white/70 text-lg max-w-2xl">
             Everything a local service business needs to get found, build trust, and get&nbsp;the&nbsp;call.
           </p>

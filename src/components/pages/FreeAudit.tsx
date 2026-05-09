@@ -68,15 +68,15 @@ export default function FreeAudit() {
       </Helmet>
 
       {/* Hero */}
-      <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
+      <section className="section-dark py-28 lg:py-40 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary blur-[120px]" />
         </div>
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-6">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-6 max-w-3xl">
             Find Out Why You're Not&nbsp;Showing&nbsp;Up
           </h1>
-          <p className="text-white/70 text-lg leading-relaxed">
+          <p className="text-white/70 text-lg leading-relaxed max-w-3xl">
             Most local service businesses are invisible online and don't know why. We'll look under the hood and show you exactly where you're losing customers — and what to&nbsp;do&nbsp;about&nbsp;it.
           </p>
         </div>

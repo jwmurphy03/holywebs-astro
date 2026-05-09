@@ -112,13 +112,13 @@ export default function PowerWashing() {
         <meta property="og:type" content="website" />
       </Helmet>
       {/* Hero */}
-      <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
+      <section className="section-dark py-28 lg:py-40 relative overflow-hidden">
         <div className="absolute inset-0 hero-bg-spotlight" />
         <div className="absolute inset-0 hero-bg-grain" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <Breadcrumbs items={[{ label: "Industries", href: "/industries" }, { label: "Power Washing" }]} />
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Power Washing Industry</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-6 leading-tight max-w-5xl">
             Digital Marketing Built for Power Washing&nbsp;Companies
           </h1>
           <p className="text-white/70 text-lg md:text-xl max-w-3xl mb-8 leading-relaxed">

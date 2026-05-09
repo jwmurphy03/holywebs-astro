@@ -17,8 +17,8 @@ export default function TexasGoogleMapsServiceBusinesses() {
         <link rel="canonical" href="https://holywebs.com/resources/blog/texas-service-business-google-maps/" />
       </Helmet>
 
-      <section className="section-dark py-20 lg:py-28 relative overflow-hidden">
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-4xl">
+      <section className="section-dark py-28 lg:py-40 relative overflow-hidden">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <Breadcrumbs items={[{ label: "Blog", href: "/resources/blog" }, { label: "Texas Google Maps" }]} />
           <a href="/resources/blog" className="inline-flex items-center gap-2 text-white/50 hover:text-primary transition-colors mb-6 text-sm">
             <ArrowLeft className="w-4 h-4" /> Back to blog

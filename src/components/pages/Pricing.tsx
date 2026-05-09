@@ -186,10 +186,10 @@ const goodFit = [
 export default function Pricing() {
   return (
     <>
-      <section className="section-dark py-24 lg:py-32 relative overflow-hidden">
+      <section className="section-dark py-28 lg:py-40 relative overflow-hidden">
         <div className="absolute inset-0 hero-bg-proof" />
         <div className="absolute inset-0 hero-bg-grain" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-5xl">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <p className="text-primary font-semibold mb-4 tracking-wide uppercase text-sm">Pricing</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground mb-6 leading-tight max-w-4xl">
             Clear Monthly Plans for Local Businesses That Want to Get Found

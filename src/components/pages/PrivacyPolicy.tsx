@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
         <meta name="description" content="Holy Webs privacy policy. Learn how we collect, use, and protect your personal information." />
         <link rel="canonical" href="https://holywebs.com/privacy-policy/" />
       </Helmet>
-      <section className="section-dark py-24 lg:py-32">
+      <section className="section-dark py-28 lg:py-40">
         <div className="container mx-auto px-4 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-extrabold text-dark-foreground mb-4">Privacy Policy</h1>
           <p className="text-white/60">Last updated: April 3, 2026</p>
