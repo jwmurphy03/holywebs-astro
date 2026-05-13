@@ -91,6 +91,7 @@ export default function Contact() {
         websiteUrl: formData.get("websiteUrl") as string,
         service: formData.get("service") as string,
         message: formData.get("message") as string,
+        company: formData.get("company") as string,
         source: "contact-page",
       });
       setSubmitted(true);
@@ -137,6 +138,17 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="hidden" aria-hidden="true">
+                  <label>
+                    Company
+                    <input
+                      name="company"
+                      type="text"
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                  </label>
+                </div>
                 {error && (
                   <div className="flex items-center gap-3 rounded-lg border border-destructive/30 bg-destructive/5 px-4 py-3 text-sm text-destructive">
                     <AlertCircle className="w-5 h-5 flex-shrink-0" />

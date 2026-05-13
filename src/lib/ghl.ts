@@ -11,11 +11,14 @@ export interface GHLPayload {
   [key: string]: string | undefined;
 }
 
+const formStartedAt = Date.now();
+
 export async function postToGHL(data: GHLPayload): Promise<{ success: boolean }> {
   const payload: Record<string, string> = {};
 
   Object.entries({
     ...data,
+    _formStartedAt: String(formStartedAt),
     timestamp: new Date().toISOString(),
   }).forEach(([key, value]) => {
     if (value) payload[key] = value;
