@@ -7,6 +7,7 @@ export interface GHLPayload {
   service?: string;
   message?: string;
   city?: string;
+  turnstileToken?: string;
   source: string;
   [key: string]: string | undefined;
 }

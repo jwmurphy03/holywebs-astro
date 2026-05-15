@@ -7,6 +7,8 @@ const MIN_FORM_TIME_MS = 3_000;
 const MAX_FORM_AGE_MS = 24 * 60 * 60 * 1000;
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT_MAX = 8;
+const TURNSTILE_VERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
+const TURNSTILE_PROTECTED_SOURCES = new Set(["contact-page", "homepage-cta"]);
 const rateLimit = new Map();
 
 const allowedFields = new Set([
@@ -90,7 +92,46 @@ function hasSpamSignals(body) {
   );
 }
 
-function validateSubmission(req, body) {
+async function verifyTurnstile(body, ip) {
+  if (!TURNSTILE_PROTECTED_SOURCES.has(body.source)) {
+    return null;
+  }
+
+  if (!process.env.TURNSTILE_SECRET_KEY) {
+    console.warn("TURNSTILE_SECRET_KEY is not configured; skipping Turnstile verification.");
+    return null;
+  }
+
+  if (!body.turnstileToken) {
+    return "Verification required";
+  }
+
+  const formData = new URLSearchParams({
+    secret: process.env.TURNSTILE_SECRET_KEY,
+    response: String(body.turnstileToken),
+    remoteip: ip,
+  });
+
+  try {
+    const response = await fetch(TURNSTILE_VERIFY_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData,
+    });
+
+    const result = await response.json();
+    if (!response.ok || !result.success) {
+      return "Verification failed";
+    }
+  } catch (err) {
+    console.error("Turnstile verification error:", err);
+    return "Verification failed";
+  }
+
+  return null;
+}
+
+async function validateSubmission(req, body, ip) {
   if (!isAllowedOrigin(req)) {
     return "Invalid origin";
   }
@@ -130,6 +171,11 @@ function validateSubmission(req, body) {
     return "Spam detected";
   }
 
+  const turnstileError = await verifyTurnstile(body, ip);
+  if (turnstileError) {
+    return turnstileError;
+  }
+
   return null;
 }
 
@@ -159,7 +205,7 @@ export default async function handler(req) {
     return json(400, { success: false, error: "Invalid JSON" });
   }
 
-  const validationError = validateSubmission(req, body);
+  const validationError = await validateSubmission(req, body, ip);
   if (validationError) {
     return json(400, { success: false, error: validationError });
   }

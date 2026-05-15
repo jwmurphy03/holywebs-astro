@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Mail, Phone, MapPin, Clock, Check, AlertCircle, Flame, Wrench, HardHat, Droplets, Zap, TreePine, Calculator, SprayCan, ArrowRight } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import SectionWrapper from "@/components/SectionWrapper";
 import IndustryFAQ from "@/components/IndustryFAQ";
+import Turnstile, { isTurnstileEnabled } from "@/components/Turnstile";
 import { postToGHL } from "@/lib/ghl";
 
 const serviceOptions = [
@@ -75,6 +76,11 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState("");
+
+  const handleTurnstileExpire = useCallback(() => {
+    setTurnstileToken("");
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -92,6 +98,7 @@ export default function Contact() {
         service: formData.get("service") as string,
         message: formData.get("message") as string,
         company: formData.get("company") as string,
+        turnstileToken,
         source: "contact-page",
       });
       setSubmitted(true);
@@ -241,7 +248,13 @@ export default function Contact() {
                   />
                 </div>
 
-                <button type="submit" disabled={submitting} className="btn-primary w-full justify-center text-base disabled:opacity-50">
+                <Turnstile
+                  onVerify={setTurnstileToken}
+                  onExpire={handleTurnstileExpire}
+                  theme="light"
+                />
+
+                <button type="submit" disabled={submitting || (isTurnstileEnabled && !turnstileToken)} className="btn-primary w-full justify-center text-base disabled:opacity-50">
                   {submitting ? "Sending..." : "Send Message"}
                 </button>
               </form>

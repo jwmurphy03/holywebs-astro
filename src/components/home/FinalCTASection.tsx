@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { Check, AlertCircle } from "lucide-react";
+import Turnstile, { isTurnstileEnabled } from "@/components/Turnstile";
 import { postToGHL } from "@/lib/ghl";
 
 const serviceOptions = [
@@ -22,6 +23,11 @@ export default function FinalCTASection({ headline, subtitle }: FinalCTASectionP
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState("");
+
+  const handleTurnstileExpire = useCallback(() => {
+    setTurnstileToken("");
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,6 +44,7 @@ export default function FinalCTASection({ headline, subtitle }: FinalCTASectionP
         websiteUrl: fd.get("websiteUrl") as string,
         service: fd.get("service") as string,
         message: fd.get("message") as string,
+        turnstileToken,
         source: "homepage-cta",
       });
       setSubmitted(true);
@@ -163,7 +170,13 @@ export default function FinalCTASection({ headline, subtitle }: FinalCTASectionP
                   />
                 </div>
 
-                <button type="submit" disabled={submitting} className="btn-primary w-full text-base mt-2 disabled:opacity-50">
+                <Turnstile
+                  onVerify={setTurnstileToken}
+                  onExpire={handleTurnstileExpire}
+                  theme="dark"
+                />
+
+                <button type="submit" disabled={submitting || (isTurnstileEnabled && !turnstileToken)} className="btn-primary w-full text-base mt-2 disabled:opacity-50">
                   {submitting ? "Sending..." : "Get My Free Consultation"}
                 </button>
               </form>
