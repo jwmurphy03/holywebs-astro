@@ -56,7 +56,6 @@ const plans = [
     eyebrow: "Aggressive market growth",
     description:
       "Best for companies that need a custom site, regional SEO, maps visibility, and dedicated landing pages.",
-    note: "Ad spend is not included. We recommend a minimum ad budget of $1,500/mo paid directly to Google or Meta.",
     cta: "Talk About Market Leader",
     href: "#pricing-call",
     highlighted: false,
@@ -76,7 +75,6 @@ const plans = [
     eyebrow: "Custom solutions",
     description:
       "Best for multi-location or multi-market companies that need a custom plan across SEO, ads, content, and reporting.",
-    note: "Custom plans start at $10,000/mo. Ad spend is not included and is paid directly to the ad platform.",
     cta: "Talk About Enterprise",
     href: "#pricing-call",
     highlighted: false,
@@ -251,11 +249,6 @@ export default function Pricing() {
               </div>
 
               <div className="mt-auto pt-2">
-                {"note" in plan && plan.note && (
-                  <p className="mb-4 rounded-md border border-primary/20 bg-primary/5 px-3 py-2 text-sm font-medium leading-relaxed text-foreground/80">
-                    {plan.note}
-                  </p>
-                )}
                 <a
                   href={plan.href}
                   className={
@@ -271,6 +264,9 @@ export default function Pricing() {
             </div>
           ))}
         </div>
+        <p className="mx-auto mt-6 max-w-3xl text-center text-sm font-medium leading-relaxed text-muted-foreground">
+          Ad spend is not included. We recommend a minimum ad budget of $1,500/mo paid directly to Google or Meta.
+        </p>
 
       </SectionWrapper>
 
