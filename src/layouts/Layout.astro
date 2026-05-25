@@ -24,6 +24,8 @@ interface Props {
   canonicalUrl?: string;
   schema?: object | object[];
   noExitIntent?: boolean;
+  hideNavbar?: boolean;
+  hideFooter?: boolean;
   robots?: string;
   pageType?: string;
   dateModified?: string;
@@ -37,6 +39,8 @@ const {
   canonicalUrl = Astro.url.href,
   schema,
   noExitIntent = false,
+  hideNavbar = false,
+  hideFooter = false,
   robots,
   pageType = 'WebPage',
   dateModified,
@@ -100,11 +104,11 @@ const structuredData = graphSchema([
   </head>
   <body>
     <div class="min-h-screen flex flex-col">
-      <Navbar client:load />
-      <main class="flex-1 pt-28">
+      {!hideNavbar && <Navbar client:load />}
+      <main class:list={["flex-1", hideNavbar ? "pt-0" : "pt-28"]}>
         <slot />
       </main>
-      <Footer client:visible />
+      {!hideFooter && <Footer client:visible />}
       {!noExitIntent && <ExitIntentPopup client:idle />}
     </div>
   </body>

@@ -17,7 +17,7 @@ import RelatedLinks from "@/components/RelatedLinks";
 const plans = [
   {
     name: "Local Growth",
-    price: "$1,997",
+    price: "$2,997",
     cadence: "/mo",
     eyebrow: "For one-market local service businesses",
     description:
@@ -31,21 +31,17 @@ const plans = [
       "Owners who want consistent local SEO without paid ads yet",
     ],
     includes: [
-      "Custom website build included",
-      "Hosting, maintenance, and reasonable website edits",
-      "Onsite SEO and technical SEO foundation",
+      "Website foundation built or improved",
+      "Local SEO strategy for one primary market",
       "Google Business Profile management",
-      "GBP posting and optimization",
-      "50 citation submissions",
-      "1 new content page per month",
-      "Local SEO strategy and routine audits",
-      "Internal linking and content silo planning",
-      "Call/form tracking and monthly reporting",
+      "Monthly content and optimization",
+      "Tracking, reporting, and strategy review",
+      "Hosting, maintenance, and site updates",
     ],
   },
   {
     name: "Local Authority",
-    price: "$2,997",
+    price: "$4,997",
     cadence: "/mo",
     eyebrow: "Best fit for serious local SEO growth",
     description:
@@ -55,24 +51,21 @@ const plans = [
     highlighted: true,
     bestFor: [
       "Businesses targeting a radius around their main city",
-      "Companies that need more content and citation velocity",
+      "Companies that need more content and authority building",
       "Owners who want a bigger SEO push before adding ad spend",
     ],
     includes: [
       "Everything in Local Growth",
-      "Expanded local SEO strategy",
-      "100 citation submissions",
-      "2 new content pages per month",
-      "More service-area and location page expansion",
-      "Ongoing GBP management and posting",
-      "Conversion rate optimization evaluation",
+      "Expanded service-area SEO",
+      "More monthly content production",
+      "Stronger local authority building",
+      "Conversion review and search visibility improvements",
       "AI search optimization for answer-based discovery",
-      "Monthly reporting with deeper visibility review",
     ],
   },
   {
     name: "Market Leader",
-    price: "$4,997",
+    price: "$7,497",
     cadence: "/mo",
     eyebrow: "For aggressive growth and larger service areas",
     description:
@@ -88,17 +81,38 @@ const plans = [
     ],
     includes: [
       "Everything in Local Authority",
-      "High-output regional SEO strategy",
-      "150 citation submissions",
-      "3 new content pages per month",
-      "Expanded service-area and authority content",
-      "Paid search or paid social strategy",
+      "Regional SEO expansion",
       "Google Ads or Facebook Ads management",
       "Campaign landing pages",
-      "Advanced tracking and conversion improvements",
+      "Advanced tracking and lead-quality review",
       "Priority support and higher-touch strategy",
-      "Budget, offer, and lead-quality review",
-      "Monthly reporting with deeper market review",
+      "Budget, offer, and conversion improvements",
+    ],
+  },
+  {
+    name: "Enterprise",
+    price: "$10,000+",
+    cadence: "/mo",
+    eyebrow: "For multi-location and dominant-market growth",
+    description:
+      "A custom growth program for companies that need heavier strategy, deeper execution, and expansion across multiple locations or markets.",
+    note: "Custom plans start at $10,000/mo. Ad spend is not included and is paid directly to the ad platform.",
+    cta: "Talk About Enterprise",
+    href: "#pricing-call",
+    highlighted: false,
+    bestFor: [
+      "Multi-location or multi-market service companies",
+      "Teams expanding across several cities or service lines",
+      "Businesses that need custom strategy, reporting, and execution",
+    ],
+    includes: [
+      "Custom market expansion strategy",
+      "Multi-location SEO and content planning",
+      "Advanced Google Business Profile strategy",
+      "Paid media management across channels",
+      "Custom landing pages and conversion systems",
+      "Executive-level reporting and strategy calls",
+      "Highest-touch support and prioritization",
     ],
   },
 ];
@@ -133,7 +147,7 @@ const faqs = [
   },
   {
     q: "What is the difference between Local Growth and Local Authority?",
-    a: "Local Growth is built for one-market visibility. Local Authority adds more monthly content, more citation work, and a stronger SEO push for businesses that want to expand into nearby service areas without adding paid ads yet.",
+    a: "Local Growth is built for one-market visibility. Local Authority adds more monthly content, broader local authority building, and a stronger SEO push for businesses that want to expand into nearby service areas without adding paid ads yet.",
   },
   {
     q: "Can I just buy a website?",
@@ -211,14 +225,14 @@ export default function Pricing() {
       <SectionWrapper variant="light" className="py-16 lg:py-24 border-b border-border/70">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4">
-            Three Plans. One Clear Direction.
+            Four Plans. One Clear Direction.
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Most local businesses do not need a pile of separate services. They need the right foundation, consistent visibility work, and a team responsible for making the system better every month.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 max-w-7xl mx-auto items-stretch">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-6 max-w-[90rem] mx-auto items-stretch">
           {plans.map((plan) => (
             <div
               key={plan.name}

@@ -11,23 +11,6 @@ const pricingSchema = {
     {
       "@type": "Offer",
       "name": "Local Growth",
-      "price": "1997",
-      "priceCurrency": "USD",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "1997",
-        "priceCurrency": "USD",
-        "unitText": "month"
-      },
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Local Growth Plan",
-        "description": "Website, one-market local SEO, Google Business Profile management, citation submissions, monthly content, tracking, and reporting for local service businesses."
-      }
-    },
-    {
-      "@type": "Offer",
-      "name": "Local Authority",
       "price": "2997",
       "priceCurrency": "USD",
       "priceSpecification": {
@@ -38,13 +21,13 @@ const pricingSchema = {
       },
       "itemOffered": {
         "@type": "Service",
-        "name": "Local Authority Plan",
-        "description": "Website, expanded local SEO, Google Business Profile management, increased citation submissions, two monthly content pages, tracking, and reporting for local service businesses."
+        "name": "Local Growth Plan",
+        "description": "Website foundation, one-market local SEO, Google Business Profile management, monthly content, tracking, and reporting for local service businesses."
       }
     },
     {
       "@type": "Offer",
-      "name": "Market Leader",
+      "name": "Local Authority",
       "price": "4997",
       "priceCurrency": "USD",
       "priceSpecification": {
@@ -55,8 +38,43 @@ const pricingSchema = {
       },
       "itemOffered": {
         "@type": "Service",
+        "name": "Local Authority Plan",
+        "description": "Website foundation, expanded local SEO, Google Business Profile management, increased content production, local authority building, tracking, and reporting for local service businesses."
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Market Leader",
+      "price": "7497",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "7497",
+        "priceCurrency": "USD",
+        "unitText": "month"
+      },
+      "itemOffered": {
+        "@type": "Service",
         "name": "Market Leader Plan",
-        "description": "High-output regional SEO, increased citation submissions, three monthly content pages, tracking, landing pages, and Google Ads or Facebook Ads management for local service businesses."
+        "description": "High-output regional SEO, expanded content strategy, tracking, landing pages, conversion improvements, and Google Ads or Facebook Ads management for local service businesses."
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Enterprise",
+      "price": "10000",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10000",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "minPrice": "10000"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Enterprise Plan",
+        "description": "Custom market expansion strategy, multi-location SEO, content planning, paid media management, custom landing pages, reporting, and high-touch support for larger local service businesses."
       }
     }
   ]
@@ -64,7 +82,7 @@ const pricingSchema = {
 ---
 <Layout
   title="Pricing | Holy Webs Monthly Growth Plans"
-  description="Transparent monthly pricing for Holy Webs local growth plans. Website, local SEO, Google Business Profile, content, tracking, and paid ads management options for service businesses."
+  description="Transparent monthly pricing for Holy Webs local growth plans. Website, local SEO, Google Business Profile, content, tracking, paid ads management, and enterprise growth options for service businesses."
   canonicalUrl="https://holywebs.com/pricing"
   schema={pricingSchema}
 >
