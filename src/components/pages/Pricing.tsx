@@ -25,18 +25,13 @@ const plans = [
     cta: "Talk About Local Growth",
     href: "#pricing-call",
     highlighted: false,
-    bestFor: [
-      "Single-city contractors and service businesses",
-      "Companies that need the website, GBP, and SEO basics handled correctly",
-      "Owners who want consistent local SEO without paid ads yet",
-    ],
+    bestFor: "Single-market service businesses that need the website, GBP, and local SEO foundation handled correctly.",
     includes: [
       "Website foundation built or improved",
       "Local SEO strategy for one primary market",
       "Google Business Profile management",
       "Monthly content and optimization",
       "Tracking, reporting, and strategy review",
-      "Hosting, maintenance, and site updates",
     ],
   },
   {
@@ -49,17 +44,12 @@ const plans = [
     cta: "Talk About Local Authority",
     href: "#pricing-call",
     highlighted: true,
-    bestFor: [
-      "Businesses targeting a radius around their main city",
-      "Companies that need more content and authority building",
-      "Owners who want a bigger SEO push before adding ad spend",
-    ],
+    bestFor: "Growing local businesses that want stronger organic visibility across nearby cities and service areas.",
     includes: [
       "Everything in Local Growth",
       "Expanded service-area SEO",
       "More monthly content production",
       "Stronger local authority building",
-      "Conversion review and search visibility improvements",
       "AI search optimization for answer-based discovery",
     ],
   },
@@ -74,19 +64,13 @@ const plans = [
     cta: "Talk About Market Leader",
     href: "#pricing-call",
     highlighted: false,
-    bestFor: [
-      "Established businesses ready to win more of the market",
-      "Multi-city, regional, or high-ticket service companies",
-      "Teams that want SEO plus managed Google or Facebook ads",
-    ],
+    bestFor: "Established companies ready to combine regional SEO, paid traffic, and higher-touch growth strategy.",
     includes: [
       "Everything in Local Authority",
       "Regional SEO expansion",
       "Google Ads or Facebook Ads management",
       "Campaign landing pages",
       "Advanced tracking and lead-quality review",
-      "Priority support and higher-touch strategy",
-      "Budget, offer, and conversion improvements",
     ],
   },
   {
@@ -100,19 +84,13 @@ const plans = [
     cta: "Talk About Enterprise",
     href: "#pricing-call",
     highlighted: false,
-    bestFor: [
-      "Multi-location or multi-market service companies",
-      "Teams expanding across several cities or service lines",
-      "Businesses that need custom strategy, reporting, and execution",
-    ],
+    bestFor: "Multi-location or multi-market companies that need custom strategy, reporting, and execution.",
     includes: [
       "Custom market expansion strategy",
       "Multi-location SEO and content planning",
-      "Advanced Google Business Profile strategy",
       "Paid media management across channels",
       "Custom landing pages and conversion systems",
       "Executive-level reporting and strategy calls",
-      "Highest-touch support and prioritization",
     ],
   },
 ];
@@ -257,16 +235,12 @@ export default function Pricing() {
                 <p className="text-muted-foreground leading-relaxed">{plan.description}</p>
               </div>
 
-              <div className="mb-7 rounded-lg border border-border/80 bg-background/80 p-4 lg:min-h-[196px]">
+              <div className="mb-7 rounded-lg border border-border/80 bg-background/80 p-4 lg:min-h-[118px]">
                 <p className="text-sm font-bold text-foreground mb-3">Best for:</p>
-                <ul className="space-y-2">
-                  {plan.bestFor.map((item) => (
-                    <li key={item} className="flex gap-2 text-sm text-muted-foreground leading-relaxed">
-                      <Target className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="flex gap-2 text-sm text-muted-foreground leading-relaxed">
+                  <Target className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
+                  <p>{plan.bestFor}</p>
+                </div>
               </div>
 
               <div className="mb-8 flex-1">

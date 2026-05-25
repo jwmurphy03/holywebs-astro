@@ -609,20 +609,6 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-md border-b border-white/10">
-      <a
-        href="/workshop"
-        className="block border-b border-white/10 bg-[#0B1220] text-white transition-colors hover:bg-[#101A2E]"
-      >
-        <div className="container mx-auto flex min-h-12 items-center justify-center gap-2 px-4 text-center text-xs font-semibold sm:min-h-10 sm:text-sm">
-          <Video className="hidden h-4 w-4 text-primary sm:block" />
-          <span className="rounded-full bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary sm:text-xs">
-            Free Workshop
-          </span>
-          <span>Free live workshop: Stop Being Invisible</span>
-          <span className="hidden text-white/35 sm:inline">|</span>
-          <span className="text-white/75">Thurs, May 14th at 2 PM Central</span>
-        </div>
-      </a>
       <div className="container mx-auto flex items-center justify-between px-4 lg:px-8 h-16">
         <a href="/">
           <img src={logoWhite} alt="Holy Webs" className="h-8 w-[160px]" width={160} height={32} />
