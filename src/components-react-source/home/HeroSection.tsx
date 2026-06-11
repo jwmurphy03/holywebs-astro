@@ -23,8 +23,8 @@ export default function HeroSection() {
         className="absolute inset-0"
         style={{
           background: `
-            linear-gradient(90deg, #08101f 0%, rgba(8, 16, 31, 0.96) 42%, rgba(8, 16, 31, 0.66) 68%, rgba(8, 16, 31, 0.86) 100%),
-            linear-gradient(180deg, rgba(8, 16, 31, 0.72) 0%, rgba(8, 16, 31, 0.44) 48%, rgba(8, 16, 31, 0.92) 100%)
+            linear-gradient(90deg, #08101f 0%, rgba(8, 16, 31, 0.9) 42%, rgba(8, 16, 31, 0.48) 68%, rgba(8, 16, 31, 0.72) 100%),
+            linear-gradient(180deg, rgba(8, 16, 31, 0.6) 0%, rgba(8, 16, 31, 0.28) 48%, rgba(8, 16, 31, 0.82) 100%)
           `,
         }}
       />
@@ -49,7 +49,7 @@ export default function HeroSection() {
           {/* Social proof badge */}
           <div className="inline-flex max-w-full items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-lg sm:rounded-full px-4 py-2 mb-5">
             <Star className="w-4 h-4 text-primary fill-primary" />
-            <span className="text-sm text-white/90 font-medium leading-snug">Home service marketing for contractors, trades, and local operators</span>
+            <span className="text-sm text-white/90 font-medium leading-snug">4.9 on Google · 200+ Home Service Operators</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-foreground leading-[1.05] mb-5 max-w-3xl">
