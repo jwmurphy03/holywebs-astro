@@ -11,14 +11,6 @@ export default function HeroSection() {
 
   return (
     <section className="section-dark relative overflow-hidden">
-      <img
-        src="/assets/blog/roofing-not-showing-google-thumb.jpg"
-        alt=""
-        className="absolute inset-y-0 right-0 h-full w-full object-cover object-center opacity-35 mix-blend-luminosity lg:w-[58%] lg:opacity-50"
-        loading="eager"
-        decoding="async"
-      />
-
       <div
         className="absolute inset-0"
         style={{
