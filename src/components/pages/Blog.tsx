@@ -20,6 +20,14 @@ const POSTS_PER_PAGE = 6;
 
 const publishedPosts = [
   {
+    title: "Define Your Website’s Purpose and Target Audience",
+    desc: "Choose a business goal, understand your customers and plan the content and actions your website needs.",
+    category: "Web Design",
+    readTime: "6 min read",
+    slug: "defining-your-websites-purpose-and-target-audience",
+    thumb: contractorNoCallsThumb,
+  },
+  {
     title: "How Texas Service Businesses Can Show Up in Google Maps",
     desc: "A practical Google Maps ranking guide for Texas service businesses in Dallas, Austin, San Antonio, Waco, Houston, and beyond.",
     category: "Local SEO",

@@ -141,7 +141,6 @@ export default function TradeCityHubPage({ city, state, stateSlug, citySlug, ind
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href={canonical} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

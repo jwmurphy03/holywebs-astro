@@ -53,12 +53,14 @@ const industryConfig = {
 
 const cityConfig: Record<string, {
   metro: string;
+  hasTradeHub?: boolean;
   marketAngle: string;
   searchContext: string;
   urgency: string;
   localSignals: string[];
 }> = {
   dallas: {
+    hasTradeHub: true,
     metro: "the DFW metroplex",
     marketAngle: "Dallas is not one simple market. A contractor can be visible in central Dallas and still be nearly invisible in Plano, Frisco, Irving, Garland, McKinney, or Richardson.",
     searchContext: "A search in Frisco behaves differently than a search near downtown Dallas. The content, GBP signals, reviews, and service-area structure need to reflect that spread.",
@@ -70,6 +72,7 @@ const cityConfig: Record<string, {
     ],
   },
   austin: {
+    hasTradeHub: true,
     metro: "the Austin metro",
     marketAngle: "Austin search is shaped by fast growth, high customer expectations, and surrounding markets like Round Rock, Georgetown, Cedar Park, Pflugerville, and San Marcos.",
     searchContext: "Someone searching in South Austin does not always see the same businesses as someone searching in Round Rock. Local relevance has to be built city by city.",
@@ -81,6 +84,7 @@ const cityConfig: Record<string, {
     ],
   },
   "san-antonio": {
+    hasTradeHub: true,
     metro: "the San Antonio metro",
     marketAngle: "San Antonio has a wide service footprint, from the urban core to fast-growing nearby markets like New Braunfels, Boerne, Schertz, Cibolo, and Converse.",
     searchContext: "A contractor who only talks about San Antonio can miss valuable searches in the surrounding communities where homeowners still want a local-feeling provider.",
@@ -407,7 +411,9 @@ export default function LocalSeoMoneyPage({ city, state, stateSlug, citySlug, in
           { title: "Local SEO", description: "Learn how Holy Webs approaches SEO for local service businesses.", href: "/services/seo" },
           { title: "Google Business Profile", description: "See how GBP work supports local rankings and calls.", href: "/services/google-business-profile" },
           { title: "Website Design", description: "A stronger website makes SEO traffic easier to convert.", href: "/services/web-design" },
-          { title: `${city} ${config.label} Marketing`, description: `See the broader local marketing hub for ${config.plural} in ${city}.`, href: hubPath },
+          ...(local.hasTradeHub ? [
+            { title: `${city} ${config.label} Marketing`, description: `See the broader local marketing hub for ${config.plural} in ${city}.`, href: hubPath },
+          ] : []),
           { title: config.label, description: `Explore how we market ${config.plural} across web, SEO, GBP, and ads.`, href: industryPath },
           { title: `${city} Digital Marketing`, description: `See the broader local marketing strategy for service businesses in ${city}.`, href: cityPath },
         ]}

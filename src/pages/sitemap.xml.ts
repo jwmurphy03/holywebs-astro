@@ -1,7 +1,6 @@
 import { SITE_URL } from "../lib/seo";
 
 const pages = import.meta.glob("./**/*.astro");
-const lastmod = "2026-05-05";
 const excluded = new Set([
   "/book/checkout",
   "/book/thank-you",
@@ -64,7 +63,6 @@ export async function GET() {
       return [
         "  <url>",
         `    <loc>${escapeXml(loc)}</loc>`,
-        `    <lastmod>${lastmod}</lastmod>`,
         `    <changefreq>${changefreqFor(route)}</changefreq>`,
         `    <priority>${priorityFor(route)}</priority>`,
         "  </url>",
