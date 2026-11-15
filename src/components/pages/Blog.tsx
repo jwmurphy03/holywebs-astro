@@ -20,6 +20,30 @@ const POSTS_PER_PAGE = 6;
 
 const publishedPosts = [
   {
+    "title": "How to Analyze Your Social Media Performance",
+    "desc": "Review social media engagement, reach, inquiries and customer feedback with a practical worksheet for local service businesses.",
+    "category": "Social Media",
+    "readTime": "4 min read",
+    "slug": "how-to-analyze-your-social-media-channels-performance",
+    "thumb": "/assets/blog/contractor-website-no-calls-thumb-v2.jpg"
+},
+  {
+    "title": "Monitor Your Brand on Social Media",
+    "desc": "Monitoring means noticing questions, mentions and problems in time to respond.",
+    "category": "Social Media",
+    "readTime": "2 min read",
+    "slug": "effectively-monitoring-your-brands-social-media-platforms",
+    "thumb": "/assets/blog/contractor-website-no-calls-thumb-v2.jpg"
+},
+  {
+    "title": "Build a Practical Social Media Strategy",
+    "desc": "A useful strategy connects your audience, content and available time to a business goal.",
+    "category": "Social Media",
+    "readTime": "2 min read",
+    "slug": "how-to-develop-a-winning-social-media-strategy",
+    "thumb": "/assets/blog/contractor-website-no-calls-thumb-v2.jpg"
+},
+  {
     title: "Write Clear and Concise Website Copy",
     desc: "Write clearer website copy with before-and-after examples and a practical editing checklist.",
     category: "Web Design",
@@ -270,14 +294,14 @@ export default function Blog({ page = 1 }: { page?: number }) {
                       className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 rounded-full bg-background text-foreground text-sm font-semibold shadow-sm hover:bg-primary hover:text-primary-foreground transition-colors"
                       aria-label="Previous page"
                     >
-                      <ChevronLeft className="w-4 h-4" /> Prev
+                      <ChevronLeft className="w-4 h-4" /><span className="sr-only sm:not-sr-only">Prev</span>
                     </a>
                   ) : (
                     <span
                       aria-disabled="true"
                       className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 rounded-full bg-background/60 text-muted-foreground/60 text-sm font-semibold cursor-not-allowed"
                     >
-                      <ChevronLeft className="w-4 h-4" /> Prev
+                      <ChevronLeft className="w-4 h-4" /><span className="sr-only sm:not-sr-only">Prev</span>
                     </span>
                   )}
 
@@ -308,14 +332,14 @@ export default function Blog({ page = 1 }: { page?: number }) {
                       className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 rounded-full bg-background text-foreground text-sm font-semibold shadow-sm hover:bg-primary hover:text-primary-foreground transition-colors"
                       aria-label="Next page"
                     >
-                      Next <ChevronRight className="w-4 h-4" />
+                      <span className="sr-only sm:not-sr-only">Next</span><ChevronRight className="w-4 h-4" />
                     </a>
                   ) : (
                     <span
                       aria-disabled="true"
                       className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 rounded-full bg-background/60 text-muted-foreground/60 text-sm font-semibold cursor-not-allowed"
                     >
-                      Next <ChevronRight className="w-4 h-4" />
+                      <span className="sr-only sm:not-sr-only">Next</span><ChevronRight className="w-4 h-4" />
                     </span>
                   )}
                 </nav>
