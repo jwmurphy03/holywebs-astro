@@ -20,6 +20,30 @@ const POSTS_PER_PAGE = 6;
 
 const publishedPosts = [
   {
+    title: "Write Clear and Concise Website Copy",
+    desc: "Write useful, clear website copy with a practical editing checklist.",
+    category: "Web Design",
+    readTime: "3 min read",
+    slug: "simplify-your-message-writing-clear-and-concise-copy",
+    thumb: contractorNoCallsThumb,
+  },
+  {
+    title: "Plan a Website That Works Across Screen Sizes",
+    desc: "Plan and test a website across narrow and wide screens.",
+    category: "Web Design",
+    readTime: "3 min read",
+    slug: "mastering-responsive-design-a-step-by-step-guide",
+    thumb: contractorNoCallsThumb,
+  },
+  {
+    title: "How to Choose a Local Web Designer",
+    desc: "Compare local designers on evidence, communication, ownership and scope.",
+    category: "Web Design",
+    readTime: "3 min read",
+    slug: "the-benefits-of-hiring-a-local-web-designer",
+    thumb: contractorNoCallsThumb,
+  },
+  {
     title: "Define Your Website’s Purpose and Target Audience",
     desc: "Choose a business goal, understand your customers and plan the content and actions your website needs.",
     category: "Web Design",
@@ -237,13 +261,13 @@ export default function Blog({ page = 1 }: { page?: number }) {
               {totalPages > 1 && (
                 <nav
                   aria-label="Blog pagination"
-                  className="mt-12 flex items-center justify-center gap-2"
+                  className="mt-12 flex items-center justify-center gap-1 sm:gap-2"
                 >
                   {prevUrl ? (
                     <a
                       href={pageHref(currentPage - 1)}
                       rel="prev"
-                      className="inline-flex items-center gap-1 px-4 py-2 rounded-full bg-background text-foreground text-sm font-semibold shadow-sm hover:bg-primary hover:text-primary-foreground transition-colors"
+                      className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 rounded-full bg-background text-foreground text-sm font-semibold shadow-sm hover:bg-primary hover:text-primary-foreground transition-colors"
                       aria-label="Previous page"
                     >
                       <ChevronLeft className="w-4 h-4" /> Prev
@@ -251,13 +275,13 @@ export default function Blog({ page = 1 }: { page?: number }) {
                   ) : (
                     <span
                       aria-disabled="true"
-                      className="inline-flex items-center gap-1 px-4 py-2 rounded-full bg-background/60 text-muted-foreground/60 text-sm font-semibold cursor-not-allowed"
+                      className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 rounded-full bg-background/60 text-muted-foreground/60 text-sm font-semibold cursor-not-allowed"
                     >
                       <ChevronLeft className="w-4 h-4" /> Prev
                     </span>
                   )}
 
-                  <div className="flex items-center gap-1 mx-2">
+                  <div className="flex items-center gap-1 sm:mx-2">
                     {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => {
                       const isActive = p === currentPage;
                       return (
@@ -281,7 +305,7 @@ export default function Blog({ page = 1 }: { page?: number }) {
                     <a
                       href={pageHref(currentPage + 1)}
                       rel="next"
-                      className="inline-flex items-center gap-1 px-4 py-2 rounded-full bg-background text-foreground text-sm font-semibold shadow-sm hover:bg-primary hover:text-primary-foreground transition-colors"
+                      className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 rounded-full bg-background text-foreground text-sm font-semibold shadow-sm hover:bg-primary hover:text-primary-foreground transition-colors"
                       aria-label="Next page"
                     >
                       Next <ChevronRight className="w-4 h-4" />
@@ -289,7 +313,7 @@ export default function Blog({ page = 1 }: { page?: number }) {
                   ) : (
                     <span
                       aria-disabled="true"
-                      className="inline-flex items-center gap-1 px-4 py-2 rounded-full bg-background/60 text-muted-foreground/60 text-sm font-semibold cursor-not-allowed"
+                      className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 rounded-full bg-background/60 text-muted-foreground/60 text-sm font-semibold cursor-not-allowed"
                     >
                       Next <ChevronRight className="w-4 h-4" />
                     </span>
