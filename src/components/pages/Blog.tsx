@@ -21,9 +21,9 @@ const POSTS_PER_PAGE = 6;
 const publishedPosts = [
   {
     title: "Write Clear and Concise Website Copy",
-    desc: "Write useful, clear website copy with a practical editing checklist.",
+    desc: "Write clearer website copy with before-and-after examples and a practical editing checklist.",
     category: "Web Design",
-    readTime: "3 min read",
+    readTime: "8 min read",
     slug: "simplify-your-message-writing-clear-and-concise-copy",
     thumb: contractorNoCallsThumb,
   },
